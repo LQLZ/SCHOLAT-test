@@ -1,0 +1,4 @@
+throw 'allowScriptTagRemoting is false.';
+//#DWR-INSERT
+//#DWR-REPLY
+dwr.engine._remoteHandleException('2','0',{javaClassName:"java.lang.Throwable",message:"Error"});

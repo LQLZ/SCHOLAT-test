@@ -1,0 +1,13 @@
+[t42]
+FileName1=t42.htm
+URL1=http://www.scholat.com//getDynamicMessagesMobile_ajax.html
+Total=2
+RequestHeaderFile=t42_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t42_ResponseHeader.txt
+ContentType=text/html
+SnapshotXmlFile=snapshot_42.xml
+FileName2=t42_loadingAnimation.gif
+URL2=http://www.scholat.com/images/loadingAnimation.gif
+[ProtocolInfo]
+ProtocolId=QTWeb

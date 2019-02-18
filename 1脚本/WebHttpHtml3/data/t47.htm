@@ -1,0 +1,1295 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+ <title>学者搜索</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+ <meta http-equiv="pragma" content="no-cache" />
+ <meta http-equiv="cache-control" content="no-cache" />
+ <meta http-equiv="expires" content="0" />
+ <meta http-equiv="keywords" content="学者网,学术搜索,个人主页,团队协作,课程平台,在线交流" />
+ <meta http-equiv="description" content="学者网是一个在线学术信息服务平台，提供学术信息管理、文献检索、学术网盘以及学者交流等服务，通过它您可以轻松构建个人、团队学术主页，并通过学术社区发现具有相同研究兴趣的学者，及时了解他们的最新动态并与他们分享你的学术成就..." />
+ <link href="http://202.116.32.240/scholat/styles/jquery-ui.gzcss?_dc=401d4ce7347" rel="stylesheet" type="text/css" />
+ <link href="http://202.116.32.240/scholat/styles/css/index.gzcss?_dc=c1552efbe16" rel="stylesheet" type="text/css" />
+ <link href="http://202.116.32.240/scholat/styles/css/divcss.gzcss?_dc=bdff58345f0" rel="stylesheet" type="text/css" />
+ <link href="http://202.116.32.240/scholat/portal/styles/dynamicSearch.gzcss?_dc=b58e994ebb9" rel="stylesheet" type="text/css" />
+ <link href="http://202.116.32.240/scholat/styles/searchresultstyle.gzcss?_dc=5160dd73a51" rel="stylesheet" type="text/css" />
+ <link href="http://202.116.32.240/scholat/styles/introcard.gzcss?_dc=c7061072818" rel="stylesheet" type="text/css" />
+ <link href="http://202.116.32.240/scholat/styles/friendMsgRequest.gzcss?_dc=fa09684cc60" rel="stylesheet" type="text/css" />
+ <script src="http://202.116.32.240/scholat/scripts/jquery-1.9.1.min.gzjs?_dc=89a8221df3d" type="text/javascript"></script>
+ <script src="http://202.116.32.240/scholat/scripts/jquery-ui-1.10.4.gzjs?_dc=392a3d2c2e4" type="text/javascript"></script>
+ <script src="http://202.116.32.240/scholat/scripts/searchfunctions.gzjs?_dc=e58cd3a3817" type="text/javascript"></script>
+ <script src="http://202.116.32.240/scholat/scripts/homepage.gzjs?_dc=97331bdb67d" type="text/javascript"></script>
+ <script src="http://202.116.32.240/scholat/scripts/friendMsgRequest.gzjs?_dc=c36f4f65445" type="text/javascript"></script>
+ <script src="http://202.116.32.240/scholat/scripts/search/portalSearch.gzjs?_dc=b48662f0bd0" type="text/javascript"></script>
+ <style type="text/css">
+	body{
+ background-color:#fff!important;
+	}
+	.maindiv{
+ min-height: 700px;
+	  overflow: hidden;
+	  margin:0 auto 20px;
+	}
+	.container_default{
+	  text-align:left;
+	  min-height: 460px;
+	  margin: 0 auto;
+	  font-size:13px;
+	}
+	.active_scholar{
+ border-bottom:1px solid #ccc;
+ margin-bottom:10px;
+ padding-bottom:3px;
+	}
+	.active_scholar>div{
+ font-size:14px;
+ height:14px;
+ width:960px;
+ text-align:left;
+ padding-left:18px;
+ color:#999;
+ margin:0 auto;
+ line-height:14px;
+	}
+	.recTag,.scholar_rec{
+ margin:0 auto;
+ width: 960px;
+	}
+	.scholar_rec .card:nth-of-type(odd){
+ margin:5px 15px 5px 0;
+	}
+	.scholar_rec .card:nth-of-type(even){
+ margin:5px 0 5px 15px;
+	}
+	.scholar_info{
+ font-size: 14px;
+ font-weight:normal;
+ line-height: 22px;
+ word-break: keep-all;
+ width:830px;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+	}
+	.noScholat font{
+ color:red;
+	}
+	.noScholat{
+ background-color: #D7E5F0;
+ font-size: 16px;
+ line-height:30px;
+ text-align:center;
+	}
+	.page{
+ width: 960px;
+ margin: 20px auto 0;
+ text-align: center;
+	}
+	.card {
+	  border:1px solid #ccc;
+ background-position: left;
+ *background-position: 0 0;
+ background-repeat: no-repeat;
+	}
+ </style>
+ <script type="text/javascript">
+	
+	
+	(function($){
+ function selectFunction(event, ui) {
+ 	$("#search_InputContent").val(ui.item.label);
+ 	subForm(0);
+  }
+ $(function() {
+   var url = "/portalScholarSearchSuggestions.html";
+   $.searchAutoComplete("search_InputContent",url,selectFunction);
+ });
+ $.extend({ 
+ 	searchAutoComplete:function(inputId,url,selectFunction){
+ 	$('#'+inputId).autocomplete({
+  source: function(request, response) {
+ 	$.ajax({
+  url: url,
+  dataType: "json",
+         data: {
+           q: request.term
+         },
+         success: function(data) {
+           response(data);
+         },
+  error : function() {
+         	//console.log("失败");
+  }       
+       });
+     },      
+ 	　　 select:selectFunction,
+     minLength: 1, 
+     autoFocus: false, 
+     delay: 500 　　　　　　　    
+ 	});
+  }
+ }); 
+	})($);
+ 
+ </script>
+	</head>
+	<body onkeydown="BindEnter(event)" style="width: 100%;">
+ <div id="reqMessage" class="pop_Message">
+	<div class="pop_head">
+ <div style="padding: 10px 5px;">
+ 	请输入验证信息：
+ 	<span style="float: right; cursor: pointer;">
+  <a onclick="javascript:hideDiv('reqMessage')" title="关闭窗口">
+ 	<img style="width: 13px; height: 13px; *margin-top: -20px;"
+  src="images/bullet_delete.gif" />&nbsp;
+  </a>
+ 	</span>
+ </div>
+	</div>
+	<div class="pop_content">
+ <textarea id="message"></textarea>
+ <span style="float: left; padding: 0; color: #F15191; display: none;" id="tip">
+ 	只能输入50个字符
+ </span>
+ <span style="display: block; height: 15px; float: right;">
+ 	<input style="background: none repeat scroll 0 0 #F6FBFF; border: 1px solid #CAE3EA; padding: 2px 8px; cursor: pointer;"
+  type="button" value="发送" onclick="javascript:Requestforaddfriend('lqlz')" />
+ 	<input style="background: none repeat scroll 0 0 #F6FBFF; border: 1px solid #CAE3EA; padding: 2px 8px; cursor: pointer;"
+  type="button" value="取消" onclick="javascript:hideDiv('reqMessage')" />
+ 	<input type="hidden" id="receiverID" value="" />
+ </span>
+	</div>
+ </div>
+ 
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+	<link href="http://202.116.32.240/scholat/styles/css/indexNew.gzcss?_dc=49d3d8ff3af" rel="stylesheet" type="text/css" />
+	<link href="http://202.116.32.240/scholat/styles/css/auth.gzcss?_dc=c5b88a2de6f" rel="stylesheet" type="text/css" />
+	<script src="http://202.116.32.240/scholat/scripts/jquery-1.6.2.gzjs?_dc=6e19ebdf6ec" type="text/javascript"></script>
+<style type="text/css">
+#divheaderinfo {
+	margin: 0px auto;
+	min-width: 900px;
+	line-height: 30px; font-family : 'Georgia', Georgia, 'Times New Roman',
+	Times, 'Microsoft YaHei', SimSun, SimHei, serif;
+	color: #000000;
+	font-family:'Georgia', Georgia, 'Times New Roman', Times, 'Microsoft YaHei', SimSun, SimHei, serif; 'Georgia', Georgia, 'Times New Roman', Times,
+ 'Microsoft YaHei', SimSun, SimHei, serif;
+}
+</style>
+<div id="divheader">
+	<div id="divheaderinfo">
+ 
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+	<head>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+ <script src="http://202.116.32.240/scholat/scripts/jquery-1.7.1.min.gzjs?_dc=870d815340c" type="text/javascript"></script>
+ <script src="http://202.116.32.240/scholat/course/layer/layer.gzjs?_dc=822459d74c8" type="text/javascript"></script>
+ <style type="text/css">
+#divheader {
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	clear: both;
+	z-index: 999;
+	height: 40px;
+	font-size: 14px;
+	position: fixed;
+	line-height: 40px;
+	background-color: #339999;
+}
+#divheaderinfo {
+	width: 960px;
+	color: #000000;
+	margin: 0px auto;
+	font-family:'Georgia', Georgia, 'Times New Roman', Times, 'Microsoft YaHei', SimSun, SimHei, serif; "Georgia", Georgia, "Times New Roman", Times,
+ "Microsoft YaHei", SimSun, SimHei, serif;
+}
+#divheaderinfo_left {
+	float: left;
+	margin-top: 5px;
+	text-align: left;
+}
+#divheaderinfo_right {
+	float: right;
+	width: 580px;
+	margin-top: 2px;
+	text-align: right;
+}
+</style>
+ <script type="text/javascript">
+  window.onload = function(){
+	 var locationUrl = document.location.href;
+	 var loginHref = document.getElementById("loginHref");
+	 if(locationUrl === "http://www.scholat.com/" || locationUrl === "http://tel.scholat.com"){}
+   if(locationUrl.indexOf(".html") == -1 && locationUrl.indexOf("course") == -1){
+    loginHref.href = "/login.html?Luser=lqlz";
+    }
+   }
+ if($("#backgroudImg").val() == ''){
+	 	document.getElementsByTagName("body")[0].style.backgroundImage="url(http://202.116.32.240/scholat/template/homepage/bgimages/22.jpg)";
+	 }
+ </script>
+	</head>
+	<body
+ style="background-image: url('http://202.116.32.240/scholat/template/homepage/bgimages/29.jpg'); background-attachment: fixed;">
+ <input type="hidden" id="backgroudImg" value="29.jpg" />
+ 
+ 
+ <div id="divheader">
+	<div id="divheaderinfo" style="padding: 0px 20px;">
+ <div id="divheaderinfo_left">
+ 	<a style="color: white;" href="http://www.scholat.com/"
+  target="_self">SCHOLAT 学者网</a>&emsp;
+ </div>
+ <div id="divheaderinfo_right">
+ 	
+  
+ 	<div style="float: right;">
+  <a style="color: white;" 
+  	href="/lqlz"
+  	target="_blank" title='访问我的学者主页'> <span>lqlz</span>
+  </a>&nbsp;&nbsp;&nbsp;
+  <a style="color: white;" href="/Phomepage.html"
+  	target="_self" title='进入我的空间'> <span>MyZone</span> </a>&nbsp;&nbsp;&nbsp;
+  <a style="color: white;" href="/logout.html"
+  	title='退出登录状态'> <span>Logout</span> </a>
+ 	</div>
+  
+  
+ 	
+ </div>
+	</div>
+ </div>
+ 
+	</body>
+</html>
+
+	</div>
+</div>
+	<script type="text/javascript">
+
+ var IE6 = !-[1,] && !window.XMLHttpRequest;
+var IE7=navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.match(/7./i)=='7.';
+var nav=document.getElementById("divheader");
+if(nav != null){
+	navstyle = nav.style;
+	if(!IE6 && !IE7)
+	{
+ navstyle.width="100%";
+ navstyle.position="fixed";
+ navstyle.top = "0px";
+	}
+	else if(IE6)
+	{
+ navstyle.position="absolute";
+ navstyle.left="0";
+ navstyle.top="0";
+	}
+	else if(IE7)
+	{
+ navstyle.width="100%";
+ navstyle.left="0";
+ navstyle.position="fixed";
+ navstyle.top="0px";
+	}
+}
+ function repairFloatStyle(currentNodeId,right,top) {
+	var IE6 = !- [ 1, ] && !window.XMLHttpRequest;
+	var IE7 = navigator.appName == "Microsoft Internet Explorer"
+	&& navigator.appVersion.match(/7./i) == '7.';
+	var currentNode = document.getElementById(currentNodeId); 
+	if (typeof (currentNode) != "undefined" && currentNode!=null) {
+ if (IE6) {
+	var parentNode = currentNode.parentNode;
+	if (typeof (parentNode) != "undefined" && parentNode!=null) {
+ parentNode.style.position = "relative";
+ currentNode.style.position = "absolute";
+ currentNode.style.right = right;
+ currentNode.style.top = top;
+	}
+ }
+	}
+}
+</script>
+
+ <div class="maindiv">
+	
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+	<link href="http://202.116.32.240/scholat/styles/search/searchCommon.gzcss?_dc=4202fbd8822" rel="stylesheet" type="text/css" />
+
+<div id="searchHeader">
+	<img id="search_logo" onerror="this.src='/images/scholat_paper.png'" />
+	<div id="search_div">
+ <div class="search_frame">
+	<div id="search_Tabs" class="box_searchTabs">
+ <a id="st10" href="#" onclick="clickTagA(this,1)">动态</a>
+ <a id="st1" href="#" onclick="clickTagA(this,2)">学术</a>
+ <a id="st2" href="#" onclick="clickTagA(this,3)">学者</a>
+ <a id="st3" href="./portalSearchTeam.html" onclick="clickTagA(this,4)">团队</a>
+ <a id="st9" href="./portalSearchCourse.html" onclick="clickTagA(this,5)">课程</a>
+	</div>
+	<div id="search_block">
+ <div class="search_block_area">
+ 	<input id="search_InputContent" name="q" maxlength="100" type="text" />
+ 	<div id="selectAcademic" style="display:none;">
+  <div id="ui-display" value="0">
+ 	<span id="search_flag">站外</span>
+ 	<img id="triangle_down" src="/template/homepage/imgs/more_icon_active.png" />
+  </div>
+  <div id="tool_List" style="display:none;">
+ 	<div onclick="changeSearch(1)">
+  <a>站内</a>
+ 	</div>
+ 	<div onclick="changeSearch(0)">
+  <a>站外</a>
+ 	</div>
+  </div>
+ 	</div>
+ 	<div id="selectDynamic" style="display:none;">
+  <div id="dynamic-display">
+ 	<span id="dynamic_flag">全部</span>
+ 	<img id="dynamic_down" src="/template/homepage/imgs/more_icon_active.png"/>
+  </div>
+  <div id="dynamic_List" style="display:none;">
+ 	<input type="hidden" name="searchMsgType" value="all" />
+ 	<div onclick="changeDynamicType(0)">
+  <a>全部</a>
+ 	</div>
+ 	<div onclick="changeDynamicType(1)">
+  <a>学者动态</a>
+ 	</div>
+ 	<div onclick="changeDynamicType(2)">
+  <a>团队动态</a>
+ 	</div>
+ 	<div onclick="changeDynamicType(3)">
+  <a>会议征文</a>
+ 	</div>
+ 	<div onclick="changeDynamicType(4)">
+  <a>招聘招生</a>
+ 	</div>
+ 	<div onclick="changeDynamicType(5)">
+  <a>学术快讯</a>
+ 	</div>
+  </div>
+ 	</div>
+ 	<div id="search_block_Img">
+  <a id="search_block_Btn" onclick="subForm(0)" href="#no">
+ 	<img style="*margin-top: -33px;" src="/images/search/search.gif"></img>
+  </a>
+ 	</div>
+ </div>
+	</div>
+	<div id="search_type">
+ <input type="radio" name="type" value="Paper" id="paper" />
+ 	论文
+ <input type="radio" name="type" value="Publication" id="publication" />
+ 	著作
+ <input type="radio" name="type" value="all" id="all" />
+ 	全部
+	</div>
+ </div>
+	</div>
+</div>
+	<script type="text/javascript">
+	$(function(){
+ $("#selectAcademic").bind("mouseover", function() {
+	$("#tool_List").show();
+	$('#triangle_down').removeClass().addClass('hover-up');
+ }).bind("mouseout", function() {
+	$("#tool_List").hide();
+	$('#triangle_down').removeClass().addClass('hover-down');
+ });
+ $("#tool_List").hover(function(){
+	$("#tool_List").toggle();
+ });
+ 
+ $("#selectDynamic").bind("mouseover", function() {
+	$("#dynamic_List").show();
+	$('#dynamic_down').removeClass().addClass('hover-up');
+ }).bind("mouseout", function() {
+	$("#dynamic_List").hide();
+	$('#dynamic_down').removeClass().addClass('hover-down');
+ });
+ $("#dynamic_List").hover(function(){
+	$("#dynamic_List").toggle();
+ });
+
+ var fq = getQueryString("fq");
+ if (fq==null || fq == 0) { 
+	changeDynamicType(0);
+ } else if (fq == 1) {
+	changeDynamicType(1);
+ } else if (fq == 2) {
+	changeDynamicType(2);
+ } else if (fq == 3) {
+	changeDynamicType(3);
+ } else if (fq == 4) {
+	changeDynamicType(4);
+ } else if (fq == 5) {
+	changeDynamicType(5);
+ }
+ 
+ getRealPath();
+ if (!!window.ActiveXObject || "ActiveXObject" in window ||(navigator.userAgent.indexOf('MSIE') >= 0) 
+	  && (navigator.userAgent.indexOf('Opera') < 0)) {
+	    $("#search_block_Img").css("marginTop","-1px");
+	  }; //判断是否IE浏览器
+	});
+	function changeSearch(searchType){
+ if(searchType==1){
+	document.getElementById("search_flag").innerHTML="站内";
+	$("#tool_List").hide();
+	$("#search_type").css('display','block');
+	$("#ui-display").attr("value", "1");
+	$(".sort").css("display", "inline-block");
+ }else if(searchType==0){
+	document.getElementById("search_flag").innerHTML="站外";
+	$("#tool_List").hide();
+	$("#search_type").css('display','none');
+	$("#ui-display").attr("value", "0");
+	$(".sort").hide();
+ }
+	}
+	function changeDynamicType(searchDynamicType){
+ if(searchDynamicType==0){
+	document.getElementById("dynamic_flag").innerHTML="全部";
+	$("#dynamic-display").css({"width":"60px","padding-left":"12px"});
+	$("#dynamic_down").css("left","50px");
+	$("#dynamic_List").hide();
+	$("input[name^='searchMsgType']").val("0");
+ }else if(searchDynamicType==1){
+	document.getElementById("dynamic_flag").innerHTML="学者动态";
+	$("#dynamic-display").css({"width":"70px","padding-left":"2px"});
+	$("#dynamic_down").css("left","60px");
+	$("#dynamic_List").hide();
+	$("input[name^='searchMsgType']").val("1");
+ }else if(searchDynamicType==2){
+	document.getElementById("dynamic_flag").innerHTML="团队动态";
+	$("#dynamic-display").css({"width":"70px","padding-left":"2px"});
+	$("#dynamic_down").css("left","60px");
+	$("#dynamic_List").hide();
+	$("input[name^='searchMsgType']").val("2");
+ }else if(searchDynamicType==3){
+	document.getElementById("dynamic_flag").innerHTML="会议征文";
+	$("#dynamic-display").css({"width":"70px","padding-left":"2px"});
+	$("#dynamic_down").css("left","60px");
+	$("#dynamic_List").hide();
+	$("input[name^='searchMsgType']").val("3");
+ }else if(searchDynamicType==4){
+	document.getElementById("dynamic_flag").innerHTML="招聘招生";
+	$("#dynamic-display").css({"width":"70px","padding-left":"2px"});
+	$("#dynamic_down").css("left","60px");
+	$("#dynamic_List").hide();
+	$("input[name^='searchMsgType']").val("4");
+ }else if(searchDynamicType==5){
+	document.getElementById("dynamic_flag").innerHTML="学术快讯";
+	$("#dynamic-display").css({"width":"70px","padding-left":"2px"});
+	$("#dynamic_down").css("left","60px");
+	$("#dynamic_List").hide();
+	$("input[name^='searchMsgType']").val("5");
+ }
+	}
+	function getRealPath(){
+ var pathName=window.document.location.pathname;
+	  var a_length = document.getElementById("search_Tabs").getElementsByTagName("a").length;
+ if(pathName.indexOf("postMsgSearch.html") > 0 || pathName.indexOf("portalPostMsgSearchS.html") > 0){
+	$("#search_logo").attr('src',"/images/scholat_dynamic.png");
+	$("#selectDynamic").css('display','block');
+	$("#search_type").css('display','none');
+	$("#dynamic_type input[value=all]").attr("checked","checked");
+   for(var i=0;i<a_length;i++){
+ document.getElementById("search_Tabs").getElementsByTagName("a")[i].className = '';
+   }
+   document.getElementById("search_Tabs").getElementsByTagName("a")[0].className = 'cur';
+ }else if(pathName.indexOf("papersearch.jsp") > 0){
+	$("#search_logo").attr('src',"/images/scholat_paper.png");
+	$("#selectDynamic").css('display','none');
+	$("#selectAcademic").css('display','inline-block');
+	$("#search_type input[value=Paper]").attr("checked","checked");
+	var flag = request("isInsideSearch");
+	if(flag == '1'){
+ $("#search_type").css('display','block');
+	}
+   for(var i=0;i<a_length;i++){
+ document.getElementById("search_Tabs").getElementsByTagName("a")[i].className = '';
+   }
+   document.getElementById("search_Tabs").getElementsByTagName("a")[1].className = 'cur';
+ }else if(pathName.indexOf("portalSearchScholar.html") > 0 || pathName.indexOf("portalSearchScholarS.html") > 0){
+	$("#search_logo").attr('src',"/images/scholat_scholar.png");
+	$("#selectDynamic").css('display','none');
+	$("#search_type").css('display','none');
+   for(var i=0;i<a_length;i++){
+ document.getElementById("search_Tabs").getElementsByTagName("a")[i].className = '';
+   }
+   document.getElementById("search_Tabs").getElementsByTagName("a")[2].className = 'cur';
+ }else if(pathName.indexOf("portalSearchTeam.html") > 0 || pathName.indexOf("portalSearchTeamS.html") > 0){
+	$("#search_logo").attr('src',"/images/scholat_team.png");
+	$("#selectDynamic").css('display','none');
+	$("#search_type").css('display','none');
+   for(var i=0;i<a_length;i++){
+ document.getElementById("search_Tabs").getElementsByTagName("a")[i].className = '';
+   }
+   document.getElementById("search_Tabs").getElementsByTagName("a")[3].className = 'cur';
+ }else if(pathName.indexOf("portalSearchCourse.html") > 0 || pathName.indexOf("portalCourseSearchS.html") > 0){
+	$("#search_logo").attr('src',"/images/scholat_course.png");
+	$("#selectDynamic").css('display','none');
+	$("#search_type").css('display','none');
+   for(var i=0;i<a_length;i++){
+ document.getElementById("search_Tabs").getElementsByTagName("a")[i].className = '';
+   }
+   document.getElementById("search_Tabs").getElementsByTagName("a")[4].className = 'cur';
+ }
+	}
+	function clickTagA(tag, num) {
+ var searchContent = $.trim($("#search_InputContent").val());
+ if(num==1){//动态搜索
+	if(searchContent != ""){
+  var url = "portalPostMsgSearchS.html?q=" + searchContent + "&fq=0&orderType=0";
+  $(tag).attr("href",encodeURI(basePath+url) );
+	}
+	else{
+ $(tag).attr("href", basePath+"postMsgSearch.html");
+	}
+ }else if(num==2){//学术搜索
+	if(searchContent==""){
+ searchContent="*:*";
+	}
+	$(tag).attr("href",encodeURI(basePath+"search/papersearch.jsp?q="+searchContent));
+ }else if(num==3){//学者搜索
+	if(searchContent != ""){
+ $(tag).attr( "href",encodeURI(basePath+"portalSearchScholarS.html?q=" + searchContent) );
+	}
+	else{
+ $(tag).attr("href", basePath+"portalSearchScholar.html");
+	}
+ }else if(num==4){//团队搜索
+	if (searchContent != "") {
+ $(tag).attr("href",encodeURI( basePath+"portalSearchTeamS.html?q="+ searchContent + "&orderType=0" ));
+	} else {
+ $(tag).attr("href", basePath+"portalSearchTeam.html");
+	}
+ }else if(num==5){//课程搜索
+	if (searchContent != "") {
+ $(tag).attr("href", encodeURI(basePath+"portalCourseSearchS.html?q=" + searchContent+"&orderType=0")); //新版
+	} else {
+ $(tag).attr("href", basePath+"portalSearchCourse.html");
+	}
+ }
+	}
+</script>
+
+	<div class="container_default">
+ 
+ 	
+  <div style="font-size: 12px; height: 21px;border-bottom: 1px solid #ccc;line-height: 29px;padding-bottom:3px;">
+ 	<div style="width:960px;margin:0 auto;">
+  <span style="float: left;">共查找到:8条记录，用时：0.016s</span>
+  <span style="float: right;cursor: pointer;">
+  	<input type="radio" name="sortType" id="sortTypeHits" value="hits" onclick="subForm(1)" />
+   按访问量排序&nbsp;&nbsp;&nbsp;&nbsp;
+  	<input type="radio" name="sortType" id="sortTypeCombine" value="date" onclick="subForm(0)" />
+   按相关度排序&nbsp;
+  </span>
+ 	</div>
+  </div>
+ 	
+ 
+ 
+ 	
+  <div style="width:960px;margin:0 auto;">
+ 	
+  <div class="card" style="margin: 5px 0; width: 960px; float: left;">
+  	<div style="float: left;padding:9px 10px;">
+   <a href="/lqlz" target="_blank">
+  	
+   
+   	<img onerror="this.src='http://202.116.32.240/scholat/images/default.png'"
+    src=".//images/default.png" width="100"
+    height="100" style="border: 1px solid #cccccc;" />
+   
+   
+  	
+   </a>
+  	</div>
+  	<div style="float: left;">
+   <p class="scholar_info">
+  	姓名：<a href="/lqlz" target="_blank"> <span style="color:red"><span style="color:red">李祺</span></span></a>
+  	(Li Qi)
+  	
+  	
+   </p>
+   <p class="scholar_info">
+  	单位：华南师范大学软件学院
+   </p>
+   
+  	<p class="scholar_info">
+   学科专业：软件
+  	</p>
+   
+   <p class="scholar_info">
+  	学者主页：
+  	<a href="/lqlz" target="_blank">
+   www.scholat.com/lqlz
+  	</a>
+   </p>
+   <div class="scholar_info">
+  	<div style="float: left; min-width: 590px; width: auto; line-height: 22px;">
+   访问量：
+   <font>761</font>
+  	</div>
+  	<div style="float:right; margin-right: 20px;" id="17449">
+   
+   
+   	<a href="/personHomePageLeaveMsg.html?leaveMessageName=lqlz" target="_blank">
+    <img title="留言" src="images/homepage/note.jpg" style="width: 22px; height: 20px;"
+   	onmouseover="this.src='images/homepage/note_hover.jpg';"
+   	onmouseout="this.src='images/homepage/note.jpg';" /> </a>
+   
+   
+  	</div>
+  	<div style="clear: left;"></div>
+   </div>
+  	</div>
+  </div>
+ 	
+  <div class="card" style="margin: 5px 0; width: 960px; float: left;">
+  	<div style="float: left;padding:9px 10px;">
+   <a href="/lidasha" target="_blank">
+  	
+   
+   	<img onerror="this.src='http://202.116.32.240/scholat/images/default.png'"
+    src=".//images/default.png" width="100"
+    height="100" style="border: 1px solid #cccccc;" />
+   
+   
+  	
+   </a>
+  	</div>
+  	<div style="float: left;">
+   <p class="scholar_info">
+  	姓名：<a href="/lidasha" target="_blank"> <span style="color:red"><span style="color:red">李祺</span></span></a>
+  	(Li Qi)
+  	
+  	
+   </p>
+   <p class="scholar_info">
+  	单位：中山大学南方学院
+   </p>
+   
+   <p class="scholar_info">
+  	学者主页：
+  	<a href="/lidasha" target="_blank">
+   www.scholat.com/lidasha
+  	</a>
+   </p>
+   <div class="scholar_info">
+  	<div style="float: left; min-width: 590px; width: auto; line-height: 22px;">
+   访问量：
+   <font>1</font>
+  	</div>
+  	<div style="float:right; margin-right: 20px;" id="61442">
+   
+   
+   	<a href="/personHomePageLeaveMsg.html?leaveMessageName=lidasha" target="_blank">
+    <img title="留言" src="images/homepage/note.jpg" style="width: 22px; height: 20px;"
+   	onmouseover="this.src='images/homepage/note_hover.jpg';"
+   	onmouseout="this.src='images/homepage/note.jpg';" /> </a>
+   
+   
+   	<a href="javascript:popupDivOut('reqMessage','61442',61442,'lqlz');">
+    <img title="加为好友" style="width: 22px; height: 20px;" src="images/homepage/makefriend.jpg"
+   	onmouseover="this.src='images/homepage/makefriend_hover.jpg';"
+   	onmouseout="this.src='images/homepage/makefriend.jpg';" />
+   	</a>
+   
+  	</div>
+  	<div style="clear: left;"></div>
+   </div>
+  	</div>
+  </div>
+ 	
+  <div class="card" style="margin: 5px 0; width: 960px; float: left;">
+  	<div style="float: left;padding:9px 10px;">
+   <a href="/likaiqi" target="_blank">
+  	
+   
+   	<img onerror="this.src='http://202.116.32.240/scholat/images/default.png'"
+    src=".//images/default.png" width="100"
+    height="100" style="border: 1px solid #cccccc;" />
+   
+   
+  	
+   </a>
+  	</div>
+  	<div style="float: left;">
+   <p class="scholar_info">
+  	姓名：<a href="/likaiqi" target="_blank"> 李凯祺</a>
+  	(Li Kaiqi)
+  	
+  	
+   </p>
+   <p class="scholar_info">
+  	单位：华南师范大学
+   </p>
+   
+   <p class="scholar_info">
+  	学者主页：
+  	<a href="/likaiqi" target="_blank">
+   www.scholat.com/likaiqi
+  	</a>
+   </p>
+   <div class="scholar_info">
+  	<div style="float: left; min-width: 590px; width: auto; line-height: 22px;">
+   访问量：
+   <font>32</font>
+  	</div>
+  	<div style="float:right; margin-right: 20px;" id="29318">
+   
+   
+   	<a href="/personHomePageLeaveMsg.html?leaveMessageName=likaiqi" target="_blank">
+    <img title="留言" src="images/homepage/note.jpg" style="width: 22px; height: 20px;"
+   	onmouseover="this.src='images/homepage/note_hover.jpg';"
+   	onmouseout="this.src='images/homepage/note.jpg';" /> </a>
+   
+   
+   	<a href="javascript:popupDivOut('reqMessage','29318',29318,'lqlz');">
+    <img title="加为好友" style="width: 22px; height: 20px;" src="images/homepage/makefriend.jpg"
+   	onmouseover="this.src='images/homepage/makefriend_hover.jpg';"
+   	onmouseout="this.src='images/homepage/makefriend.jpg';" />
+   	</a>
+   
+  	</div>
+  	<div style="clear: left;"></div>
+   </div>
+  	</div>
+  </div>
+ 	
+  <div class="card" style="margin: 5px 0; width: 960px; float: left;">
+  	<div style="float: left;padding:9px 10px;">
+   <a href="/jqli" target="_blank">
+  	
+   
+   	<img onerror="this.src='http://202.116.32.240/scholat/images/default.png'"
+    src=".//images/default.png" width="100"
+    height="100" style="border: 1px solid #cccccc;" />
+   
+   
+  	
+   </a>
+  	</div>
+  	<div style="float: left;">
+   <p class="scholar_info">
+  	姓名：<a href="/jqli" target="_blank"> 李浚祺</a>
+  	(Li Junqi)
+  	
+  	
+   </p>
+   <p class="scholar_info">
+  	单位：中山大学南方学院
+   </p>
+   
+   <p class="scholar_info">
+  	学者主页：
+  	<a href="/jqli" target="_blank">
+   www.scholat.com/jqli
+  	</a>
+   </p>
+   <div class="scholar_info">
+  	<div style="float: left; min-width: 590px; width: auto; line-height: 22px;">
+   访问量：
+   <font>3</font>
+  	</div>
+  	<div style="float:right; margin-right: 20px;" id="62545">
+   
+   
+   	<a href="/personHomePageLeaveMsg.html?leaveMessageName=jqli" target="_blank">
+    <img title="留言" src="images/homepage/note.jpg" style="width: 22px; height: 20px;"
+   	onmouseover="this.src='images/homepage/note_hover.jpg';"
+   	onmouseout="this.src='images/homepage/note.jpg';" /> </a>
+   
+   
+   	<a href="javascript:popupDivOut('reqMessage','62545',62545,'lqlz');">
+    <img title="加为好友" style="width: 22px; height: 20px;" src="images/homepage/makefriend.jpg"
+   	onmouseover="this.src='images/homepage/makefriend_hover.jpg';"
+   	onmouseout="this.src='images/homepage/makefriend.jpg';" />
+   	</a>
+   
+  	</div>
+  	<div style="clear: left;"></div>
+   </div>
+  	</div>
+  </div>
+ 	
+  <div class="card" style="margin: 5px 0; width: 960px; float: left;">
+  	<div style="float: left;padding:9px 10px;">
+   <a href="/lynico" target="_blank">
+  	
+   
+   	<img onerror="this.src='http://202.116.32.240/scholat/images/default.png'"
+    src=".//images/default.png" width="100"
+    height="100" style="border: 1px solid #cccccc;" />
+   
+   
+  	
+   </a>
+  	</div>
+  	<div style="float: left;">
+   <p class="scholar_info">
+  	姓名：<a href="/lynico" target="_blank"> 李新祺</a>
+  	(Li Xinqi)
+  	
+  	
+   </p>
+   <p class="scholar_info">
+  	单位：广东外语外贸大学
+   </p>
+   
+   <p class="scholar_info">
+  	学者主页：
+  	<a href="/lynico" target="_blank">
+   www.scholat.com/lynico
+  	</a>
+   </p>
+   <div class="scholar_info">
+  	<div style="float: left; min-width: 590px; width: auto; line-height: 22px;">
+   访问量：
+   <font>1</font>
+  	</div>
+  	<div style="float:right; margin-right: 20px;" id="70262">
+   
+   
+   	<a href="/personHomePageLeaveMsg.html?leaveMessageName=lynico" target="_blank">
+    <img title="留言" src="images/homepage/note.jpg" style="width: 22px; height: 20px;"
+   	onmouseover="this.src='images/homepage/note_hover.jpg';"
+   	onmouseout="this.src='images/homepage/note.jpg';" /> </a>
+   
+   
+   	<a href="javascript:popupDivOut('reqMessage','70262',70262,'lqlz');">
+    <img title="加为好友" style="width: 22px; height: 20px;" src="images/homepage/makefriend.jpg"
+   	onmouseover="this.src='images/homepage/makefriend_hover.jpg';"
+   	onmouseout="this.src='images/homepage/makefriend.jpg';" />
+   	</a>
+   
+  	</div>
+  	<div style="clear: left;"></div>
+   </div>
+  	</div>
+  </div>
+ 	
+  <div class="card" style="margin: 5px 0; width: 960px; float: left;">
+  	<div style="float: left;padding:9px 10px;">
+   <a href="/lisiqi7" target="_blank">
+  	
+   
+   	<img onerror="this.src='http://202.116.32.240/scholat/images/default.png'"
+    src=".//images/default.png" width="100"
+    height="100" style="border: 1px solid #cccccc;" />
+   
+   
+  	
+   </a>
+  	</div>
+  	<div style="float: left;">
+   <p class="scholar_info">
+  	姓名：<a href="/lisiqi7" target="_blank"> 李思祺</a>
+  	(Li Siqi)
+  	
+  	
+   </p>
+   <p class="scholar_info">
+  	单位：广东外语外贸大学
+   </p>
+   
+   <p class="scholar_info">
+  	学者主页：
+  	<a href="/lisiqi7" target="_blank">
+   www.scholat.com/lisiqi7
+  	</a>
+   </p>
+   <div class="scholar_info">
+  	<div style="float: left; min-width: 590px; width: auto; line-height: 22px;">
+   访问量：
+   <font>19</font>
+  	</div>
+  	<div style="float:right; margin-right: 20px;" id="34615">
+   
+   
+   	<a href="/personHomePageLeaveMsg.html?leaveMessageName=lisiqi7" target="_blank">
+    <img title="留言" src="images/homepage/note.jpg" style="width: 22px; height: 20px;"
+   	onmouseover="this.src='images/homepage/note_hover.jpg';"
+   	onmouseout="this.src='images/homepage/note.jpg';" /> </a>
+   
+   
+   	<a href="javascript:popupDivOut('reqMessage','34615',34615,'lqlz');">
+    <img title="加为好友" style="width: 22px; height: 20px;" src="images/homepage/makefriend.jpg"
+   	onmouseover="this.src='images/homepage/makefriend_hover.jpg';"
+   	onmouseout="this.src='images/homepage/makefriend.jpg';" />
+   	</a>
+   
+  	</div>
+  	<div style="clear: left;"></div>
+   </div>
+  	</div>
+  </div>
+ 	
+  <div class="card" style="margin: 5px 0; width: 960px; float: left;">
+  	<div style="float: left;padding:9px 10px;">
+   <a href="/liqikun" target="_blank">
+  	
+   
+   	<img onerror="this.src='http://202.116.32.240/scholat/images/default.png'"
+    src=".//images/default.png" width="100"
+    height="100" style="border: 1px solid #cccccc;" />
+   
+   
+  	
+   </a>
+  	</div>
+  	<div style="float: left;">
+   <p class="scholar_info">
+  	姓名：<a href="/liqikun" target="_blank"> <span style="color:red"><span style="color:red">李祺</span></span>坤</a>
+  	(Li Qikun)
+  	
+  	
+   </p>
+   <p class="scholar_info">
+  	单位：广东建设职业技术学院
+   </p>
+   
+   <p class="scholar_info">
+  	学者主页：
+  	<a href="/liqikun" target="_blank">
+   www.scholat.com/liqikun
+  	</a>
+   </p>
+   <div class="scholar_info">
+  	<div style="float: left; min-width: 590px; width: auto; line-height: 22px;">
+   访问量：
+   <font>1</font>
+  	</div>
+  	<div style="float:right; margin-right: 20px;" id="75751">
+   
+   
+   	<a href="/personHomePageLeaveMsg.html?leaveMessageName=liqikun" target="_blank">
+    <img title="留言" src="images/homepage/note.jpg" style="width: 22px; height: 20px;"
+   	onmouseover="this.src='images/homepage/note_hover.jpg';"
+   	onmouseout="this.src='images/homepage/note.jpg';" /> </a>
+   
+   
+   	<a href="javascript:popupDivOut('reqMessage','75751',75751,'lqlz');">
+    <img title="加为好友" style="width: 22px; height: 20px;" src="images/homepage/makefriend.jpg"
+   	onmouseover="this.src='images/homepage/makefriend_hover.jpg';"
+   	onmouseout="this.src='images/homepage/makefriend.jpg';" />
+   	</a>
+   
+  	</div>
+  	<div style="clear: left;"></div>
+   </div>
+  	</div>
+  </div>
+ 	
+  <div class="card" style="margin: 5px 0; width: 960px; float: left;">
+  	<div style="float: left;padding:9px 10px;">
+   <a href="/adamwt" target="_blank">
+  	
+   
+   	<img onerror="this.src='http://202.116.32.240/scholat/images/default.png'"
+    src="./resources/s_icon/adamwt_1495636807713.jpg" width="100"
+    height="100" style="border: 1px solid #cccccc;" />
+   
+   
+  	
+   </a>
+  	</div>
+  	<div style="float: left;">
+   <p class="scholar_info">
+  	姓名：<a href="/adamwt" target="_blank"> 王田</a>
+  	(Tian Wang)
+  	&nbsp;&nbsp;
+  	教授/Professor
+   </p>
+   <p class="scholar_info">
+  	单位：华侨大学
+   </p>
+   
+  	<p class="scholar_info">
+   学科专业：Mobile computing , WSNs , Fog computing
+  	</p>
+   
+   <p class="scholar_info">
+  	学者主页：
+  	<a href="/adamwt" target="_blank">
+   www.scholat.com/adamwt
+  	</a>
+   </p>
+   <div class="scholar_info">
+  	<div style="float: left; min-width: 590px; width: auto; line-height: 22px;">
+   访问量：
+   <font>18447</font>
+  	</div>
+  	<div style="float:right; margin-right: 20px;" id="30451">
+   
+   
+   	<a href="/personHomePageLeaveMsg.html?leaveMessageName=adamwt" target="_blank">
+    <img title="留言" src="images/homepage/note.jpg" style="width: 22px; height: 20px;"
+   	onmouseover="this.src='images/homepage/note_hover.jpg';"
+   	onmouseout="this.src='images/homepage/note.jpg';" /> </a>
+   
+   
+   	<a href="javascript:popupDivOut('reqMessage','30451',30451,'lqlz');">
+    <img title="加为好友" style="width: 22px; height: 20px;" src="images/homepage/makefriend.jpg"
+   	onmouseover="this.src='images/homepage/makefriend_hover.jpg';"
+   	onmouseout="this.src='images/homepage/makefriend.jpg';" />
+   	</a>
+   
+  	</div>
+  	<div style="clear: left;"></div>
+   </div>
+  	</div>
+  </div>
+ 	
+  </div>
+ 	
+ 	
+ 
+ 
+ 	<div class="page" style="clear:both;">
+  共
+  1
+  页
+  <span class='page'>[ <strong>1</strong> ]</span>
+  <select id="page" name="page"
+ 	onchange="PageFromSubmit('portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA',1)">
+ 	<option value="#" selected="selected">
+  第1页
+ 	</option>
+  </select>
+ <script type="text/javascript">
+	 	addpageslist(1,1);
+ </script>
+ 	</div>
+ 
+	</div>
+ </div>
+ 
+	<script type="text/javascript">
+window.onscroll=function()
+{
+	var docEle=document.documentElement;
+	var st = docEle.scrollTop==0?document.body.scrollTop:docEle.scrollTop;
+	var toTop = $("#toTop");
+	if(st<60)
+	{
+	toTop.css("visibility", "hidden");
+	}
+	else
+	{
+ toTop.css("visibility", "visible");
+	}
+}
+	</script>
+<div
+	style="position: fixed; bottom: 48px; z-index: 0; right: 0; cursor: pointer;margin-right:18px;"
+	onclick="location.href='#';">
+	<span id="toTop"
+ style="visibility: hidden;">
+ <a style="color: #FFFFFF; text-decoration: none; font-size: 12px;"><img
+ src="/images/backTopBottom.png"
+ onmouseover="setover(this)" onmouseout="setout(this)" width="40px"
+ style="opacity:1;">
+ </a>
+	</span>
+</div>
+<div
+	style="font-size: 14px; text-align: center; line-height: 25px; padding-top: 20px; padding-bottom: 20px;">
+	<span class="Georgia">&copy; 2018 SCHOLAT 学者网</span>
+	<br />
+	<a href="./portaldisclaim.html">免责声明</a> |
+	<a href="./portalaboutus.html">关于学者网</a> |
+	<a href="./portalcontactus.html">联系我们</a>
+</div>
+
+	</body>
+ <script type="text/javascript">
+	  function leaveMessageConfirm(){
+	   if (window.confirm("留言需要先登录!"))
+	     window.location.href="scholarLeaveMessage.html?Entry=lqlz";
+	  }
+ $(document).ready(function(){	
+   
+   repairFloatStyle('search_block_Img',"0px","25px"); 
+	$("#search_InputContent").click(function(){changeSubType(1);});
+	var q = getUrlParameter("q"); 
+	$("#search_InputContent").val(q);
+	$("#search_InputContent").click(function(){submitType=1});
+	var orderType = getQueryString("orderType");
+	if (orderType==null || orderType == 0) {
+ var orderDiv = document.getElementById("sortTypeCombine");
+ if(orderDiv!=null)
+ 	orderDiv.checked = true;
+	} else if (orderType == 1) {
+ var orderDiv = document.getElementById("sortTypeHits");
+ if(orderDiv!=null)
+ 	orderDiv.checked = true;
+	}
+ });
+ $(function() {
+	var $div_li = $("div.tab_menu ul li");
+	$div_li.click(function() {
+ $(this).addClass("selected").siblings().removeClass("selected");
+ var index = $div_li.index(this)+1;
+ $('#typeid').attr('value', index);
+ $('#search_InputContent').focus();
+ if(index==5)
+ 	setType('Conference');
+ else if(index==6)
+ 	setType('Journal');
+ else 
+ 	setType('');
+	}).hover(function() {$(this).addClass("hover");	}, 
+		function() {$(this).removeClass("hover");}
+	);
+ });
+ 
+ var searchType=2; 
+ function selectTab(id){
+	searchType=id;	
+	for(var i=1; i<=12; i++){
+ if(i==id){
+ 	$("#st"+i).addClass("cur");
+ }else{
+ 	$("#st"+i).removeClass("cur");
+ }
+	}
+	if(id==4)
+ setType('Conference');
+	else if(id==5)
+ setType('Journal');
+	else
+ setType('');
+	$("#search_InputContent").focus();	
+ }
+ 
+ function advancedsearch_portal(){
+	var location = window.location.href;
+	if(location.indexOf("search") > 0)
+ window.location.href = "advancedsearch.jsp?typeid="+searchType;
+	else
+ window.location.href = "search/advancedsearch.jsp?typeid="+searchType;
+ }
+ 
+ var submitType=1;
+ function changeSubType(type){
+	submitType=type;	
+ }
+ 
+ function BindEnter(obj){	
+   
+   if(obj!=null&&(obj.keyCode == 13||obj.which==13)){	   
+	  subForm(0);
+   }
+ }
+ function subForm(orderType) {
+	var searchContent = $.trim($("#search_InputContent").val());
+	if(searchContent != ""){
+ window.location.href = "portalSearchScholarS.html?q=" + encodeURI(searchContent) 
+ + "&orderType=" + orderType;;
+	}
+	else{
+ window.location.href = "portalSearchScholar.html";
+	}
+ }
+ function setType(t) {
+	var querybox=$('#search_InputContent')[0];
+	var v;
+	if(t!=''){
+ if (querybox.value.indexOf('type:') >= 0)
+ 	v=querybox.value.replace(/type:[a-zA-Z]+/g, "type:"+t);
+ else
+ 	v="type:" + t + " " + querybox.value;
+	}
+	else{
+ v=querybox.value.replace(/type:[a-zA-Z]+/g, '').replace(/(^\s+)|(\s+$)/g,'');
+	}
+	querybox.value=v;
+ }
+ function printDate(){
+	var dateString;
+	var curDay = new Date();
+	var month = curDay.getMonth()+ 1
+	dateString = curDay.getFullYear()+"年"+month+"月"+curDay.getDate()+"日 "+'星期'+'日一二三四五六'.charAt(curDay.getDay()); 
+	document.write(dateString);	
+ }
+ 
+ function card_out(n,t,obj,q){
+	var picTop = $(obj).offset().top;
+	var picLeft = $(obj).offset().left;
+	var top = picTop;
+	var left = picLeft;
+	var bodyWidth = $(document.body).width();
+	var bodyHeight = $(document.body).height();
+	if(q==1)
+	{	if(picLeft+250>bodyWidth){
+ 	left = picLeft-150;
+ 	left_j = 1;
+ }else{
+ 	left = picLeft+20;
+ }
+ if(picTop-170<0){
+ 	top = picTop+80;
+ 	top_j = 1;
+ }else{
+ 	top = picTop-110;
+ }
+	}
+	if(t==1){	
+ clearTimeout(timeoutID2);
+ $("#mp"+n).removeClass();
+ if(left_j==0&&top_j==0)
+ 	{
+  $("#mp"+n).addClass("mp_scholar_l");
+  $("#mp"+n).css({"left":left+"px","top":top+"px"});
+ 	}
+ else if(left_j==0&&top_j==1)
+ 	{
+  $("#mp"+n).addClass("mp_scholar_l_d");
+  $("#mp"+n).css({"left":left+"px","top":top+"px"});
+ 	}
+ else if(left_j==1&&top_j==0)
+ 	{
+  $("#mp"+n).addClass("mp_scholar_r");
+  $("#mp"+n).css({"left":left+"px","top":top+"px"});
+ 	}
+ else if(left_j==1&&top_j==1)
+ 	{
+  $("#mp"+n).addClass("mp_scholar_r_d");
+  $("#mp"+n).css({"left":left+"px","top":top+"px"});
+ 	}
+	}
+	else if(t==2){ 
+ timeoutID2=setTimeout(function(){$("#mp"+n).removeClass(); $("#mp"+n).addClass("hidden");top_j = 0;left_j = 0;},200);
+ }
+ }
+ 
+ function card_delay(n,t,obj,q)
+ {
+	if(t==1)
+	{
+   timeoutID1 = setTimeout(function(){card_out(n,t,obj,q)},500);
+   }
+   if(t==2)
+	{
+  	clearTimeout(timeoutID1);	
+  	card_out(n,t,obj,q);
+   }
+ }
+ </script>
+</html>

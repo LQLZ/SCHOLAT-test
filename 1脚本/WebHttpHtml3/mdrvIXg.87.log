@@ -1,0 +1,10 @@
+Start auto log messages stack.	[MsgId: MMSG-10546]
+vuser_init.c(118): Resource "http://res.scholat.com/scholat/images/login_corner.png" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+vuser_init.c(118): Resource "http://res.scholat.com/scholat/images/account.png" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+vuser_init.c(118): Resource "http://res.scholat.com/scholat/images/password.png" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+vuser_init.c(118): web_custom_request("getLatestVisitors.html") was successful, 3125 body bytes, 659 header bytes  	[MsgId: MMSG-26386]
+vuser_init.c(129): web_custom_request("CalendarAjaxService.getRemindCalendars.dwr") started  	[MsgId: MMSG-26355]
+vuser_init.c(129): Error -26610: HTTP Status-Code=502 (Bad Gateway) for "http://www.scholat.com/dwr/call/plaincall/CalendarAjaxService.getRemindCalendars.dwr"  	[MsgId: MERR-26610]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+

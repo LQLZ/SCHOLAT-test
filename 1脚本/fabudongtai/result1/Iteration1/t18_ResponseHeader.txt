@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+Date: Mon, 11 Jun 2018 07:34:43 GMT
+Server: Apache
+Access-Control-Allow-Origin: *
+Vary: Accept-Encoding
+Content-Encoding: gzip
+X-Frame-Options: SAMEORIGIN
+Content-Length: 169
+Keep-Alive: timeout=5, max=71
+Connection: Keep-Alive
+Content-Type: text/javascript;charset=utf-8
+

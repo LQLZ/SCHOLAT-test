@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-ID:\Vugen\Scripts\fabudongtai
+-ID:\HPE\LoadRunner\include
+-ed:\vugen\scripts\fabudongtai\\logfile.log
+d:\vugen\scripts\fabudongtai\\combined_fabudongtai.c
+d:\vugen\scripts\fabudongtai\\pre_cci.c

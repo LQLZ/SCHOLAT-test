@@ -1,0 +1,14 @@
+POST /dwr/call/plaincall/ChatMng.update.dwr HTTP/1.1
+Accept: */*
+Accept-Language: zh-CN
+Referer: http://www.scholat.com/postMessage.html
+Content-Type: text/plain
+UA-CPU: AMD64
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Win64; x64; Trident/4.0; .NET CLR 2.0.50727; SLCC2; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3)
+Host: www.scholat.com
+Content-Length: 252
+Connection: Keep-Alive
+Cache-Control: no-cache
+Cookie: course=clanguage; JSESSIONID=8A04491B97B115738E8027AF39D71DDE.tomcat1; STOKEN="E64478C5D0095A74/2018-06-11 10:00:44/2ff06d7814b821dc9e030fd392765186&desc=1218"
+

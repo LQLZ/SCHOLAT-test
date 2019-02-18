@@ -1,0 +1,15 @@
+[t11]
+FileName1=t11.htm
+URL1=http://www.scholat.com//AllScholarShare_ajax.html
+Total=3
+RequestHeaderFile=t11_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t11_ResponseHeader.txt
+ContentType=text/html
+SnapshotXmlFile=snapshot_11.xml
+FileName2=t11_tonline.png
+URL2=http://www.scholat.com/chatjs/icons/tonline.png
+FileName3=t11_tool-sprites.gif
+URL3=http://www.scholat.com/ext-2.0.2/resources/images/default/panel/tool-sprites.gif
+[ProtocolInfo]
+ProtocolId=QTWeb

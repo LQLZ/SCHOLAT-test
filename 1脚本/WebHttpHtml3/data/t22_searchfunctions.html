@@ -1,0 +1,1560 @@
+/**
+ * 旧版 学术搜索相关js。
+ */
+
+var selpapercount=1;//缺省选中的文章数
+function selecttype(type)
+{
+	var keyword=($('#searchGroupInput').val().replace(/[ ]type:\*|[ ]type:JournalPaper|[ ]type:ConferencePaper|[ ]type:Book|[ ]type:Thesis|[ ]type:InCollection|[ ]type:Unknown|[ ]type:Conference|[ ]type:Journal|[ ]type:BookChapter|[ ]type:Reference/g,""));
+	//keyword=keyword.replace(/[ ]/g,"");
+	$('#searchGroupInput').attr('value',keyword+' type:'+type);
+	curPage=1;
+	submitForm(); 
+}
+String.prototype.trim =function() 
+{
+	return this.replace(/^\s+|\s+$/g, "");
+}
+
+function addyearlist(year,num)
+{
+	if(year.length!=4)
+		return;
+	
+	var str="<li><a href='#' onclick='selectyear("+year+")'>"+year+"</a><span class='number'>("+num+")</span></li>";
+	$('#yearlist').append(str);
+}
+function addyearlistmore(year,num)
+{
+	if(year.length!=4)
+		return;
+	
+	var str="<li><a href='#' onclick='selectyear("+year+")'>"+year+"</a><span class='number'>("+num+")</span></li>";
+	$('#yearlistmore').append(str);
+}
+
+function autoaddyeallist()
+{
+	var myDate = new Date(); 
+	var year=myDate.getYear();
+	   
+	for(var i=0;i<20;i++)
+	{
+	year=year-i;
+	var str="<li id='year"+year+"'><a href='#' onclick='selectyear("+year+")'>"+year+"</a></li>";
+	$('#yearlist').append(str);
+	}
+}
+
+function selectyear(year)
+{
+	curPage=1;
+	var keyword=($('#searchGroupInput').val().replace(/[ ]year:\*|[ ]year:(\d){4}/g,""));
+	var keyword=(keyword.replace(/[ ]year:(\[).*(\])/g,""));
+	$('#searchGroupInput').attr('value',keyword+' year:'+year);
+	submitForm(); 
+}
+
+function showdivyeardomain()
+{
+	$('#divyeardomain').show();
+	$('#startyear').focus();
+}
+
+
+function showdivabstract(id)
+{
+	$('#divabstract'+id).show();
+	$('#divhideabstract'+id).show();
+	$('#divshowabstract'+id).hide();
+}
+
+function hidedivabstract(id)
+{
+	$('#divabstract'+id).hide();
+	$('#divhideabstract'+id).hide();
+	$('#divshowabstract'+id).show();
+}
+
+function confirmyeardomain()
+{
+	if ($('#startyear').val()=='') return;
+	if ($('#endyear').val()=='') return;
+	curPage=1;
+	var keyword=($('#searchGroupInput').val().replace(/[ ]year:\*|[ ]year:(\d){4}/g,""));
+	var keyword=(keyword.replace(/[ ]year:(\[).*(\])/g,""));
+	
+	$('#searchGroupInput').attr('value',keyword+' year:['+$('#startyear').val()+' '+$('#endyear').val()+']');
+	submitForm();
+}
+
+function searchmypaper()
+{
+	if ($("#username").val()=='')
+	{
+	     alert("请先登录");
+	     location.href="../login.html";   
+	}
+	else
+	{
+		 var username=$("#username").val();
+		 var work_unit=$("#workunit").val();
+		 if (work_unit=="") work_unit="*";
+		 var strquery='author_exact:'+username+' organization:'+work_unit;
+		 //var strquery='author_exact:'+username;
+		$('#searchGroupInput').attr('value',strquery);
+		curPage=1;
+		submitForm(); 
+	}
+}
+
+function getcollectsnum() //获取收藏文章数
+{
+	if ($("#username").val()=='') 
+	{
+		 $("#inputcollectnum").attr('value','');
+		 return false;
+	}
+	$.ajax(
+	{
+		  type: "post",
+		  url: "collectpaperlist_num.html", 
+		  timeout:60000,
+		  dataType: "text",
+		  success:function(data)
+		  {
+			  $("#inputcollectnum").attr('value','('+data+')');
+		  },
+		  error:function()
+		  {
+			  $("#inputcollectnum").attr('value','');
+	      }
+   });
+}
+
+function getsavepapersnum() //获取保存的文章数
+{
+	if ($("#username").val()=='') 
+	{
+		$("#inputsavepapernum").attr('value','');
+		return false;
+	}
+	$.ajax(
+	{
+		  type: "post",
+		  url: "savepaperlist_num.html", 
+		  timeout:60000,
+		  dataType: "text",
+		  success:function(data){
+		  //alert(data);
+		  $("#inputsavepapernum").attr('value','('+data+')');
+		           
+		  },
+		  error:function(){
+ 
+		  $("#inputsavepapernum").attr('value','');
+	      }
+	});
+}
+
+function CheckedAll()
+{ 
+	$(':checkbox').attr('checked','checked'); 
+} 
+function CheckedNo()
+{ 
+	$(':checkbox').attr('checked',''); 
+} 
+
+function CollectAll()
+{
+	var arr = $(':checkbox:checked');
+	selpapercount=arr.length;
+	if (arr.length==0) 
+		alert("未选择任何文章!"); 
+	if (arr.length>1)
+		var r=confirm("确认收藏所选论文吗?");
+	if (r==false)
+		return;
+	for(var i=0;i<arr.length;i++)
+	  collectpaper(arr[i].value); 
+	selpapercount=1; 
+}
+function SaveAll()
+{
+	var arr = $(':checkbox:checked');
+	selpapercount=arr.length;
+	if (arr.length==0) 
+		alert("未选择任何文章!"); 
+
+	if (arr.length>1)
+		var r=confirm("确认保存所选论文吗?");
+	if (r==false)
+		return;
+   
+	for(var i=0;i<arr.length;i++) 
+	  savepaper(arr[i].value); 
+	selpapercount=1; 
+}
+
+
+
+function IgnoreAll()
+{
+	var arr = $(':checkbox:checked');
+	selpapercount=arr.length;
+	if (arr.length==0) 
+		alert("未选择任何文章!"); 
+	if (arr.length>=1)
+		var r=confirm("忽略的文章将不在被推荐,确认该操作吗?");
+	if (r==false)
+	   return;
+	for(var i=0;i<arr.length;i++)
+		savepaperIDignored(arr[i].value); 
+	selpapercount=1; 
+}
+
+
+function advancedsearch_portal() //显示高级搜索界面
+{
+	window.location.href="search/advancedsearch.jsp?typeid="+$('#typeid').val();
+}
+
+function advancedsearch() //显示高级搜索界面
+{
+	window.location.href="advancedsearch.jsp?typeid="+$('#typeid').val();
+}
+
+function advanceconfirm()
+{
+	//-------采集数据
+	var strquery='';
+	var val;
+	if((val=$('#A_title').val())!='')
+	    strquery+='title:'+val;
+	
+	if((val=$('#A_authors').val())!='')
+	      strquery+=' author_exact:'+val;
+	
+	if((val=$('#A_organization').val())!='')
+	      strquery+=' organization:'+val;
+	
+	if((val=$('#A_keyword').val())!='')
+	      strquery+=' keyword:'+val;
+	
+	if((val=$('#A_source').val())!='')
+	      strquery+=' source:'+val;
+	
+	if((val=$('#A_year').val())!='')
+	{
+		var pos=val.indexOf('-');
+		if(pos>=0)
+		{
+			var yearFrom=val.substring(0,pos).trim();
+			var yearTo=val.substring(pos+1).trim();
+			if(yearFrom=='') yearFrom='*';
+			if(yearTo=='') yearTo='*';
+			strquery+=' year:['+yearFrom+' TO '+yearTo+']';
+		}
+		else
+			strquery+=' year:'+val;
+	}
+	rows=$('#listcount').val();
+	
+	if (strquery=='')  
+		return false;
+	 window.location.href="papersearch.jsp?q="+$.trim(strquery)+"&rows="+rows;  
+}
+
+function advancecancel()
+{
+	$("input[name=A_title]").each(function()
+	{
+	   $(this).attr('value','')
+	});
+ 
+	$("input[name=A_authors]").each(function()
+	{
+	   $(this).attr('value','')
+	}); 
+
+	$("input[name=A_organization]").each(function()
+	{
+	   $(this).attr('value','')
+	}); 
+
+	$("input[name=A_keyword]").each(function()
+	{
+	   $(this).attr('value','')
+	});
+
+	$("input[name=A_source]").each(function()
+	{
+	   $(this).attr('value','')
+	});
+}
+
+function paperstatistic()
+{
+	dialog("文章统计","url:get?portalpaperstatistic.jsp","600px","auto","text");
+}
+
+//--学者信息高级搜索
+function advancedsearch_scholar() //显示高级搜索界面
+{
+	dialog("高级搜索-学者搜索","id:divadvancedsearch","450px","auto","id");
+	$("input[name=scholarChineseName]").each(function(){
+	    $(this).focus()});//每一个的id
+}
+
+function advanceconfirm_scholar()
+{
+	//-------采集数据
+	var strquery='';
+	$("input[name=scholarChineseName]").each(function(){
+	    if ($(this).attr("value")!='') 
+	    {
+	      strquery+='title:'+$(this).attr("value");
+	    }
+	 });
+ 
+	$("input[name=scholarEnglishName]").each(function(){
+	    if ($(this).attr("value")!='') 
+	    {
+	      strquery+='title:'+$(this).attr("value");
+	    }
+	 }); 
+ 
+	 $("input[name=scholarUnit]").each(function(){
+	    if ($(this).attr("value")!='') 
+	    {
+	      strquery+='title:'+$(this).attr("value");
+	    }
+	 });
+
+	 $("input[name=scholarField]").each(function(){
+	    if ($(this).attr("value")!='') 
+	    {
+	      strquery+='title:'+$(this).attr("value");
+	    }
+	 });
+	 if ((strquery.replace(/[ ]/g,""))=="") return false;
+
+	$("form[name=portalsiteScholarAdvanceSearch_scholar]").each(function(){
+ 
+	   $(this).submit();
+	 });
+}
+
+function getDesc(doc)
+{
+	var str="";
+	if(doc.author!=null)
+		str=doc.author+','+'. ';
+	str+=doc.title+". ";
+	if(doc.source==null)
+		doc.source='unknown source';
+	str+=doc.source+","+doc.year;
+	if(doc.vol!=null)
+		str+=","+doc.vol;
+	if(doc.issue!=null)
+		str+="("+doc.issue+")";
+	if(doc.pages!=null)
+		str+=":"+doc.pages;
+	return str;
+}
+
+function showItem(doc,index,detail){
+	var html='<div class="divItem" id="divItem'+index+'">';
+	
+	if(!detail){
+		html+=generateDocTools(doc,index);
+		if(doc.type == 'Reference'){
+			
+			html+='<div class="itemTitle"><span>'+highlight(doc.citation)+'</span></div>';
+			
+		}else{
+			html+='<div class="itemTitle"><span>'+highlight(doc.title)+'</span></div>';
+			
+			
+		}
+		
+	}
+	else{
+		if(doc.type == 'Reference'){
+			//var index = doc.timestamp.toString().indexOf('T');
+			//var date = doc.timestamp.toString().substring(0,index);
+			html+='<div class="itemTitle"><span>'+highlight(doc.citation)+'</span></div>';
+			//html += '<div class="itemType" style="margin-left:50px;">日期：'+ date +'<div>';
+		}else{
+			
+			html+='<div class="itemTitle"><span>'+highlight(doc.title)+'</span></div>';
+		}
+		//html+='<div class="itemTitle">'+doc.title+'</div>';
+		
+	}
+	
+	if(doc.type=='JournalPaper'||doc.type=='ConferencePaper'||doc.type=='Unknown'){
+		if(doc.abstract){
+				html+='<div id="itemAbstract" class="itemAbstract"><strong>摘要：&nbsp;&nbsp;</strong>';
+				if(doc.abstract.length>230)
+					html+=highlight(doc.abstract.substring(0,227))+'...<span class="itemAbstractSwitch" onclick="switchAbstract(this.parentElement,'+index+',true)">More&nbsp;»</span>';
+				else
+					html+=highlight(doc.abstract);
+				html+='</div>';
+	
+		}
+		
+		html+='<div class="itemAuthor"><strong class="itemName">作者：</strong><div class="itemContent">'+getAuthors(doc)+'&nbsp;</div></div>';
+		if(doc.type=='JournalPaper')
+			html+='<div class="itemType"><strong class="itemName">类型：</strong><div class="itemContent">期刊论文</div></div>';
+		else if(doc.type=='ConferencePaper')
+			html+='<div class="itemType"><strong class="itemName">类型：</strong><div class="itemContent">会议论文</div></div>';
+		else if(doc.type=='Unknown')
+			html+='<div class="itemType"><strong class="itemName">类型：</strong><div class="itemContent">未知</div></div>';
+		
+		if(doc.source||doc["journal-ref"])
+		     html+='<div class="itemSource"><strong class="itemName">来源：</strong><div class="itemContent">'+getSource(doc)+'&nbsp;</div></div>';
+		if(doc.organization)
+			html+='<div class="itemOrganization"><strong class="itemName">作者单位：</strong><div class="itemContent">'+highlight(doc.organization)+'</div></div>';
+		if(doc.keyword){
+			var keyword = getKeywords(doc);
+			if(keyword.length>0)
+				html+='<div class="itemKeywords"><strong class="itemName">关键词：</strong><div class="itemContent">'+keyword+'&nbsp;</div></div>';
+		}
+		if(doc.comments)
+			html+='<div><strong class="itemName">备注：</strong><div class="itemContent">'+doc.comments+'&nbsp;</div></div>';
+	
+	}
+	else if(doc.type=='Book' || doc.type=='BookChapter'){
+		//作者信息
+		html+='<div class="itemAuthor"><strong class="itemName">作者：</strong><div class="itemContent">'+getAuthors(doc)+'&nbsp;</div>';
+		
+		if(doc.author_affiliation){
+			html += '<strong class="itemName">作者单位：</strong><div class="itemContent">'+doc.author_affiliation+'</div>';
+		}
+		if(detail){
+			if(doc.author_email)
+				html += '<strong class="itemName">作者邮箱：</strong><div class="itemContent">'+doc.author_email+'</div>';
+		}
+			
+		html+='</div>';
+ 
+		var type='';
+		if(doc.type=='Book')
+			type='学术专著';
+		else
+			type='图书章节';
+		html += '<div class="itemType"><strong class="itemName">类型：</strong><div class="itemContent">'+type+'</div>';
+
+		if(doc.booktitle)
+			html+='<strong class="itemName">图书名称：</strong><div class="itemContent">'+doc.booktitle+'</div>';
+
+		html+='<div class="itemSource">';
+		if(doc.publisher)
+		     html+='<strong class="itemName">出版社：</strong><div class="itemContent">'+highlight(doc.publisher);
+		//加入年月
+		if(doc.year){
+			html+='&nbsp;'+doc.year+"年";
+			if(doc.month)
+				html+=doc.month+"月";
+			html+="出版";
+		}
+		if(doc.pages)
+			html+=",&nbsp;页码："+doc.pages;
+		html+='&nbsp;</div></div>';
+
+		if(doc.isbn)
+			html+='<div class="itemFields"><strong>ISBN：</strong>'+doc.isbn+'</div>';
+		if(doc.img)
+			html+='<div class="itemImg"><img src="'+doc.img+'"></div>';
+		
+		//如果是论文细节页就展示更多内容
+		if(detail){
+			html+='<div class="itemMoreDetail">';
+			
+			if(doc.abstract){
+				html+='<div id="itemAbstract" class="itemAbstract"><strong >摘要：&nbsp;&nbsp;</strong>';
+				if(doc.abstract.length>230)
+					html+=highlight(doc.abstract.substring(0,227))+'...<span class="itemAbstractSwitch" onclick="switchAbstract(this.parentElement,'+index+',true)">More&nbsp;»</span>';
+				else
+					html+=highlight(doc.abstract);
+				html+='</div>';
+	
+		    }
+			if(doc.doi)
+				html+='<strong class="itemName">DOI：</strong><div class="itemContent">'+doc.doi+'</div>';
+			if(doc.print_isbn)
+				html+='<strong class="itemName">Print ISBN：</strong><div class="itemContent">'+doc.print_isbn+'</div>';
+			if(doc.online_isbn)
+				html+='<strong class="itemName">Online ISBN：</strong><div class="itemContent">'+doc.online_isbn+'</div>';
+			
+			html+='</div">';
+		}
+
+	}
+	else if(doc.type=='Journal'){
+		html+='<div class="itemType"><strong>类型：</strong>期刊</div>';
+	}
+	else if(doc.type=='Conference'){
+		html+='<div class="itemType"><strong>类型：</strong>会议</div>';
+		if(doc.author&&doc.author.length>0){
+			html+='<div class="itemAuthor"><strong class="itemName">主编：</strong><div class="itemContent">'+getAuthors(doc)+"&nbsp;</div></div>";
+		}
+		if(doc.series){
+			html+='<div>Series：'+doc.series;
+			if(doc.year)
+				html+=', '+doc.year;
+			if(doc.vol)
+				html+=' ('+doc.vol+')';
+			html+="</div>";
+		}
+		if(doc.publisher){
+			html+='<div><strong>出版社：</strong>'+doc.publisher;
+			html+='</div>';
+		}
+		if(doc.isbn)
+			html+='<div><strong>ISBN：</strong>'+doc.isbn+'</div>';
+		
+				
+		if(doc.subject)
+			html+='<div><strong>主题：</strong>'+doc.subject+"</div>";
+		if(doc.location)
+			html+='<div><strong>会议地点：</strong>'+doc.location+'</div>';
+		if(doc.startdate){
+			html+='<div><strong>会议日期：</strong>'+doc.startdate.substring(0,10);
+			if(doc.enddate)
+				html+=' ~ '+doc.enddate.substring(0,10);
+			html+="</div>";
+		}
+		if(doc.duedate)
+			html+='<div><strong>截稿日期：</strong>'+doc.duedate.substring(0,10)+"</div>";
+		
+	}
+	else if(doc.type=='Thesis'){
+		html+='<div classs="itemAuthor"><strong>作者：</strong>'+getAuthors(doc)+'</div>'
+			+'<div class="itemType"><strong>类型：</strong>';
+
+		if(doc.degree=='doctor')
+			html+='博士学位论文';
+		else if(doc.degree=='master')
+			html+='硕士学位论文';
+		else if(doc.degree=='postdoc')
+			html+='博士后出站报告';
+		else if(doc.degree=='undergraduate')
+			html+='本科学位论文';
+		else 
+			html+='学位论文';
+
+		if(doc.school)
+			html+='<div class="itemOrganization"><strong>学校：</strong>'+highlight(doc.school)+'</div>';
+	}
+	else if(doc.type=='InCollection'){
+		html+='<div class="itemAuthor"><strong>作者：</strong>'+getAuthors(doc)+'</div>'
+	     +'<div class="itemType"><strong>类型：</strong>Book Chapter</div>';
+	}
+	
+	
+	html+="<div class='itemUrl'><strong>相关链接：</strong>";
+	for(var i in doc.url)
+	{	
+		html+="<div style='padding-left:94px;'><a style='color: #3A6DDA;' " +
+			"target='_blank' href='" + doc.url[i] + "'>" 
+			+ doc.url[i] + "</a></div>";
+	}
+	html+="</div>";
+	if(arguments[3]!== undefined&&arguments[3]!==null){//如果有第三个传参，说明是showpdflist的页面
+		
+		html+="<span>";
+		html+="<a href='javascript:void(0)' onclick='showPaperContent(this,\""+doc.id+"\")' style='border:3px solid #399;padding:3px;margin-left:3px;'>阅读</a>";
+		html+="<a href='javascript:void(0);' onclick='showPrivilegeDialog(this,\""+doc.id+"\")' style='border:3px solid #399;padding:3px;margin-left:3px;' >修改权限</a>";
+		html+="<a href='javascript:void(0);' onclick='comfirmRemoveDialog(this,\""+doc.id+"\")' style='border:3px solid #399;padding:3px;margin-left:3px;'>删除上传的pdf</a>";
+		html+='</span></div>';
+		
+		return html;
+	}
+	html+='</div>';
+	return html;
+}
+
+function generateDocTools(doc,index){
+	var html='<div class="itemTools">';
+	html+='<span class="itemFav" title="收藏" onclick=\'collectpaper('+index+')\'></span>';
+	if(doc.type!='Conference'&&doc.type!='Journal'){
+		html+='<span class="itemBibtex" title="获取BibTeX信息" onclick=\'getBibtex('+index+',this);return false;\'></span>';
+	}
+	var docId=doc.id;
+	var docTitle=doc.title;
+	
+	
+	//html+='<span class="itemRead" title="浏览文章" onclick=\'showPaperContent(this,"'+docId+'");return false;\'></span>';//后期修改class与事件
+	
+	
+	//html+='<span class="itemUpload" title="上传文章" onclick=\'uploadPaperPdf(this,"'+docId+'","'+docTitle+'");return false;\'></span>';
+		
+	html+='</div>';
+	return html;
+}
+//如果paper有下载链接，即可查看内容
+function showPaperContent(elem,id){
+	
+	var url="hasPaper.html";
+	$.ajax({
+		type:"post",
+		url:"hasPaper.html",
+		data:{paperid:id},
+		datatype:"text",
+		timeout:60000,
+		success:function(data){
+			if(window.ActiveXObject){
+				
+			}else if(data instanceof Document){//火狐下的data为document
+				data=arguments[2].responseText;
+			}
+			if(data=='2'){
+				$("#waitLayout").css("display","block");
+				$("#waitDialog").css("display","block");
+				location.href="paperContent.html?paperid="+id;
+			}else if(data=='1'){
+				alert("该论文不开放阅读");
+			}else{
+				alert("暂时没有人分享该论文，没办法阅读！");
+			}
+		},
+		error:function(){
+			
+		}
+	});
+	
+	
+	
+}
+function uploadPaperPdf(elem,id,title){
+	
+	$.ajax({
+		type:"post",
+		url:"hasPaper.html",
+		data:{paperid:id},
+		datatype:"text",
+		timeout:60000,
+		success:function(data){
+			if(window.ActiveXObject){
+				
+			}else if(data instanceof Document){//火狐下的data为document
+				data=arguments[2].responseText;
+			}
+			if(data=='0'){
+				$("#uploadPaperPdfDialog").css("display","inline");
+				$("#uploadPaperPdfId").attr("value",id);
+				$("#uploadPaperPdfTitle").attr("value",title);
+			}else if(data=='1'||data=='2'){
+				//$("#showPaperContentDialog").css("display","inline");
+				alert("已经有用户分享该文章了！");
+			}
+		},
+		error:function(){
+			
+		}
+	});
+	
+	
+}
+
+//确认删除上传的pdf触发的函数
+function removeUploadPaperPdf(elem){
+	var paperid=$("#removePaperId").val();
+	location.href="removeUploadPaperPdf.html?paperid="+encodeURI(paperid);
+}
+//取消删除上传的pdf的触发函数
+function closeComfirmRemovePdfDialog(elem){
+	$("#confirmRemovePdfDialog").css("display","none");
+
+}
+function closeUploadPaperPdfDialog(elem){
+	
+	$("#uploadPaperPdfDialog").css("display","none");
+}
+
+function closeShowPaperContentDialog(elem){
+	$("#showPaperContentDialog").css("display","none");
+}
+function getBibtex2(index,e){
+	var msg='';
+	var status = true;
+	var d;
+	if(typeof(docs) == "undefined")
+	{
+		d = doc;
+		status = false;
+	}
+	else
+		d = docs[index];
+ 
+	if(d.type=='JournalPaper'){
+		msg+='@article{'+d.title+',\n'
+			+' author={'+d.author+'},\n'
+			+' title={'+d.title+'}';
+		if(d.source)
+			msg+=',\n journal={'+d.source+'}';
+		if(d.year)
+			msg+=',\n year={'+d.year+'}';
+		if(d.vol)
+			msg+=',\n volume={'+d.vol+'}';
+		if(d.issue)
+			msg+=',\n issue={'+d.issue+'}';
+		if(d.pages)
+			msg+=',\n pages={'+d.pages+'}';
+		if(d.doi)
+			msg+=',\n doi={'+d.doi+'}';
+				
+		msg+='\n}';
+	}
+	else if(d.type=='ConferencePaper'){
+		msg+='@inproceedings{'+d.title+',\n'
+			+'  author={'+d.author+'},\n'
+			+'  title={'+d.title+'}';
+		if(d.source)
+			msg+=',\n booktitle={'+d.source+'}';
+		if(d.year)
+			msg+=',\n year={'+d.year+'}';
+		if(d.month)
+			msg+=',\n month={'+d.month+'}';
+		if(d.pages)
+			msg+=',\n pages={'+d.pages+'}';
+		if(d.doi)
+			msg+=',\n doi={'+d.doi+'}';
+				
+		msg+='\n}';
+	}
+	else if(d.type=='Thesis'){
+		if(d.degree=='master')
+			msg+='@masterthesis{';
+		else
+			msg+='@phdthesis{';
+			
+		msg+=d.title+',\n author={'+d.author[0]+'}'
+			 +',\n title={'+d.title+'}';
+		
+		if(d.school)
+			msg+=',\n school={'+d.school+'}';
+		if(d.pages) 
+			msg+=',\n pages={'+d.pages+'}';
+		if(d.year)
+			msg+=',\n year={'+d.year+'}';
+		if(d.month)
+			msg+=',\n month={'+d.month+'}';
+		msg+='\n}';
+	}
+	else if(d.type=='InCollection' || d.type=='BookChapter'){
+		msg='@incollection{'+d.title
+			 +',\n author={'+d.author+'}'
+			 +',\n title={'+d.title+'}';
+ 
+		if(d.source)
+			msg+=',\n booktitle={'+d.source+'}';
+		if(d.year)
+			msg+=',\n year={'+d.year+'}';
+		if(d.month)
+			msg+=',\n month={'+d.month+'}';
+		if(d.pages)
+			msg+=',\n pages={'+d.pages+'}';
+		if(d.vol)
+			msg+=',\n volume={'+d.vol+'}';
+		if(d.series)
+			msg+=',\n series={'+d.series+'}';
+		msg+='\n}';
+	}
+	else if(d.type=='Book'){
+		msg='@book{'+d.title+',\n'+
+			'  author={'+d.author+'},\n'
+			+'  title={'+d.title+'}';
+		if(d.publisher)
+			msg+=',\n publisher={'+d.publisher+'}';
+		if(d.year)
+			msg+=',\n year={'+d.year+'}';
+		if(d.month)
+			msg+=',\n month={'+d.month+'}';
+		if(d.pages)
+			msg+=',\n pages={'+d.pages+'}';
+		if(d.vol)
+			msg+=',\n volume={'+d.vol+'}';
+		if(d.series)
+			msg+=',\n series={'+d.series+'}';
+		msg+='\n}';
+	}
+	if(msg=='')
+		return;
+	if(status==true) {
+		$("#bibtex").val(msg);
+		$('#txtBibtex')[0].value=msg;
+		$('#divPopup').show();
+		$('#divPopup')[0].style.top=(mousePos.y)+'px';
+		$('#divPopup')[0].style.left=(mousePos.x-$('#divPopup')[0].offsetWidth-30)+'px';
+	}
+	else
+		$("#bibtex").val(msg);
+}
+function getMousePoint(event) {
+    var e = event || window.event;
+    var scrollX = document.documentElement.scrollLeft || document.body.scrollLeft;
+    var scrollY = document.documentElement.scrollTop || document.body.scrollTop;
+    var x = e.pageX || e.clientX + scrollX;
+    var y = e.pageY || e.clientY + scrollY;
+    return { 'x': x, 'y': y };
+}
+
+function getAuthors(doc){
+	var authors=doc.author||doc.editor;
+	var str='';
+	var list=[];
+
+	if (doc.author != null) {
+		var authors = doc.author;
+		for ( var a in authors) {
+			if (/.*[\u4e00-\u9fa5]+.*$/.test(authors[a]))
+				list = list.concat(authors[a].split(/[,，;；\s]+/));
+			else
+				list.push(authors[a]);
+		}
+	} else if (doc.editor != null) {
+		var authors = doc.editor;
+		list = list.concat(authors.split(/[,，]+/));
+		 
+	}	
+	
+	for(var a in list){
+		str+='<a  style="color: #3A6DDA;" href=\'papersearch.jsp?q=author:"'+list[a]+'"\'>'+highlight(list[a])+'</a>,&nbsp;&nbsp;';
+	}
+	
+	return str.substring(0,str.length-13);
+}
+
+function getSource(doc){
+	var str="";
+	if(doc.source)
+		str+='<a style="color: #3A6DDA;" href=\'papersearch.jsp?q=source:"'+doc.source+'"\'>'+highlight(doc.source)+"</a>";
+	else if(doc["journal-ref"])
+		str+=doc["journal-ref"];
+	else
+		str+='undefined';
+	if(doc.year)
+		str+=',&nbsp;'+doc.year;
+	if(doc.vol!=null)
+		str+=','+doc.vol;
+	if(doc.issue!=null)
+		str+='('+doc.issue+')';
+	if(doc.pages!=null)
+		str+=":"+doc.pages;
+	return str;
+}
+
+function switchAbstract(node,i,expand){
+	var html;
+	if(expand)
+		html='<div class="itemAbstract">摘要：'+highlight(docs[i].abstract)
+			  	+'<span class="itemAbstractSwitch" onclick="switchAbstract(this.parentElement,'+i+',false)">Less&nbsp;«</span></div>';
+	else
+		html='<div class="itemAbstract">摘要：'+highlight(docs[i].abstract.substring(0,227))
+				+'...<span class="itemAbstractSwitch" onclick="switchAbstract(this.parentElement,'+i+',true)">More&nbsp;»</span>';
+	
+	node.innerHTML=html;
+}
+
+function getKeywords(doc){
+	var str='';
+	var len=doc.keyword.length;
+	if(len>8)
+		len=8;
+	var count=0;
+	for ( var kw in doc.keyword) {
+		if (doc.keyword[kw].length > 0) {
+			str += '<a style="color: #3A6DDA;" href=\'papersearch.jsp?q=keyword:"'
+					+ doc.keyword[kw]
+					+ '"\'>'
+					+ highlight(doc.keyword[kw])
+					+ '</a>；&nbsp;';
+			count = count + 1;
+			if (count > len)
+				break;
+		}
+	}
+	return str;
+}
+
+function getUrls(doc){
+	var urls;
+	doc.url=doc.url.replace(/&amp;/g,'&');
+	if(doc.url.indexOf('`')>=0)
+		urls=doc.url.split('`');
+	else if(doc.url.indexOf(';')>=0)
+		urls=doc.url.split(';');
+	else
+		urls=[doc.url];
+	
+	var omit=/(^http:\/\/academic.research.microsoft.com|^http:\/\/www.cnki.com.cn)/
+	for(var u=urls.length-1;u>=0;u--){
+		if(urls[u]==''||omit.test(urls[u]))
+			urls.splice(u, 1);
+	}
+	if(urls.length<=0)
+		return '';
+	
+	var showUrl=0;
+	for(var u=0;u<urls.length;u++){
+		if(urls[u].substring(urls[u].lastIndexOf('.')+1)=='pdf'){
+			showUrl=u;
+		}
+	}
+	if(showUrl!=0){
+		var t=urls[showUrl];
+		urls[showUrl]=urls[0];
+		urls[0]=t;
+	}
+	
+	var str='<div class="itemUrl"><div><a style="color: #3A6DDA;" target="_blank"  href="'+urls[0]+'">'+urls[0]+"</a>";
+	if(urls.length==1){
+		str+='</div>';
+	}
+	else{
+		str+='<span onclick="switchUrl(this)" class="moreUrls" title="更多链接"></span></div>';
+		for(var u=1;u<urls.length;u++){
+			str+='<div class="itemMoreUrls"><a target="_blank" href="'+urls[u]+'">'+urls[u]+'</a></div>';
+		}
+	}
+	str+='</div>';
+	return str;
+}
+
+function switchUrl(e,show){
+	var itemNode=e.parentElement.parentElement;
+	if(e.className=='moreUrls'){
+		itemNode.className='itemUrlAll';
+		e.className='lessUrls';
+		e.style.title='收回';
+		//e.innerHTML='Less&nbsp;«';
+	}
+	else{
+		itemNode.className='itemUrl';
+		e.className='moreUrls';
+		e.style.title='更多链接';
+		//e.innerHTML='More&nbsp;»';
+	}
+}
+
+//处理搜索结果页分页后的跳转选择处理
+function addpageslist(max,current) //给select增加页面跳转选择列表
+{
+var page = $("#page");
+page.empty();
+for(var i=1;i<=max;i++) {
+    var option = $("<option>").text("第"+i+"页").val(i);
+    page.append(option);
+}
+page.val(current);    
+
+}
+
+//处理搜索结果页分页后的跳转选择处理
+function addpageslist_En(max,current) //给select增加页面跳转选择列表
+{
+var page = $("#page");
+page.empty();
+for(var i=1;i<=max;i++) {
+    var option = $("<option>").text("Page"+i).val(i);
+    page.append(option);
+}
+page.val(current);    
+
+}
+
+function PageFromSubmit(url,total){
+document.location.href=url+"&cpage="+$("#page").val()+"&total="+total;
+}
+
+//收藏文章
+function collectpaper(i)
+{
+ 
+ //获取论文相关信息
+ //var key =$("#I_desc"+i).val().replace(/[ ]/g,"").split(".");
+ var item="#divItem"+i; 
+ var authors=$(item+' .itemAuthor').text().substring(3);
+ var title=docs[i].title;
+ var source=$(item+' .itemSource').text().substring(3);
+ var year=docs[i].year;
+ var url =docs[i].url;
+ var detail='';
+ if(docs[i].keyword)
+	 detail+=docs[i].keyword+'; '+"\n\n";
+ if(docs[i].abstract)
+	 detail+=docs[i].abstract;
+
+  if(!confirm("确认收藏如下论文吗?"+"\n标题:" +title +'\n作者:'+authors +'\n来源:'+source))
+   	return;
+  if ($("#username").val()=='')
+  {
+     alert("请先登录");
+     location.href="../login.html";   
+     return;
+  }
+   //开始保存
+   //collectPaper_exterior
+   $.ajax({
+	  type: "post",
+	  url: "collectPaper_exterior.html", 
+	  timeout:60000,
+	  data:{title:title,authors:authors,source:source,date:year+'.'+'01',p_url:url,paperid:docs[i].id,detail:detail},
+	  dataType: "text",
+	  success:function(data){
+		  if (data=="0") {
+			  if (existalertcount==1)
+			  	alert("已存在相同论文记录!");existalertcount=2;
+		  }
+		  if (data=="1") {
+			  if (succalertcount==1)
+			  {alert("收藏成功!");succalertcount=2;}
+			  getcollectsnum();
+		  }
+		  if (data=="-1"){
+			  if (failalertcount==1)
+				  alert("收藏失败!");failalertcount=2;
+		  }
+	  },
+	  error:function(){
+	  //请求出错处理
+	  alert("操作超时!");
+      }
+	   
+
+   });
+}	
+
+function highlight(content) //红色字体显示命中结果的搜索词
+{
+	if(typeof(querySeg)=="undefined")
+		return content;
+//	query = decodeURI(query); //unocode解码，如果不解码，中文是Unicode编码形式，无法匹配汉字
+	//冒号被编码成%3A，用decodeURI处理后仍然无法解码成冒号，原因未知,所以下面的替换直接用%3A来替换。
+//	strquery = query.replace(/title:|author:|author_exact:|organization:|keyword:|source:|"/g, "");
+//	strquery = query.replace(/title%3A|author%3A|author_exact%3A|organization%3A|keyword%3A|source%3A|"/g, "");
+		
+//	strquery = $.trim(strquery);
+//	key = strquery.split(" ");
+ 
+	if(isPureEnglish(querySeg)){
+		key = query.split(" ");
+	}
+	else{
+		key = querySeg.split(" ");
+	}
+	var str = "";
+	for ( var i = 0; i < key.length; i++) {
+		key[i] = $.trim(key[i]);
+		if(!isStopWord(key[i])){
+			str += "|"+key[i];
+		}
+	}
+
+	str = str.substring(1).replace(/[ ]|/g, "");
+	oricontent = content;
+
+	try {
+
+	    //高亮关键字，因为中文没有像英文那样词语之间有空格，所以必须使用不同的方法来处理
+		if(isPureEnglish(str)){
+			 strcontent = content.replace(eval("/\\b("+str+")\\b/ig"),"<font color=red>$1</font>"); //无法匹配中文，因为中文的词语之间无空格
+		}
+		else{
+			strcontent = content.replace(eval("/("+str+")/ig"),"<font color=red>$1</font>");
+		}
+			 
+
+	} catch (e) {
+		strcontent = oricontent;
+	}
+
+	return strcontent;
+}
+
+/**
+ * 是否只包含英文字母
+ * @param str
+ * @returns
+ */
+function isPureEnglish(str){
+	var reg = /^[a-zA-Z\\s|]+$/;
+	return reg.test(str);
+}
+
+
+function formatNumber(str){
+	if(typeof(str)=='number')
+		str=str+'';
+	return str.replace(/\d+?(?=(?:\d{3})+$)/g, function(s){
+		return s + ',';
+	    });
+}
+
+function pageRender(result){
+	var divHint=document.getElementById("divHint");
+	var divContent=document.getElementById("divContent");
+	var time=result.responseHeader.QTime;
+	docs=result.response.docs;
+	
+
+	$('#res').hide();  
+	$('#divselectbtns').show();
+	$("#searchConditionForm").hide();
+	
+	numDocs=result.response.numFound;
+	divHint.innerHTML="搜索到"+formatNumber(numDocs)+"条记录，用时"+time+"ms";
+	divContent.innerHTML="";
+	if(numDocs==0) divContent.innerHTML="无相关记录"; 
+	else
+	{
+		$("#wrap").css("visibility", "visible");
+		$("#frame_left").css("visibility", "visible");
+	}
+	generateYearList(result.facet_counts.facet_fields.year);
+	generateTypeList(result.facet_counts.facet_fields.type);
+	for (var doc in docs){
+				
+		//divContent.innerHTML+=showItem(docs[doc],doc,false);
+		showSearchItem(docs[doc],doc,false)
+		
+	}
+	$('.divItem').mouseover(function(e){$(this).addClass('divItemOver')});
+	$('.divItem').mouseout(function(e){$(this).removeClass('divItemOver')});
+	generatePages();
+	
+}
+
+function generateYearList(yearlist){
+	var showCount=10;
+	var maxCount=30;
+	var min=yearlist.length-showCount*2;
+	if(min<0)
+		min=0;
+	$('#yearlist').html('');
+	for(var i=yearlist.length-1;i>=min;){
+		addyearlist(yearlist[i-1],yearlist[i]);
+		i-=2;
+	}
+	
+	$('#yearlistmore').hide();
+	if(min>0)
+		$('.yearListSwitch').show();
+	else{
+		$('.yearListSwitch').hide();
+		return;
+	}
+	
+	var min2=yearlist.length-maxCount*2;
+	if(min2<0)
+		min2=0;
+	$('#yearlistmore').html('');
+	for(var i=min-1;i>=min2;){
+		addyearlistmore(yearlist[i-1],yearlist[i]);
+		i-=2;
+	}
+	
+}
+
+function generateTypeList(list){
+
+	if(list[5]>0){
+		$('#bookNumber').html('('+list[5]+')');
+		$('#bookNumber:parent').show();
+	}
+	else{
+		$('#bookNumber:parent').hide();
+	}
+	
+	if(list[9]>0){
+		$('#conferenceNumber').html('('+list[9]+')');
+		$('#conferenceNumber:parent').show();
+	}
+	else{
+		$('#conferenceNumber:parent').hide();
+	}
+	
+	if(list[11]>0){
+		$('#conferencePaperNumber').html('('+list[11]+')');
+		$('#conferencePaperNumber:parent').show();
+	}
+	else{
+		$('#conferencePaperNumber:parent').hide();
+	}
+	
+	if(list[7]>0){
+		$('#bookChapterNumber').html('('+list[7]+')');
+		$('#bookChapterNumber:parent').show();
+	}
+	else{
+		$('#bookChapterNumber:parent').hide();
+	} 
+	
+	if(list[15]>0){
+		$('#journalNumber').html('('+list[15]+')');
+		$('#journalNumber:parent').show();
+	}
+	else{
+		$('#journalNumber:parent').hide();
+	}
+	
+	if(list[17]>0){
+		$('#journalPaperNumber').html('('+list[17]+')');
+		$('#journalPaperNumber:parent').show();
+	}
+	else{
+		$('#journalPaperNumber:parent').hide();
+	}
+	
+	if(list[31]>0){
+		$('#thesisNumber').html('('+list[31]+')');
+		$('#thesisNumber:parent').show();
+	}
+	else{
+		$('#thesisNumber:parent').hide();
+	}
+	
+	if(list[33]>0){
+		$('#unknownNumber').html('('+list[33]+')');
+		$('#unknownNumber:parent').show();
+	}
+	else{
+		$('#unknownNumber:parent').hide();
+	}
+	if(list[23] > 0){
+		
+		$("#referenceNumber").html('(' + list[23] + ')');
+		$("#referenceNumber:parent").show();
+	}else{
+		
+		$("#referenceNumber:parent").hide();
+	}
+}
+
+var blnShowYearListMore=false;
+function switchYearList(){
+	if(blnShowYearListMore==false){
+		$('#yearlistmore').show();
+		$('.yearListSwitch').html('Less «');
+	}
+	else{
+		$('#yearlistmore').hide();
+		$('.yearListSwitch').html('More »');
+	}
+	blnShowYearListMore=!blnShowYearListMore;
+}
+
+function generatePages2(){
+	var divPages=document.getElementById("divPages");
+	var numPages=Math.ceil(numDocs/rows);
+	if(numPages<=1){
+		divPages.innerHTML='';
+		return;
+	}
+	var url=window.location.href.replace(/&p=\d+/,'');
+	var str="";
+	//上一页
+	if (curPage==1)
+		str="<a href='"+url+"&p="+(curPage-1)+"' style='width:45px;height:20px;font-size:12px;text-align:center;'> 上一页</a> " ;
+	else
+		str="<a href='"+url+"&p="+(curPage-1)+"' style='width:45px;height:20px;font-size:12px;text-align:center;'> 上一页</a>";
+	//页数
+	var endPage=curPage+9;
+	var startPage=curPage-9;
+	if(endPage>numPages)
+		endPage=numPages;
+	if(startPage<1)
+		startPage=1;
+	for (var i=startPage; i<=endPage; i++) {
+		if(i==curPage)
+			str+="&nbsp;"+i+"&nbsp;&nbsp;";
+		else
+			str+="<a href='"+url+"&p="+i+"' style='text-align:center;'> "+i+" </a>";
+	}
+	//下一页
+	if(curPage+1<=numPages)
+		str+="&nbsp;<a href='"+url+"&p="+(curPage+1)+"' style='width:45px;height:20px;font-size:12px;text-align:center;'> 下一页</a>";
+	else
+		str+="&nbsp;下一页";
+	divPages.innerHTML=str;
+}
+
+function request(paras) {
+	var url = decodeURI(location.href.replace(/%3A/g, ':'));
+	var paraString = url.substring(url.indexOf("?") + 1, url.length).split("&");
+	var paraObj = {}
+	for (i = 0; j = paraString[i]; i++) {
+		paraObj[j.substring(0, j.indexOf("=")).toLowerCase()] = j.substring(j
+				.indexOf("=") + 1, j.length);
+	}
+	var returnValue = paraObj[paras.toLowerCase()];
+	if (returnValue != null) {
+		returnValue = returnValue.replace(/[+]/g, " ");
+		returnValue = returnValue.replace(/[#]/g, " ");
+		//returnValue = returnValue.replace(/[ m](\d)/g, "");
+		return (returnValue);
+	} else {
+		return null;
+	}
+}
+    
+// 保存文章
+function savepaper(i)
+{
+
+//获取论文相关信息
+//var key =$("#I_desc"+i).val().replace(/[ ]/g,"").split(".");
+var key =$("#I_desc"+i).val().split("."); 
+
+var authors=key[0];
+var title=key[1];
+//var source=key[2]+','+key[3];
+var source=key[2];
+var year=$("#I_year"+i).val();
+var url=$("#I_url"+i).val();
+var detail="<strong>关键词:</strong>"+$("#I_keyword"+i).val()+"<br><strong>摘要:</strong>"+$("#I_abstract"+i).val();
+
+title=title.replace(/["]/g,"");
+title=title.replace(/[ ]/g,"");
+source=source.replace(/["]/g,"");
+source=source.replace(/[ ]/g,"");
+if (selpapercount<=1)
+{
+var r=confirm("确认保存如下论文吗?"+"\n标题:"
++title
++'\n作者:'+authors
++'\n来源:'+source);
+if (r==false)
+return;
+}
+
+if ($("#username").val()=='')
+{
+alert("请先登录");
+location.href="../login.html";   
+}
+else
+{
+
+//开始保存
+//SavePaper_exterio
+$.ajax({
+		  type: "post",
+		  url: "SavePaper_exterio.html", 
+		  timeout:60000,
+		  data:{title:title,authors:authors,source:source,date:year+'.'+'01',p_url:url,detail:detail},
+		  dataType: "text",
+		  success:function(data){
+			   if (data=="0") {
+			    if (existalertcount==1)
+			       {alert("已存在相同论文记录!");existalertcount=2;}
+			    }
+		if (data=="1") {
+		if (succalertcount==1)
+		   {alert("保存成功!");succalertcount=2;}
+		getsavepapersnum();
+		}
+		if (data=="-1"){
+		if (failalertcount==1)
+		   {alert("保存失败!");failalertcount=2;}
+		}          
+		  },
+		  error:function(){
+		  //请求出错处理
+		  alert("操作超时!");
+	      }
+		   
+
+});
+}
+}
+
+function isStopWord(w){
+	w=w.toLowerCase();
+	for(var i in stopwords){
+		if(stopwords[i]==w)
+			return true;
+	}
+	return false;
+}
+var stopwords=['a', 'an', 'and', 'are', 'as', 'at', 'be', 'but', 'by', 'for', 'if', 'in', 'into', 'is', 'it', 'no', 'not', 'of', 'on', 'or', 'such', 'that', 'the', 'their', 'then', 'there', 'these', 'they', 'this', 'to', 'was', 'will', 'with'];
+
+function comfirmRemoveDialog(elem,id){
+	$("#confirmRemovePdfDialog").css("display","inline");
+	$("#removePaperId").attr("value",id);
+}
+
+
+function showPrivilegeDialog(elem,id){
+	$.ajax({
+		type:"post",
+		url:"getPdfPrivilege.html",
+		timeout:60000,
+		datatype:"text",
+		data:{paperid:id},
+		success:function(data){
+			
+			if(window.ActiveXObject){
+				
+			}else if(data instanceof Document){
+				data=arguments[2].responseText;
+			}
+			if(data==='1'){
+				$("#privilegeDialogRadio0").attr("checked","checked");
+				//$("#privilegeDialogRadio1").attr("checked",false);
+			}else{
+				//$("#privilegeDialogRadio0").attr("checked",false);
+				$("#privilegeDialogRadio1").attr("checked","checked");
+			}
+			$("#privilegeDialogHiddenId").attr("value",id);
+			$("#privilegeDialog").css("display","inline");
+			
+		},
+		error:function(){}
+	});
+	
+}
+
+function updatePdfPrivilege(elem){
+	var id=$("#privilegeDialogHiddenId").val();
+	var pdfPrivilege=$("input[name='pdfPrivilege']:checked").val();
+	$.ajax({
+		type:"post",
+		url:"updatePdfPrivilege.html",
+		timeout:60000,
+		datatype:"text",
+		data:{paperid:id,pdfPrivilege:pdfPrivilege},
+		success:function(data){
+			if(window.ActiveXObject){
+				
+			}else if(data instanceof Document){
+				data=arguments[2].responseText;
+			}
+			$("#privilegeDialog").css("display","none");
+			alert("修改成功");
+			
+			
+			
+		},
+		error:function(){}
+	});
+}
+
+function closePrivilegeDialog(){
+	$("#privilegeDialog").css("display","none");
+}
+
+
+function searchHomePage(){
+	var urlFront = "http://paper.scholat.com/paper/select?callback=?&indent=on&version=2.2&json.wrf=searchHomePageResult&q=*:*";
+	var urlBack ="&fl=*&sort=score desc,year desc&wt=json&facet=true&"
+		+ "facet.field=type&facet.field=year&facet.sort=index&f.year.facet.mincount=1&facet.limit=-1";
+	var url=urlFront+urlBack;
+	
+	$("#homePagePanel").tmpl({}).appendTo("#divContent");
+	
+	$.getJSON(url,searchHomePageResult);
+	
+}
+function searchHomePageResult(result){
+	console.log(result);
+	$('#res').hide();  
+	$('#divselectbtns').show();
+	$("#searchConditionForm").hide();
+	
+	var numDocs=result.response.numFound;
+	var time=result.responseHeader.QTime;
+	divHint.innerHTML="共有"+formatNumber(numDocs)+"条记录，用时"+time+"ms";
+	
+	
+	$("#wrap").css("visibility", "visible");
+	$("#frame_left").css("visibility", "visible");
+	
+	generateYearList(result.facet_counts.facet_fields.year);
+	generateTypeList(result.facet_counts.facet_fields.type);
+}
+function showSearchItem(doc,index,detail){
+	//console.log(doc);
+	var citation = highlight(doc.citation);
+	var title = highlight(doc.title);
+	var dateIndex = doc.timestamp.toString().indexOf('T');
+	var date = doc.timestamp.toString().substring(0,dateIndex);
+	//获取摘要的227个字符
+	var abstractContent="";
+	if(doc.abstract){
+		var abstractLength = doc.abstract.length;
+		if(abstractLength>230)
+			abstractContent = highlight(doc.abstract.substring(0,227));
+		else
+			abstractContent = highlight(doc.abstract);
+	}
+	
+	var authors = getAuthors(doc);
+	var authorsLength =0;
+	if(doc.author){
+		authorsLength = doc.author.length;
+	}
+	
+	var source = getSource(doc);
+	var organization = highlight(doc.organization);
+	
+	var keyword = '';
+	var keywordLength = 0;
+	if(doc.keyword){
+		keyword = getKeywords(doc);
+		keywordLength = keyword.length;
+	}
+	var type='';
+	if(doc.type=='Book')
+		type='学术专著';
+	else
+		type='图书章节';
+	var startdate = '';
+	var enddate = '';
+	if(doc.enddate){
+		enddate = doc.enddate.substring(0,10);
+	}
+	if(doc.startdate){
+		startdate = doc.startdate.substring(0,10);
+	}
+	var duedate ='';
+	if(doc.duedate){
+		duedate = doc.duedate.substring(0,10);
+	}
+	//是否有第四个参数
+	var emptyArgument4 = false;
+	if(arguments[3]!== undefined&&arguments[3]!==null){
+		emptyArgument4 = true;
+	}
+	var publisher = '';
+	if(doc.publisher)
+		publisher = highlight(doc.publisher);
+	var school = '';
+	if(doc.school)
+		school = highlight(doc.school);
+	var tmplDoc = {doc:doc,index:index,detail:false,citation:citation,title:title,date:date,
+					abstractContent: abstractContent,authors:authors, source:source,
+					organization:organization,abstractLength:abstractLength,keyword:keyword, 
+					keywordLength:keywordLength,type:type,authorsLength:authorsLength,
+					startdate:startdate, enddate:enddate, duedate:duedate, emptyArgument4:emptyArgument4,
+					publisher:publisher, school:school};
+	//divContent.innerHTML+=showItem(docs[doc],doc,false);
+	$("#paperSearchResult").tmpl(tmplDoc).appendTo('#divContent');
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+

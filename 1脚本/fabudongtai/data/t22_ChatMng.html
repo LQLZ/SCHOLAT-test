@@ -1,0 +1,85 @@
+
+// Provide a default path to dwr.engine
+if (dwr == null) var dwr = {};
+if (dwr.engine == null) dwr.engine = {};
+if (DWREngine == null) var DWREngine = dwr.engine;
+if (ChatMng == null) var ChatMng = {};
+ChatMng._path = '/dwr';
+ChatMng.send = function(p0, p1, p2, p3, callback) {
+ dwr.engine._execute(ChatMng._path, 'ChatMng', 'send', p0, p1, p2, p3, false, callback);
+}
+ChatMng.check = function(p0, callback) {
+ dwr.engine._execute(ChatMng._path, 'ChatMng', 'check', p0, false, callback);
+}
+ChatMng.update = function(p0, p1, callback) {
+ dwr.engine._execute(ChatMng._path, 'ChatMng', 'update', p0, p1, false, callback);
+}
+ChatMng.sendfile = function(p0, callback) {
+ dwr.engine._execute(ChatMng._path, 'ChatMng', 'sendfile', p0, callback);
+}
+ChatMng.logout = function(p0, p1, callback) {
+ dwr.engine._execute(ChatMng._path, 'ChatMng', 'logout', p0, p1, false, callback);
+}
+ChatMng.getAccountManager = function(callback) {
+ dwr.engine._execute(ChatMng._path, 'ChatMng', 'getAccountManager', callback);
+}
+ChatMng.setAccountManager = function(p0, callback) {
+ dwr.engine._execute(ChatMng._path, 'ChatMng', 'setAccountManager', p0, callback);
+}
+ChatMng.setSession = function(p0, callback) {
+ dwr.engine._execute(ChatMng._path, 'ChatMng', 'setSession', p0, callback);
+}
+ChatMng.getTeamworkAccountManager = function(callback) {
+ dwr.engine._execute(ChatMng._path, 'ChatMng', 'getTeamworkAccountManager', callback);
+}
+ChatMng.setTeamworkAccountManager = function(p0, callback) {
+ dwr.engine._execute(ChatMng._path, 'ChatMng', 'setTeamworkAccountManager', p0, callback);
+}
+ChatMng.sendcommsg = function(p0, p1, p2, p3, callback) {
+ dwr.engine._execute(ChatMng._path, 'ChatMng', 'sendcommsg', p0, p1, p2, p3, callback);
+}
+ChatMng.sendsysmsg = function(p0, callback) {
+ dwr.engine._execute(ChatMng._path, 'ChatMng', 'sendsysmsg', p0, callback);
+}
+ChatMng.clusterOnline = function(p0, p1, callback) {
+ dwr.engine._execute(ChatMng._path, 'ChatMng', 'clusterOnline', p0, p1, callback);
+}
+ChatMng.clusterpush = function(p0, callback) {
+ dwr.engine._execute(ChatMng._path, 'ChatMng', 'clusterpush', p0, callback);
+}
+ChatMng.getScriptSession = function(p0, callback) {
+ dwr.engine._execute(ChatMng._path, 'ChatMng', 'getScriptSession', p0, callback);
+}
+ChatMng.clusterOffline = function(p0, callback) {
+ dwr.engine._execute(ChatMng._path, 'ChatMng', 'clusterOffline', p0, callback);
+}
+ChatMng.delfile = function(p0, p1, p2, p3, callback) {
+ dwr.engine._execute(ChatMng._path, 'ChatMng', 'delfile', p0, p1, p2, p3, false, callback);
+}
+ChatMng.delhis = function(p0, p1, p2, callback) {
+ dwr.engine._execute(ChatMng._path, 'ChatMng', 'delhis', p0, p1, p2, false, callback);
+}
+ChatMng.deloff = function(p0, p1, p2, p3, callback) {
+ dwr.engine._execute(ChatMng._path, 'ChatMng', 'deloff', p0, p1, p2, p3, false, callback);
+}
+ChatMng.notice = function(p0, p1, p2, p3, callback) {
+ dwr.engine._execute(ChatMng._path, 'ChatMng', 'notice', p0, p1, p2, p3, false, callback);
+}
+ChatMng.sendoff = function(p0, p1, p2, p3, callback) {
+ dwr.engine._execute(ChatMng._path, 'ChatMng', 'sendoff', p0, p1, p2, p3, false, callback);
+}
+ChatMng.remseal = function(p0, callback) {
+ dwr.engine._execute(ChatMng._path, 'ChatMng', 'remseal', p0, callback);
+}
+ChatMng.sharefile = function(p0, p1, p2, p3, p4, p5, callback) {
+ dwr.engine._execute(ChatMng._path, 'ChatMng', 'sharefile', p0, p1, p2, p3, p4, p5, false, callback);
+}
+ChatMng.serverstate = function(p0, p1, p2, callback) {
+ dwr.engine._execute(ChatMng._path, 'ChatMng', 'serverstate', p0, p1, p2, false, callback);
+}
+ChatMng.teamsend = function(p0, p1, p2, p3, p4, callback) {
+ dwr.engine._execute(ChatMng._path, 'ChatMng', 'teamsend', p0, p1, p2, p3, p4, false, callback);
+}
+ChatMng.getRecentTeamChat = function(callback) {
+ dwr.engine._execute(ChatMng._path, 'ChatMng', 'getRecentTeamChat', false, callback);
+}

@@ -1,0 +1,1310 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+ <title>发布信息 | 学者网</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+ <link href="http://www.scholat.com/styles/scholat/leftmenu.gzcss?_dc=ab618ee2e24" rel="stylesheet" type="text/css" />
+ <link href="http://www.scholat.com/styles/friends/myfriends.gzcss?_dc=6e2bc265b79" rel="stylesheet" type="text/css" />
+ <link href="http://www.scholat.com/styles/space/reset.gzcss?_dc=0c9353328a9" rel="stylesheet" type="text/css" />
+ <link href="http://www.scholat.com/styles/space/css.gzcss?_dc=edbf4eab51c" rel="stylesheet" type="text/css" />
+ <script src="http://www.scholat.com/scripts/jquery-1.9.1.min.gzjs?_dc=89a8221df3d" type="text/javascript"></script>
+ <script type="text/javascript">
+     $(document).ready(function(){
+   $(".tc li").mouseover(function(){ 
+   $(this).css("background-image","url(http://www.scholat.com/images/space/tto.gif)");
+   });
+   $(".tc li").mouseout(function(){ 
+  $(this).css("background-image","");
+   }); 
+   $("#t4").click(function(){
+   $(".sm").slideToggle("slow");
+   });
+     });
+
+     function changeTab(current,n,classname,tabname){
+    for(var i=1; i<=n;i++){
+   $("#"+tabname+i).attr("class","");
+    } 
+    $("#"+tabname+current).attr("class",classname); 
+     }
+  function slidelist(){ 
+  if($("#lhl").css("display")=="none"){
+ $(".lhide").html("收起<img src='http://www.scholat.com/images/space/up.gif' />"); 
+  }else{
+ $(".lhide").html("更多<img src='http://www.scholat.com/images/space/down.gif' />"); 
+  }
+  $("#lhl").slideToggle("slow");
+  }
+  function changebgc(c){
+  $(".lhide").css("background-color",c);
+  }
+  function sTab(c,n){
+   for(var i=1;i<=n;i++){
+   $("#ptab"+i).css("display","none");
+   }
+   $("#ptab"+c).css("display","block");  
+  }
+ </script>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="heading" content="发布信息" />
+	<link href="http://www.scholat.com/styles/scholat/contentStyles.gzcss?_dc=652082e59b4"
+ rel="stylesheet" type="text/css" />
+	<script src="http://www.scholat.com/common/ueditor1_3_6/ueditor.config.gzjs?_dc=693020255af"
+ type="text/javascript"></script>
+	<script
+ src="http://www.scholat.com/common/ueditor1_3_6/ueditor.all.min.gzjs?_dc=f20335518c0"
+ type="text/javascript"></script>
+	<script
+ src="http://www.scholat.com/common/ueditor1_3_6/lang/zh-cn/zh-cn.gzjs?_dc=aaa6b2b0bb6"
+ type="text/javascript"></script>
+	<link href="http://www.scholat.com/styles/jquery-ui.gzcss?_dc=401d4ce7347" rel="stylesheet"
+ type="text/css" />
+	<script src="http://www.scholat.com/scripts/jquery-ui-1.10.4.min.gzjs?_dc=b7c2ad35745"
+ type="text/javascript"></script>
+	<script src="http://www.scholat.com/scripts/search/searchMyPostMessage.gzjs?_dc=9a2f0fef0ed"
+ type="text/javascript"></script>
+	<style>
+body {
+	font-family:'Georgia', Georgia, 'Times New Roman', Times, 'Microsoft YaHei', SimSun, SimHei, serif; 'Georgia', Georgia, 'Times New Roman', Times,
+ 'Microsoft YaHei', SimSun, SimHei, serif;
+	font-style: normal;
+}
+
+#tabs ul li {
+	margin-left: 15px;
+}
+
+.personInfo li {
+	margin-top: 10px;
+}
+
+.wwlbl {
+	width: 80px;
+	float: left;
+}
+
+#attachmentDiv b {
+	padding-top: -10px;
+}
+
+.topDiv {
+	float: left;
+	min-height: 25px;
+	background: rgb(236, 236, 236);
+	width: 960px;
+	_width: 950px;
+	padding-left: 0px;
+}
+
+.topTag {
+	display: block;
+	float: left;
+	color: #000;
+	font-size: 16px;
+	width: 110px;
+	height: 48.8px;
+	line-height: 48.8px;
+	text-align: center;
+	cursor: pointer;
+	font-family:'Georgia', Georgia, 'Times New Roman', Times, 'Microsoft YaHei', SimSun, SimHei, serif; 'Georgia', Georgia, 'Times New Roman', Times,
+ 'Microsoft YaHei', SimSun, SimHei, serif;
+}
+
+.topTag:hover {
+	background-color: rgba(105, 105, 105, 0.1);
+	color: #000;
+}
+
+.topClickBackground {
+	background-color: #2bc1c0 !important;
+}
+
+.sResultItem {
+	padding: 14px 10px 12px 10px;
+	border-bottom: 1px dashed #B1CFEB;
+}
+
+.sResultTitle {
+	text-decoration: none;
+	width: 600px;
+	overflow: hidden;
+	display: block;
+	white-space: nowrap;
+	word-break: keep-all;
+	text-overflow: ellipsis;
+}
+
+.sResultDate {
+	color: gray;
+	width: 78px;
+	padding-left: 5px;
+	display: inline-flex;
+}
+
+.sResultRemove {
+	padding-left: 5px;
+	width: 60px;
+}
+
+.sResultEdit {
+	padding-left: 5px;
+	width: 60px;
+}
+
+.sResultContent {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#searchResult div,#searchResult span,#searchResult a,#searchResult font
+      ,#searchResult a {
+	font-size: 14px;
+}
+
+#searchResultPagination a,#searchResultPagination span {
+	font-size: 14px;
+}
+
+.new_page {
+	display: inline-block;
+	margin: 1px;
+	text-decoration: none;
+	font-size: 12px;
+	width: 14px;
+	height: 14px;
+	text-align: center;
+	line-height: 15px;
+	color: #399;
+	padding: 1px 2px;
+}
+</style>
+	<script>
+ $(function() {  
+   $("#addMessage").addClass("topClickBackground");
+   $("#addMessage").css("color","white");
+   $("#tabs_4").hide();
+ });
+ function deleteFile(id) {
+  if (confirm("确认要删除？")){
+    window.location.href="removePostMessageAttachment.html?linkId=" + id + "&id=";  
+  }
+ }
+	</script>
+	</head>
+	<body
+ 
+ >
+ 
+ 
+
+ <head>
+	<link href="http://www.scholat.com/portal/styles/portalTop.gzcss?_dc=5a1c8ee51b2" rel="stylesheet" type="text/css" />
+	
+</head>
+<style>
+	@media screen and (-webkit-min-device-pixel-ratio:0) {
+ #portal_logo {
+	margin-top: 5px;
+ }
+ img{
+	    vertical-align: middle !important;
+ }
+	}
+	img{
+ vertical-align: middle !important;
+	}
+</style>
+<body style="background-image: url('http://www.scholat.com/template/homepage/bgimages/29.jpg'); background-attachment: fixed;">
+	<input type="hidden" id="backgroudImg" value="29.jpg" />
+	<input type="hidden" id="local_filepath" value="http://www.scholat.com/" />
+	<input type="hidden" id="remoteUser" value="lqlz" />
+	
+	<div id="divheader" onkeydown="BindEnter(event)">
+ <div id="divheaderinfo" style="padding: 0px 20px;">
+	<div id="divheaderinfo_left">
+ <a style="color:#fff;font-size:14px;" href="http://www.scholat.com/" target="_self">SCHOLAT 学者网</a>&emsp;
+	</div>
+	<div id="divheaderinfo_center">
+ <div class="nav">
+ 	<div class="select">
+  <span class="ui-display"> 
+ 	<span id="search_flag" onclick="SearchNav()"> 学者</span>
+ 	<img id="triangle_down" src="http://www.scholat.com/images/triangle.png" />
+  </span>
+  <div id="tool_List" style="display: hidden;" class="hidden-box">
+ 	<div id="mytest">
+  <div id="li-0" onclick="changeSearch(0)">
+  	<a>动态</a>
+  </div>
+  <div id="li-1" onclick="changeSearch(1)">
+  	<a>学术</a>
+  </div>
+  <div id="li-2" onclick="changeSearch(2)">
+  	<a>学者</a>
+  </div>
+  <div id="li-3" onclick="changeSearch(3)">
+  	<a>团队</a>
+  </div>
+  <div id="li-4" onclick="changeSearch(4)">
+  	<a>课程</a>
+  </div>
+ 	</div>
+  </div>
+ 	</div>
+ 	<div id="search_input_bg" class="ui-search_input_bg">
+  <input id="searchGroupInput" name="q" maxlength="100" type="text" />
+ 	</div>
+ 	<div onclick="SearchNav()"
+  style="background: none repeat scroll 0% 0% #fff; width: 30px; height: 25px; float: left; cursor: pointer;">
+  <a href="#no" style="margin-left: 8px;" onclick="SearchNav()">
+ 	<img id="portal_logo" src="http://www.scholat.com/images/searchbutton.png" />
+  </a>
+ 	</div>
+ 	<div style="clear: both;"></div>
+ </div>
+	</div>
+	
+	<div id="divheaderinfo_right">
+ 
+ 	
+  <div style="float:right;position:relative;">
+ 	<a href="http://www.scholat.com/Phomepage.html" style="float:left;text-align:center;width:90px;" class="divheaderinfo_link" title="Zone">我的空间</a>
+ 	<ul id="navList">
+  <li id="t1" style="width:80px;">
+  	<p class="p1" title="My profile">
+   个人中心&nbsp;<img src="http://www.scholat.com/images/arrow_white.png"/>
+  	</p>
+  </li>
+  <li id="t2" style="width:80px;">
+  	<p class="p1" title="Academic">
+   学术圈&nbsp;<img src="http://www.scholat.com/images/arrow_white.png"/>
+  	</p>
+  </li>
+  <li id="t3" style="width:60px;">
+  	<p class="p1" title="Tools" id="newsTips" style="position:relative;">
+   消息&nbsp;<img src="http://www.scholat.com/images/arrow_white.png"/>
+   <span>●</span>
+  	</p>
+  </li>
+  <div style="clear:both;"></div>
+ 	</ul>
+ 	<a href="http://www.scholat.com/lqlz" target="_blank" title='访问我的学者主页' class="divheaderinfo_link" style="margin-right:13px;">
+  lqlz
+ 	</a>
+ 	<a href="logout.html" title='退出登录状态'>
+  <img src="http://www.scholat.com/images/Exit.png" style="margin-top:-3px;"/>
+ 	</a>
+ 	<img src="http://www.scholat.com/images/help.png" onclick="window.open('http://www.scholat.com/helpPerson.html','_self')"
+ 	style="margin-top:-1px;cursor:pointer;margin-left: 8px;" title="Help"/>
+ 	<ul id="personList" style="display:none;">
+  <li>
+  	<a href="http://www.scholat.com/editUserProfile.html">个人信息</a>
+  </li>
+  <li>
+  	<a href="http://www.scholat.com/ScholarPapers.html?selectType=allPaper">学术档案</a>
+  </li>
+  <li>
+  	<a href="http://www.scholat.com/postMessage.html">动态管理</a>
+  </li>
+  <li>
+  	<a href="http://www.scholat.com/ScholarCalendar.html">日程管理</a>
+  </li>
+  <li>
+  	<a href="http://www.scholat.com/noDecComShowUnReadMessage.html">站内信息</a>
+  </li>
+ 	</ul>
+ 	<ul id="academicList" style="display:none;">
+  <li>
+  	<a href="http://www.scholat.com/friendsGroupManager.html">我的好友</a>
+  </li>
+  <li>
+  	<a href="http://www.scholat.com/teamworkShowAll.html">我的团队</a>
+  </li>
+  <li>
+  	<a href="http://www.scholat.com/myCourses.html">我的课程</a>
+  </li>
+ 	</ul>
+ 	<div id="newsList" style="display:none;">
+  <div id="header_newsbar">
+  	<ul>
+   <li>
+  	<div id="header_dynamicremind">动态<span>●</span></div>
+   </li>
+   <li>
+  	<div id="header_friendremind">好友<span>●</span></div>
+   </li>
+   <li>
+  	<div id="header_teamremind">团队<span>●</span></div>
+   </li>
+   <li>
+  	<div id="header_academicremind">学术<span>●</span></div>
+   </li>
+   <li>
+  	<div id="header_courseremind">课程<span>●</span></div>
+   </li>
+   <li>
+  	<div id="header_calendarshareremind">课表<span>●</span></div>
+   </li>
+   <li style="width:44px;">
+  	<div id="header_emailremind">站内信<span>●</span></div>
+   </li>
+   <div style="clear:both;"></div>
+  	</ul>
+  	<div class="header_newsLine"></div>
+  </div>
+  <div id="header_Message"></div>
+ 	</div>
+  </div>
+ 	
+ 	
+ 
+	</div>
+ </div>
+	</div>
+	
+	<script src="http://www.scholat.com/portal/scripts/portalTop.gzjs?_dc=ef16806c586" type="text/javascript"></script>
+	<script src="http://www.scholat.com/scripts/cookieUtil.gzjs?_dc=4d9c355cc55" type="text/javascript"></script>
+	<script>
+ var account = "lqlz";
+ 
+ if (account == null || account == "") {
+
+	var logincookie = CookieUtil.get("STOKEN");
+
+	if (logincookie != null && logincookie != "") {
+
+  if (checkdate(logincookie.split("/")[1])) {
+
+	          var currentUrl = window.location.href;
+
+	          CookieUtil.set("H_U", currentUrl, "/", "/", null, true);
+
+	          window.location.href = './login.html';
+	      } else {
+
+	          CookieUtil.unset("STOKEN", "/", null);
+	      }
+	}
+	
+ }
+
+ function checkdate(cookiedate) {
+
+	    var date = new Date(),
+	      timestamp, newDate;
+
+	    timestamp = date.getTime();
+
+	    newDate = new Date(timestamp - 7 * 24 * 3600 * 1000);
+
+	    var cookie_Date = new Date(cookiedate);
+
+	    if (cookie_Date.getTime() > newDate.getTime()) {
+
+	      return true;
+	    }
+
+	    return false;
+
+	  }
+	</script>
+</body>
+
+ <div style="margin: 0 auto;">
+	<div class="t" style="height: 0px; margin-top: 32px; border: 0px;">
+ 
+
+<html>
+	<head>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+ <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+ <link href="http://www.scholat.com/ext-2.0.2/resources/css/ext-all-style.gzcss?_dc=dac3d2e21bb" rel="stylesheet" type="text/css" />
+ <link href="http://www.scholat.com/ext-2.0.2/chat-all.gzcss?_dc=fab96c80dac" rel="stylesheet" type="text/css" />
+ <script src="http://www.scholat.com/dwr/engine.js" type="text/javascript"></script>
+ <script src="http://www.scholat.com/dwr/interface/ChatMng.js" type="text/javascript"></script>
+ <script src="http://www.scholat.com/scripts/jquery-ui-1.10.4.min.gzjs?_dc=b7c2ad35745" type="text/javascript"></script>
+ 
+ <script src="http://www.scholat.com/ext-2.0.2/adapter/jquery/ext-jquery-adapter.gzjs?_dc=2e881e9bc76" type="text/javascript"></script>
+ <script src="http://www.scholat.com/ext-2.0.2/adapter/ext/ext-base.gzjs?_dc=a2f5bf50671" type="text/javascript"></script>
+ <script src="http://www.scholat.com/ext-2.0.2/ext-all.gzjs?_dc=b3021a6934f" type="text/javascript"></script>
+ <script src="http://www.scholat.com/ext-2.0.2/build/locale/ext-CN.gzjs?_dc=2658d3b3224" type="text/javascript"></script>
+ <script src="http://www.scholat.com/chatjs/swfupload.gzjs?_dc=ec02675407e" type="text/javascript"></script>
+ <script src="http://www.scholat.com/chatjs/UploadDialog.gzjs?_dc=cc347cd1309" type="text/javascript"></script>
+ <script src="http://www.scholat.com/chatjs/sound.gzjs?_dc=a3983d96d36" type="text/javascript"></script>
+ <script src="http://www.scholat.com/chatjs/chat.gzjs?_dc=c355816c251" type="text/javascript"></script>
+ <script src="http://www.scholat.com/chatjs/mainwin.gzjs?_dc=9cca6a7ad5e" type="text/javascript"></script>
+ <script src="http://www.scholat.com/chatjs/send.gzjs?_dc=2efe1602e5e" type="text/javascript"></script>
+ <script src="http://www.scholat.com/chatjs/teamsend.gzjs?_dc=6994ea87aa0" type="text/javascript"></script>
+ <script src="http://www.scholat.com/course/layer/layer.gzjs?_dc=822459d74c8" type="text/javascript"></script>
+ <script src="http://www.scholat.com/course/layer/extend/layer.ext.gzjs?_dc=4c1f068ce21" type="text/javascript"></script>
+ 
+ <link href="http://www.scholat.com/course/styles/pekeUpload.gzcss?_dc=752e1006f46" rel="stylesheet" type="text/css" />
+ <script src="http://www.scholat.com/chatjs/pekeUpload.gzjs?_dc=22ab70f6847" type="text/javascript"></script>
+ <style>
+	.tcl .num {
+ color: #F15191;
+	}
+	.msgA {
+ color: black;
+ padding-top: 10px;
+	}
+	.msgA:ACTIVE,.msgA:HOVER,msgA:LINK,msgA:VISITED {
+ color: black;
+	}
+ </style>
+ 
+ 
+ <script type="text/javascript">
+	Ext.onReady(function () {
+ var iE6 = !-[1, ] && !window.XMLHttpRequest;
+ if (iE6) {
+ 	setTimeout("tipsbox.msg('\u6d4f\u89c8\u5668\u7248\u672c\u8fc7\u4f4e','\u4e0d\u652f\u6301\u5728\u7ebf\u4ea4\u6d41\u529f\u80fd\uff01','3');", 8000);
+ } else {
+ 	ACCOUNT_ID = "17449";
+ 	var strurl = window.location.href;
+ 	if (ACCOUNT_ID != null && ACCOUNT_ID != "" && strurl.indexOf("/team/") < 0 && strurl.indexOf("/teamIndex.html") < 0) {
+  CHINESE_NAME = "李祺";
+  SESSION_ID = "8A04491B97B115738E8027AF39D71DDE.tomcat1";
+  ICON_URL = "/images/default.png";
+  Ext.QuickTips.init();
+  soundinit();
+  if (ICON_URL == "" || ICON_URL == null || ICON_URL == "images/default.png") {
+ 	ICON_URL = "/chatjs/icons/online-avatar.jpg";
+  }
+  ICON_URL = WEB_ROOT + ICON_URL;
+  CHAT_LOGIN = true;
+  CHAT_LOAD_TIME = randTime();
+  setTimeout("submitClient()", 1000);
+  setTimeout("loadchat()", 2000);
+  DWREngine.setTimeout(25000);
+  dwr.engine.setErrorHandler(function (message) {
+ 	logincheck();
+  });
+ 	}
+ }
+	});
+	
+	window.document.onkeydown = function doconkeydown() {
+ if ((event.keyCode == 8)) {
+ 	if (window.event.srcElement.tagName.toUpperCase() != "INPUT" && window.event.srcElement.tagName.toUpperCase() != "TEXTAREA" && window.event.srcElement.tagName.toUpperCase() != "TEXT") {
+  event.keyCode = 0;
+  event.returnValue = false;
+ 	}
+ }
+	};
+	startList = function () {
+ if (document.all && document.getElementById) {
+ 	navRoot = document.getElementById("nav");
+ 	for (i = 0; i < navRoot.childNodes.length; i++) {
+  node = navRoot.childNodes[i];
+  if (node.nodeName == "LI") {
+ 	node.onmouseover = function () {
+  this.className += "over";
+ 	};
+ 	node.onmouseout = function () {
+  this.className = this.className.replace("over", "");
+ 	};
+  }
+ 	}
+ }
+	};
+	window.onload = startList;
+	navList = function () {
+ if (document.all && document.getElementById) {
+ 	navRoot = document.getElementById("navList");
+ 	for (i = 0; i < navRoot.childNodes.length; i++) {
+  node = navRoot.childNodes[i];
+  if (node.nodeName == "LI") {
+ 	node.onmouseover = function () {
+  this.className += "over";
+ 	};
+ 	node.onmouseout = function () {
+  this.className = this.className.replace("over", "");
+ 	};
+  }
+ 	}
+ }
+	};
+	window.onload = navList;
+ </script>
+	</head>
+	<body>
+	</body>
+</html>
+<appfuse:constants scope="request" />
+
+	</div>
+	<div class="c">
+ <div>
+ 	<script type="text/javascript">
+    var suffix=0; 
+    var ispost=false;
+    
+ function addMore(objectID, name, inputType, attachmentSecurity)
+ {
+	var Flag = false;
+	if($(".fontClass input[type='file']").length > 0){
+ 
+ $(".fontClass input[type='file']").each(function(){
+ 	
+ 	if($(this).val()==null || $(this).val().length==0){
+  Flag = true;
+  return false;
+ 	}
+ });
+	}
+	if(Flag){
+ return;
+	}
+  var div = document.createElement("div"); 
+  div.className='fontClass';
+  div.style.marginLeft="32px";
+	      var span = document.createElement("span");
+  span.innerHTML = "&nbsp;\u6743\u9650:";//权限
+  if("frompost"==attachmentSecurity)
+  {
+   ispost=true;
+   attachmentSecurity= "newAttachmentsSecurity";
+   span.style.display="none";
+  }
+	      var object = document.getElementById(objectID); 
+	      var br = document.createElement("br");
+  //var br2 = document.createElement("br");
+  
+  var input = document.createElement("input"); 
+  var button = document.createElement("img");
+  var security = document.createElement("input");	
+  var title = document.createElement("input");	   
+  var Sys = {};
+	      var ua = navigator.userAgent.toLowerCase();
+	      var IE = !!window.ActiveXObject || "ActiveXObject" in window;
+	      if (IE) {
+	     	Sys.ie = (ua.match(/.+(?:rv|it|ra|ie)[\/: ]([\d.]+)/) || [0, '0'])[1];
+	      } 
+  if(document.uniqueID){ //IE
+ 	if(typeof(Sys.ie) == "undefined")
+  Sys.ie = ua.match(/rv:([\d.]+)/)[1];
+    if(Sys.ie==9){ // for ie 9
+     var radio0 = document.createElement("input");
+ 	 var radio1 = document.createElement("input");
+ 	 var radio2 = document.createElement("input");
+ 	 radio0.setAttribute("name","_radio"+suffix);  
+ 	 radio1.setAttribute("name","_radio"+suffix);	
+ 	 radio2.setAttribute("name","_radio"+suffix);	
+    }else if (Sys.ie==10 || Sys.ie==11 ){ // for ie 10 , 11
+   	var radio0 = document.createElement("input");
+  var radio1 = document.createElement("input");
+  var radio2 = document.createElement("input");
+  radio0.name="_radio"+suffix;
+  radio1.name="_radio"+suffix;
+  radio2.name="_radio"+suffix;
+    }
+    else{
+    var radio0 = document.createElement("<input type='radio' name='"+"_radio"+suffix+"'>"); 
+    var radio1 = document.createElement("<input type='radio' name='"+"_radio"+suffix+"'>");
+    var radio2 = document.createElement("<input type='radio' name='"+"_radio"+suffix+"'>");
+    } 
+  }else{//not IE
+ 	var radio0 = document.createElement("input");
+ 	var radio1 = document.createElement("input");
+ 	var radio2 = document.createElement("input");
+ 	radio0.name="_radio"+suffix;
+ 	radio1.name="_radio"+suffix;
+ 	radio2.name="_radio"+suffix;
+  }	
+  
+	
+  
+  var label0= document.createTextNode("");
+  var label1= document.createTextNode("");
+  var label2= document.createTextNode("");
+  
+  
+  if(ispost)
+  {
+ 	radio0.style.display="none";radio1.style.display="none";radio2.style.display="none";
+  }else
+  {
+   label0= document.createTextNode("所有人");
+   label1= document.createTextNode("好友");
+   label2= document.createTextNode("自己");
+  
+  }
+  
+  input.type = inputType;
+  input.name = name;
+  title.type = "hidden";
+  
+  title.name = "attachmentTitle";
+  
+  input.style.height="22px";
+  input.style.width="330px";
+  //button.type = "button";
+  //button.value = "删除";
+  button.style.marginLeft = "60px";
+  //button.style.float="right";
+  button.style.cursor="pointer";
+  button.src="images/action_delete.gif";
+  security.type= "text";
+ 	  security.name= attachmentSecurity;
+ 	  security.style.display="none";
+  
+  radio0.type="radio";	
+  radio0.value="0";
+  radio0.style.marginLeft="20px";
+  
+  radio1.type="radio";	
+  radio1.value="1";
+  radio1.style.marginLeft="20px";
+  
+  radio2.type="radio";	
+  radio2.value="2";
+  radio2.style.marginLeft="20px";
+  suffix++;
+  
+  button.onclick = function()
+  {
+ 	object.removeChild(div);
+    div.removeChild(br);
+   //div.removeChild(br2);
+   div.removeChild(input);
+
+   div.removeChild(title);
+ 	
+   	 
+   
+   
+   
+   div.removeChild(span);
+   
+   div.removeChild(radio0);
+   div.removeChild(label0);
+ 	 
+   div.removeChild(radio1);
+   div.removeChild(label1);
+ 	 
+   div.removeChild(radio2);
+   div.removeChild(label2);
+ 	 
+   div.removeChild(security);
+   div.removeChild(button);
+   suffix--;
+  }	
+  
+  radio0.onclick =function()
+  {
+   security.value= "0";
+  }
+  
+  radio1.onclick =function()
+  {
+   security.value= "1";
+  }
+  
+  radio2.onclick =function()
+  {
+   security.value= "2";
+  }
+  object.appendChild(div);
+  div.appendChild(br);
+  //div.appendChild(br2);
+ 	
+  div.appendChild(title);
+  
+  div.appendChild(input);	
+  
+ 	
+ 	 
+  div.appendChild(span);
+  	
+  div.appendChild(radio0);
+  div.appendChild(label0);
+ 	
+  div.appendChild(radio1);	
+  div.appendChild(label1);
+ 	
+  div.appendChild(radio2);	
+  div.appendChild(label2);	
+ 	
+ 	object.appendChild(security);
+ 	radio0.checked="true";	
+  
+ 	security.value="0";         
+ 	div.appendChild(button);
+  var saveAttachment = document.getElementById("saveAttachment");
+  saveAttachment.style.display = "block"; 
+ 	
+ 
+	
+	
+//	$(".fontClass >input[type=file]").val();
+	
+	}  
+</script>
+
+	<div class="topDiv" style="margin-bottom: 10px;">
+ <a class="topTag" id="myMessage" style="margin-left: 0px;"
+	href="postMessage.html?tab=1" title="我的动态">我的动态</a>
+ <a class="topTag" id="reprintMessage" style="margin-left: 0px;"
+	href="postMessage.html?tab=2" title="转载的动态">转载的动态</a>
+ <a class="topTag" id="collectMessage" style="margin-left: 0px;"
+	href="postMessage.html?tab=3" title="收藏的动态">收藏的动态</a>
+ <a class="topTag" id="addMessage" style="margin-right: 0px;"
+	href="addPostMessage.html" title="添加动态">添加动态</a>
+ <div id="searchDiv"
+	style="float: right; margin-top: 10px; padding-right: 20px;">
+	<input type="text" id="q" name="q" value="请输入要搜索的内容"
+ onfocus="searchInputOnFocus()" onkeydown="enterIn(event)"
+ style="float: left; width: 200px; height: 25px; line-height: 25px; color: #ccc;" />
+	<a id="searchGroupBtn" style="float: left;"
+ onclick="searchMyPostMessage(1)" href="#no"> <img width="29"
+ 	height="29" src="/images/searchFriend.png" /> </a>
+ </div>
+	</div>
+	<div style="clear: both"></div>
+	<div
+ style="width: 900px; margin-left: 27px; border: 0px; margin-bottom: 20px;">
+ <div id="tabs-1" style="margin-top: 20px; padding-left: 20px">
+	<script type="text/javascript" src="/struts/css_xhtml/validation.js"></script>
+    
+<form id="postMessageEditForm" name="postMessageEditForm" onsubmit="return dealWithPush(); return validateForm_postMessageEditForm();" action="/savePostMessage.html" method="post" enctype="multipart/form-data">
+<ul>
+ <input type="hidden" value="" id="postMessageId"
+ 	name="postMessage.id" />
+ <input type="hidden" value=""
+ 	name="postMessage.userId" />
+ <input type="hidden" value="" name="teamworkIds" id="teamworkIds" />
+ <input type="hidden" value="" name="pushToMyTeams"
+ 	id="pushToMyTeams" />
+ <input type="hidden" value="" name="courseIds" id="courseIds" />
+ <input type="hidden" value="" name="pushToCourse" id="pushToCourse" />
+ <input type="hidden" value="" name="collectPMId" />
+ <div class="personInfo">
+ 	<div style="text-align: center; position: relative;">
+  <textarea id="postMessageTitle"
+ 	style="width: 745px; height: 30px; padding-top: 9px; padding-left: 15px; font-size: 18px; font-weight: 500; margin-bottom: 20px; overflow-x: hidden; overflow-y: auto; margin-right: 73px;"
+ 	name="postMessage.title" onblur="saveTitle()"></textarea>
+  <div style="position: absolute; top: 10px; left: 790px;">
+ 	<span
+  style="font-family:'Georgia', Georgia, 'Times New Roman', Times, 'Microsoft YaHei', SimSun, SimHei, serif; 'Georgia', Georgia, 'Times New Roman', Times, 'Microsoft YaHei', SimSun, SimHei, serif; font-size: 26px;"
+  id="wordCheck"></span>/50
+  </div>
+ 	</div>
+ 	<div style="padding-left: 21px">
+  <script id="container" name="postMessage.content"
+ 	type="text/plain" style="width: 820px; height: 500px;"></script>
+ 	</div>
+ 	<div style="margin-left: 16px;">
+  
+ 	<li id="wwgrp_postMessageEditForm_postMessage_security" class="wwgrp">  <div     id="wwlbl_postMessageEditForm_postMessage_security" class="wwlbl">
+<label for="postMessageEditForm_postMessage_security" class="desc">      阅读权限
+</label>    </div> 
+<div id="wwctrl_postMessageEditForm_postMessage_security" class="wwctrl">
+<input type="radio" name="postMessage.security" id="postMessageEditForm_postMessage_security0" checked="checked" value="0"/><label for="postMessageEditForm_postMessage_security0">所有人</label>
+<input type="radio" name="postMessage.security" id="postMessageEditForm_postMessage_security1" value="1"/><label for="postMessageEditForm_postMessage_security1">好友</label>
+<input type="radio" name="postMessage.security" id="postMessageEditForm_postMessage_security2" value="2"/><label for="postMessageEditForm_postMessage_security2">自己</label>
+</div> </li>
+
+  
+  
+  <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;置顶
+  
+ 	
+  <input type="checkbox" name="topTime" checked="checked" />
+ 	
+ 	
+  
+  &nbsp;&nbsp;
+  <font&nbsp;color=#369>[置顶的公开动态将在学者主页显示]</font>
+  <br>
+  <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;允许评论
+  
+ 	<input type="checkbox" name="discuss" checked="checked" />
+  
+  
+ 	</div>
+ </div>
+ 
+ <div id="attachmentDiv"
+ name="attachmentDiv"
+
+>
+ 	
+ 	<div id="mutilFileUpload" style="padding: 18px;">
+  <img src="http://www.scholat.com/images/attachment.gif"
+ 	style="padding-right: 5px; padding-left: 7px; width: 25px; height: 25px;" />
+  <a
+ 	href="javascript:addMore('mutilFileUpload','newAttachments', 'file','frompost')">
+ 	<b>新增附件 </b> </a>
+  <span class="wwgrp" style="color: #336699;">
+ 	只允许上传txt,doc,docx,pdf,zip,tar,rar,jpeg,bmp,gif等常用文件类型 </span>
+ 	</div>
+ </div>
+ 
+ 	<div style="padding-left: 20px;">
+  <input type="button" style="height: 25px; width: 110px;"
+ 	value="推送动态到团队" onclick="teamworkListByUsername()" />
+  <div id="teamList"></div>
+ 	</div>
+ 	<div style="padding-left: 20px; margin-top: 5px;">
+  <input type="button" style="height: 25px; width: 110px;"
+ 	value="推送动态到课程" onclick="showCourseList()" />
+  <div id="courseList"></div>
+ 	</div>
+ 
+ <br />
+ <div style="padding: 20px; color: red; font-size: 16px;">
+ 	注意：学者网是实名的学术社交平台，发言请遵守《文明上网自律公约》，如发布违规内容，我们将注销您的帐号。
+ </div>
+ 
+ <div style="margin: 10px; text-align: center;">
+ 	<input type="submit" id="submitBtn" value="保存" class="button" style="width:75px;height:25px;" onclick="delSpace()"/>
+
+ 	
+ 	<input type="button" style="height: 25px; width: 80px;" value="取消"
+  onclick="window.location.href='postMessage.html';delCookie('title');delDrafts();">
+ 	
+  <input type="button" style="height: 25px; width: 80px;" value="重置"
+ 	onclick="doReset()">
+ 	
+ </div>
+ 
+	</ul>
+</form>
+
+<script type="text/javascript">
+  function validateForm_postMessageEditForm() {
+    var getFieldValue = function(field) {
+      var type = field.type ? field.type : field[0].type;
+      if (type == 'select-one' || type == 'select-multiple') {
+        return (field.selectedIndex == -1 ? "" : field.options[field.selectedIndex].value);
+      } else if (type == 'checkbox' || type == 'radio') {
+        if (!field.length) {
+          field = [field];
+        }
+        for (var i = 0; i < field.length; i++) {
+          if (field[i].checked) {
+            return field[i].value;
+          }
+        }
+        return "";
+      }
+      return field.value;
+    }
+    form = document.getElementById("postMessageEditForm");
+    clearErrorMessages(form);
+    clearErrorLabels(form);
+    var errors = false;
+    var continueValidation = true;
+    return !errors;
+  }
+</script>
+
+ </div>
+ <script type="text/javascript">
+ 
+ var editor = UE.getEditor('container',{
+  toolbars:[
+       [ 'undo', 'redo', '|',
+        'bold', 'italic', 'underline','|', 'insertorderedlist', 'insertunorderedlist', 'lineheight', '|',
+         'justifyleft', 'justifycenter', 'justifyright', 'justifyjustify', '|',
+         'insertimage', 'link', '|',
+         'inserttable', 'deletetable'
+       ]
+     ]
+ });
+ setTimeout(function(){
+	 var postId = $("#postMessageId").val();
+	 if (postId==''){	//新增动态
+  if (editor.execCommand('getlocaldata')){
+	 editor.execCommand('drafts'); //读取草稿箱内容
+  }
+  var title = getCookie("title");	//读取标题
+  if (title!=''&&title!="在这里输入您的动态标题"){
+	 $("#postMessageTitle").html(title);	
+	 $("#postMessageTitle").css({color:"#000"});
+	 var mylen = getStrLength(title);
+	 $("#wordCheck").html(Math.floor((maxlen*2 - mylen)/2));
+  }
+	 }
+ }, 500);
+ function saveTitle(){
+	 var postId = $("#postMessageId").val();
+	 if (postId==''){	//只有新增动态的情况下才保存标题
+  var title = document.getElementById("postMessageTitle").value;
+  setCookie("title", title, 1);
+	 }
+ }
+ var maxlen= 50;  
+ function getStrLength(str){
+  var mylen = 0;
+  var i = 0;
+  for(;(i < str.length); ++i){
+  if(str.charCodeAt(i) != 32){
+   if(str.charCodeAt(i) > 0 && str.charCodeAt(i) < 128){
+   ++mylen; 
+   }else{
+   mylen += 2; 
+   }
+  }
+  }
+  return mylen;
+ }
+ $(function(){
+  isOutOfLimit = false;
+  var tipMsg = $("#postMessageTitle").val();
+  if(tipMsg.length<1){
+  $("#postMessageTitle").html("在这里输入您的动态标题");
+  $("#postMessageTitle").css({color:"#ccc"});
+  }
+  $("#postMessageTitle").click(function(){ 
+  var tipMsg2 = $("#postMessageTitle").val();
+  　　　if(tipMsg2=='在这里输入您的动态标题'){
+   $("#postMessageTitle").css({color:"#000"});
+   $("#wordCheck").html("50");
+  }
+  }); 
+  $("#postMessageTitle").focus(function(){
+  var tipMsg4 = $("#postMessageTitle").val();
+  $("#postMessageTitle").css({color:"#000"});
+  　if(tipMsg4=='在这里输入您的动态标题')
+   {
+   $("#postMessageTitle").html("");
+   }
+  }); 
+  $("#postMessageTitle").blur(function(){  
+  var tipMsg2 = $("#postMessageTitle").val();
+  　　　　if(tipMsg2.length==0){
+    $("#postMessageTitle").html("在这里输入您的动态标题");
+    $("#postMessageTitle").css({color:"#ccc"});    
+   $("#wordCheck").html("50");
+  }
+  }); 
+  var titleString = $("#postMessageTitle").val();
+  var mylen = getStrLength(titleString);
+  if(titleString == "在这里输入您的动态标题"){
+  $("#wordCheck").html("50");
+  }else{
+  $("#wordCheck").html(Math.floor((maxlen*2 - mylen)/2));
+  }
+  $("#postMessageTitle").keyup(function(){
+  var tipMsg3 = $("#postMessageTitle").val();
+  var mylen = getStrLength(tipMsg3);
+  $("#wordCheck").html(Math.floor((maxlen*2 - mylen)/2));
+  if($("#wordCheck").html() < 0){
+   $("#postMessageTitle").css("border","1px solid rgb(250,125,60)");
+  }else{
+   $("#postMessageTitle").css("border","1px solid gray");
+  }
+  });
+  
+  $.ajax({
+  url: "checkLimitCondition.html",
+  type: "post",
+  success: function(data){
+   if(data == "OutOfLimit"){
+   isOutOfLimit = true;
+   }
+  },
+  error: function(){
+  // console.log("error");
+  }
+  })
+ }); 
+ var clickCount = 0;
+  function teamworkListByUsername(){
+  if(clickCount==1){
+   clickCount=0;
+   $("#teamList").hide();
+   return;
+  }else{
+   clickCount = 1;
+   if($("#teamList").html!=""){
+   $("#teamList").show();
+   }
+  }
+  $.ajax({
+   contentType:"application/json;charset=utf-8",
+   type:"post",
+   url:"showteamworkListByUsername.html",
+   timeout:100000,
+   dataType:"json",
+   cache:false,
+   success:function(data){
+   var html = "<ul style='margin: 5px 0 0 5px;'>";
+   for(var i=0;i<data.length;i++){
+    html = html + "<li style='line-height: normal;margin: 0;'><div style='float:left;padding-top:5px;'>"+
+      "<input type='checkbox' value='"+data[i].id+"' name='checkbox'/></div><div style='float:left;padding-left: 5px;margin-top:5px;position: relative;'>"+data[i].name+
+      "</div><div style='float:left;margin-left:15px;padding-top:5px;'><input type='radio' name='security"+data[i].id+"' value='0' checked='checked'/>公开可见<input type='radio' value='1' name='security"+data[i].id+"'/>成员可见</div><div style='clear:left;'></div></li>"
+   }
+   html = html + "</ul>";
+   $("#teamList").html(html);
+     },
+   error:function(){
+     $("#teamList").html("&nbsp;&nbsp;加载失败，请稍后再试！");
+   }
+  });
+  }
+  var clickCount2 = 0;
+  function showCourseList(){
+  if(clickCount2==1){
+   clickCount2=0;
+   $("#courseList").hide();
+   return;
+  }else{
+   clickCount2 = 1;
+   if($("#courseList").html!=""){
+   $("#courseList").show();
+   }
+  }
+  $.ajax({
+   contentType:"application/json;charset=utf-8",
+   type:"post",
+   url:"showCourseList.html",
+   timeout:100000,
+   dataType:"json",
+   cache:false,
+   success:function(data){
+   var html = "<ul style='margin: 5px 0 0 5px;'>";
+   for(var i=0;i<data.length;i++){
+    html = html + "<li style='line-height: normal;margin: 0;'><div style='float:left;padding-top:5px;'>"+
+      "<input type='checkbox' value='"+data[i].id+"' name='checkbox2'/></div><div style='float:left;padding-left: 5px;margin-top:5px;position: relative;'>"+data[i].title+
+      "</div><div style='clear:left;'></div></li>"
+   }
+   html = html + "</ul>";
+   $("#courseList").html(html);
+     },
+   error:function(){
+     $("#courseList").html("&nbsp;&nbsp;加载失败，请稍后再试！");
+   }
+  });
+  }
+  function dealWithPush(){
+  var tipMsg = $.trim($("#postMessageTitle").val());
+  if(tipMsg.length>500){
+   goTop();
+   blinkit();
+   return false;
+  }
+  if(tipMsg.length<1||'在这里输入您的动态标题'==tipMsg){
+   goTop();
+   blinkit();
+   return false;
+  }
+  if($("#wordCheck").html() < 0){
+   
+   $("#postMessageTitle").css("border","1px solid rgb(250,125,60)");
+   goTop();
+   blinkit();
+   return false;
+  }
+  var checkbox = $("input[name=checkbox]:checked");
+  if(checkbox.length>0){
+   $("#pushToMyTeams").val("pushToMyTeams");
+   var teamworkIds='';
+   for(var i=0;i<checkbox.length;i++){
+   var security = $("input[name='security"+checkbox[i].value+"']:checked").val();
+   teamworkIds = checkbox[i].value+";"+security+ "," + teamworkIds;
+   }
+   $("#teamworkIds").val(teamworkIds);
+  }
+  var checkbox2 = $("input[name=checkbox2]:checked");
+  if(checkbox2.length>0){
+   $("#pushToCourse").val("pushToCourse");
+   var courseIds=new Array();
+   for(var i=0;i<checkbox2.length;i++){
+   courseIds[i] = checkbox2[i].value;
+   }
+   $("#courseIds").val(courseIds);
+  }
+  if(isOutOfLimit){
+   alert("您今天编辑的动态数量已经超出限制");
+   return false;
+  }
+  }
+  function deletePostMessage(id){
+  var ret = window.confirm('您确定删除？');
+  if(ret){
+   location="removePostMessage.html?id="+id;
+  }
+  delCookie('title');
+  delDrafts();	//删除后清空编辑器草稿箱
+  }
+  function blinkit()
+  {
+  intrvl=0;
+  for(nTimes=0;nTimes<2;nTimes++)
+  {
+   intrvl += 200;
+   setTimeout("refresh1()",intrvl);
+   intrvl += 200;
+   setTimeout("refresh2()",intrvl);
+   }
+  }
+  function refresh1()
+  {
+  document.getElementById("postMessageTitle").style.opacity=0.8;
+  document.getElementById("postMessageTitle").style.backgroundColor="#ea5858";
+  }
+  function refresh2()
+  {
+  document.getElementById("postMessageTitle").style.opacity=1;
+  document.getElementById("postMessageTitle").style.backgroundColor="white";
+  }
+  var befst=0;
+  function goTop(acceleration, time) {
+   var docEle=document.documentElement;
+   var aftst= docEle.scrollTop==0?document.body.scrollTop:docEle.scrollTop;
+   if(befst<aftst && befst!=0)
+   { 
+   befst=0;
+   aftst=0;
+   return;
+   }
+   acceleration = acceleration || 0.1;
+   time = time || 8;
+   var x1 = 0;
+   var y1 = 0;
+   var x2 = 0;
+   var y2 = 0;
+   var x3 = 0;
+   var y3 = 0;
+   if (docEle) {
+   x1 = docEle.scrollLeft || 0;
+   y1 = docEle.scrollTop || 0;
+   }
+   if (document.body) {
+   x2 = document.body.scrollLeft || 0;
+   y2 = document.body.scrollTop || 0;
+   }
+   var x3 = window.scrollX || 0;
+   var y3 = window.scrollY || 0;
+   var x = Math.max(x1, Math.max(x2, x3));
+   var y = Math.max(y1, Math.max(y2, y3));
+   var speed = 1 + acceleration;
+   window.scrollTo(Math.floor(x / speed), Math.floor(y / speed));
+   if(x > 0 || y > 0) {
+   var invokeFunction = "goTop(" + acceleration + ", " + time + ")";
+   befst = docEle.scrollTop==0?document.body.scrollTop:docEle.scrollTop;
+   window.setTimeout(invokeFunction, time);
+   }
+  }
+  
+   function delSpace(){
+    document.getElementById("submitBtn").style.visibility="hidden";
+  	setInterval("showBtn()",3000);
+  	document.getElementById("postMessageTitle").value = document.getElementById("postMessageTitle").value.replace(/^\s+|\s+$/g, '');
+  	delCookie('title'); 
+  	delDrafts(); //点击保存按钮后同时清除编辑器草稿箱内容
+   }
+   function showBtn()
+   {
+  	document.getElementById("submitBtn").style.visibility="visible";
+   }
+   function delDrafts(){	//清空编辑器草稿箱内容
+  	localStorage.clear();
+   }
+   //设置cookie
+   function setCookie(c_name, c_value, expire){
+     var exdate = new Date();
+     exdate.setDate(exdate.getDate()+expire);
+     document.cookie=c_name+"="+escape(c_value)+((expire==null)?"":";expires="+exdate.toGMTString());
+   }
+   //获取cookie
+   function getCookie(c_name){
+     if (document.cookie.length>0){
+       c_start = document.cookie.indexOf(c_name+"=");
+       if (c_start!=-1){
+      	c_start = c_start + c_name.length + 1;
+      	c_end = document.cookie.indexOf(";", c_start);
+      	if (c_end==-1)
+        	c_end = document.cookie.length;
+      	return unescape(document.cookie.substring(c_start, c_end)); 
+       }
+     }
+     return "";
+   }
+   function delCookie(name)
+   {
+  	var exp = new Date();
+  	exp.setTime(exp.getTime()-1);
+  	var c_value=getCookie(name);
+  	if(c_value!=null)
+   document.cookie=name+"="+c_value+";expires="+exp.toGMTString();
+   }
+   function doReset(){	//重置
+    $("#postMessageTitle").html("");
+    editor.setContent("");
+ $("#wordCheck").html(50); 
+    delCookie("title");
+    delDrafts();
+   }
+	</script>
+ <div id="tabs-2"></div>
+ <div id="tabs-3"></div>
+ <div id="tabs_4" style="min-height: 700px;">
+	<div id="searchTip">
+ <div id="numberAndTime"
+ 	style="font-size: 12px; height: 28px; width: 96%; line-height: 29px; padding-left: 20px; padding-right: 20px; margin-bottom: 18px;">
+ </div>
+	</div>
+	<div id="searchResult" style="padding-top: 30px; margin-top: -50px;"></div>
+	<div id="searchResultPagination" class="pagebox"
+ style="margin: 20px 0px;"></div>
+ </div>
+	</div>
+ </div>
+	</div>
+ </div>
+ 
+ <div class="b" style="clear: both;"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<script>
+window.onscroll=function()
+{
+ var docEle=document.documentElement;
+ var st = docEle.scrollTop==0?document.body.scrollTop:docEle.scrollTop;
+ var toTop = $("#toTop");
+ if(st<520)
+ {
+  toTop.css("visibility", "hidden");
+ }
+ else
+ {
+  toTop.css("visibility", "visible");
+ }
+}
+	</script>
+<div
+	style="z-index: 9999; position: fixed; bottom: 48px; z-index: 0; right: 0; cursor: pointer; margin-right: 18px;"
+	onclick="location.href='#';">
+	<span id="toTop" style="visibility: hidden;"> <a
+ style="color: #FFFFFF; text-decoration: none; font-size: 12px;"><img
+ src="/images/backTopBottom.png" width="40px"
+ style="opacity: 1;"> </a> </span>
+</div>
+<div style="visible:hidden;">
+	&nbsp;.
+</div>
+<div
+	style="line-height: 25px; font-family:'Georgia', Georgia, 'Times New Roman', Times, 'Microsoft YaHei', SimSun, SimHei, serif; 'Georgia', Georgia, 'Times New Roman', Times, 'Microsoft YaHei', SimSun, SimHei, serif; text-align: center;">
+	<div style="color: #399;">
+ &copy;
+ 2018
+ SCHOLAT 学者网
+	</div>
+	<div>
+ <a style="color: #399;" href="portaldisclaim.html" target="_blank">免责声明</a>
+ |
+ <a style="color: #399;" href="portalaboutus.html" target="_blank">关于学者网</a>
+ |
+ <a style="color: #399;" href="portalcontactus.html" target="_blank">联系我们</a>
+	</div>
+</div>
+</div>
+	</body>
+</html>

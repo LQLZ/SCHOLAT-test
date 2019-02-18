@@ -1,0 +1,13 @@
+[t67]
+FileName1=t67.htm
+URL1=http://www.scholat.com//ScholarUserType.html
+Total=2
+RequestHeaderFile=t67_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t67_ResponseHeader.txt
+ContentType=text/html
+SnapshotXmlFile=snapshot_67.xml
+FileName2=t67_bgshadow.gif
+URL2=http://202.116.32.240/scholat/images/avatar/bgshadow.gif
+[ProtocolInfo]
+ProtocolId=QTWeb

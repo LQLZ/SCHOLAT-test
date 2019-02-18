@@ -1,0 +1,17 @@
+[t14]
+FileName1=t14.htm
+URL1=http://www.scholat.com/getLatestVisitors.html
+Total=4
+RequestHeaderFile=t14_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t14_ResponseHeader.txt
+ContentType=text/html
+SnapshotXmlFile=snapshot_14.xml
+FileName2=t14_default.png
+URL2=http://www.scholat.com/images/default.png
+FileName3=t14_huangzhihao_1444124176867.jpg
+URL3=http://www.scholat.com/resources/s_icon/huangzhihao_1444124176867.jpg
+FileName4=t14_mozhaoxian_1444843385058.jpg
+URL4=http://www.scholat.com/resources/s_icon/mozhaoxian_1444843385058.jpg
+[ProtocolInfo]
+ProtocolId=QTWeb

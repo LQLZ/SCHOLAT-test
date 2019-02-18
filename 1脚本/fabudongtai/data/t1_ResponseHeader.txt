@@ -1,0 +1,13 @@
+HTTP/1.1 200 OK
+Date: Mon, 11 Jun 2018 02:00:05 GMT
+Server: Apache
+Set-Cookie: JSESSIONID=8A04491B97B115738E8027AF39D71DDE.tomcat1; Path=/; HttpOnly
+Access-Control-Allow-Origin: *
+Vary: Accept-Encoding
+Content-Encoding: gzip
+X-Frame-Options: SAMEORIGIN
+Content-Length: 8013
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html;charset=UTF-8
+

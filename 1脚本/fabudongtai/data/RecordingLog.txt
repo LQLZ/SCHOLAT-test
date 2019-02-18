@@ -1,0 +1,1222 @@
+[API Trapper      (18f0:18f4)] Recording in 64-bit mode: C:\Program Files\Internet Explorer\iexplore.exe
+[Network Analyzer (18f0:194c)] ------------------------------------------------------------------------------------------
+[Network Analyzer (18f0:194c)] Load Network Traffic Analyzers:
+[Network Analyzer (18f0:194c)]     Analyzer Module: WPLUS (value=)
+[Network Analyzer (18f0:194c)]     Analyzer Module: WebBase (value=GetHttpProtocolAnalyzer:api_http_filter_x64.dll)
+[Network Analyzer (18f0:194c)]     + Network Analyzer: api_http_filter_x64.dll @ GetHttpProtocolAnalyzer Loaded!
+[Network Analyzer (18f0:194c)]     + Interception Auditors: WinInetWplusInterceptionAudit:api_http_filter_x64.dll
+[Network Analyzer (18f0:194c)]     Analyzer Module: QTWeb (value=GetWebSocketProtocolAnalyzer:WebSocketAnalyzer_x64.dll)
+[Network Analyzer (18f0:194c)]     + Network Analyzer: WebSocketAnalyzer_x64.dll @ GetWebSocketProtocolAnalyzer Loaded!
+[Network Analyzer (18f0:194c)]     Analyzer Module: local_server (value=)
+[Network Analyzer (18f0:194c)] ------------------------------------------------------------------------------------------
+[Network Analyzer (18f0:1950)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1954)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1944)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1944)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid=  1)  PROXIED!
+[Web Request      (18f0:1950)] "GET /"   
+[Network Analyzer (18f0:1950)]   (Sid:  1) Client -> Server @ : 384 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:  1) Server -> Client : 2896 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:  1) Server -> Client : 5497 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /scripts/netcheck.gzjs?_dc=074920bd12f"   
+[Network Analyzer (18f0:1950)]   (Sid:  1) Client -> Server @ : 508 bytes (Service=HTTP)
+[Network Analyzer (18f0:1944)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1920)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1900)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1980)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:193c)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1984)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:193c)] Request Connection: Remote Server @ 202.116.32.240:80   (Service=)  (Sid=  2)  PROXIED!
+[Web Request      (18f0:1950)] "GET /scholat/portal/styles/portalTop.gzcss?_dc=5a1c8ee51b2"   
+[Network Analyzer (18f0:1950)]   (Sid:  2) Client -> Server @ : 445 bytes (Service=HTTP)
+[Network Analyzer (18f0:1984)] Request Connection: Remote Server @ 202.116.32.240:80   (Service=)  (Sid=  3)  PROXIED!
+[Web Request      (18f0:1950)] "GET /scholat/portal/scripts/portalTop.gzjs?_dc=ef16806c586"   
+[Network Analyzer (18f0:1950)]   (Sid:  3) Client -> Server @ : 445 bytes (Service=HTTP)
+[Network Analyzer (18f0:1980)] Request Connection: Remote Server @ 202.116.32.240:80   (Service=)  (Sid=  4)  PROXIED!
+[Web Request      (18f0:1950)] "GET /scholat/scripts/cookieUtil.gzjs?_dc=4d9c355cc55"   
+[Network Analyzer (18f0:1950)]   (Sid:  4) Client -> Server @ : 439 bytes (Service=HTTP)
+[Network Analyzer (18f0:1944)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid=  5)  PROXIED!
+[Network Analyzer (18f0:1950)]   (Sid:  2) Server -> Client : 2227 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:  1) Server -> Client : 1042 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:  3) Server -> Client : 5375 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:  4) Server -> Client : 787 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /portal_new/css/portal_new.gzcss?_dc=13e42d3190d"   
+[Network Analyzer (18f0:1950)]   (Sid:  5) Client -> Server @ : 518 bytes (Service=HTTP)
+[Network Analyzer (18f0:1900)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid=  6)  PROXIED!
+[Web Request      (18f0:1950)] "GET /portal_new/css/slider.gzcss?_dc=fdd94300ea4"   
+[Network Analyzer (18f0:1950)]   (Sid:  6) Client -> Server @ : 514 bytes (Service=HTTP)
+[Network Analyzer (18f0:1920)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid=  7)  PROXIED!
+[Web Request      (18f0:1950)] "GET /scripts/jquery-1.7.1.min.gzjs?_dc=870d815340c"   
+[Network Analyzer (18f0:1950)]   (Sid:  7) Client -> Server @ : 516 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:  5) Server -> Client : 1641 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:  7) Server -> Client : 1448 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:  6) Server -> Client : 682 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:  7) Server -> Client : 7240 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:  7) Server -> Client : 4344 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:  7) Server -> Client : 3671 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:  7) Server -> Client : 2896 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:  7) Server -> Client : 4344 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:  7) Server -> Client : 9581 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1988)] Address lookup for PC127 = 10.191.65.127
+[Web Request      (18f0:1950)] "GET /scholat/images/triangle.png"   
+[Network Analyzer (18f0:1950)]   (Sid:  4) Client -> Server @ : 480 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /images/help.png"   
+[Network Analyzer (18f0:1944)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:193c)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1950)]   (Sid:  1) Client -> Server @ : 486 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /scholat/images/searchbutton.png"   
+[Network Analyzer (18f0:1950)]   (Sid:  2) Client -> Server @ : 484 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /scholat/images/arrow_white.png"   
+[Network Analyzer (18f0:1950)]   (Sid:  3) Client -> Server @ : 483 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:  4) Server -> Client : 576 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:  2) Server -> Client : 895 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1944)] Request Connection: Remote Server @ 202.116.32.240:80   (Service=)  (Sid=  8)  PROXIED!
+[Network Analyzer (18f0:1950)]   (Sid:  3) Server -> Client : 614 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /scholat/images/Exit.png"   
+[Network Analyzer (18f0:1950)]   (Sid:  8) Client -> Server @ : 476 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /scholat/teamwork/img/teamDefault.gif"   
+[Network Analyzer (18f0:1950)]   (Sid:  2) Client -> Server @ : 489 bytes (Service=HTTP)
+[Network Analyzer (18f0:193c)] Request Connection: Remote Server @ 202.116.32.240:80   (Service=)  (Sid=  9)  PROXIED!
+[Network Analyzer (18f0:1980)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1990)] Address lookup for PC127 = 10.191.65.127
+[Web Request      (18f0:1950)] "GET /scholat/course/img/book_1.jpg"   
+[Network Analyzer (18f0:1944)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:198c)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1920)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1900)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1950)]   (Sid:  3) Client -> Server @ : 482 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /scholat/portal_new/images/newHomeImg.jpg"   
+[Network Analyzer (18f0:1950)]   (Sid:  4) Client -> Server @ : 493 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /resources/s_icon/ytang_1493689120672.jpg"   
+[Network Analyzer (18f0:1950)]   (Sid:  5) Client -> Server @ : 511 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /resources/s_icon/maochj2_1522050037379.jpg"   
+[Network Analyzer (18f0:1950)]   (Sid:  6) Client -> Server @ : 513 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /resources/s_icon/zcz1183_1488348494758.jpg"   
+[Network Analyzer (18f0:1950)]   (Sid:  7) Client -> Server @ : 513 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:  8) Server -> Client : 894 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /scholat/images/help.png"   
+[Network Analyzer (18f0:1950)]   (Sid:  9) Client -> Server @ : 476 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:  1) Server -> Client : 1137 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:  2) Server -> Client : 9199 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:  3) Server -> Client : 5874 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:  4) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1988)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid= 10)  PROXIED!
+[Network Analyzer (18f0:1950)]   (Sid:  9) Server -> Client : 1166 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:  4) Server -> Client : 16384 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /portal_new/js/slider.gzjs?_dc=17c4636ea96"   
+[Network Analyzer (18f0:1950)]   (Sid:  1) Client -> Server @ : 512 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:  4) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:  7) Server -> Client : 5429 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:  4) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:  5) Server -> Client : 1448 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:  6) Server -> Client : 2896 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1944)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 11)  PROXIED!
+[Network Analyzer (18f0:1950)]   (Sid:  5) Server -> Client : 2896 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:  6) Server -> Client : 2361 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:  4) Server -> Client : 4596 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /resources/s_icon/dingdly_1483777216191.jpg"   
+[Network Analyzer (18f0:1950)]   (Sid: 11) Client -> Server @ : 513 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:  5) Server -> Client : 2002 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1900)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 12)  PROXIED!
+[Web Request      (18f0:1950)] "GET /resources/s_icon/chenming_1495723041654.jpg"   
+[Network Analyzer (18f0:1950)]   (Sid: 12) Client -> Server @ : 514 bytes (Service=HTTP)
+[Network Analyzer (18f0:1920)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 13)  PROXIED!
+[Network Analyzer (18f0:1950)]   (Sid:  1) Server -> Client : 1728 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /resources/s_icon/lixingwang_1503751811011.jpg"   
+[Network Analyzer (18f0:1950)]   (Sid: 13) Client -> Server @ : 516 bytes (Service=HTTP)
+[Network Analyzer (18f0:198c)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 14)  PROXIED!
+[Network Analyzer (18f0:1990)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 15)  PROXIED!
+[Web Request      (18f0:1950)] "GET /resources/s_icon/yangzx_1523510603992.jpg"   
+[Network Analyzer (18f0:1950)]   (Sid: 14) Client -> Server @ : 512 bytes (Service=HTTP)
+[Network Analyzer (18f0:1980)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 16)  PROXIED!
+[Network Analyzer (18f0:1950)]   (Sid: 11) Server -> Client : 2896 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /resources/s_icon/namelh_1496890604653.jpg"   
+[Network Analyzer (18f0:1950)]   (Sid: 15) Client -> Server @ : 512 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET //images/default.png"   
+[Network Analyzer (18f0:1950)]   (Sid: 16) Client -> Server @ : 490 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 11) Server -> Client : 1555 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 12) Server -> Client : 2896 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 13) Server -> Client : 1448 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 12) Server -> Client : 792 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 13) Server -> Client : 1448 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 13) Server -> Client : 1942 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 15) Server -> Client : 2896 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 14) Server -> Client : 4612 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 15) Server -> Client : 2932 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 16) Server -> Client : 15045 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /portal_new/images/course.png"   
+[Network Analyzer (18f0:1950)]   (Sid:  7) Client -> Server @ : 499 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /portal_new/images/Invite.png"   
+[Network Analyzer (18f0:1950)]   (Sid:  6) Client -> Server @ : 499 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /portal_new/images/team.png"   
+[Network Analyzer (18f0:1950)]   (Sid:  5) Client -> Server @ : 497 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:  7) Server -> Client : 8688 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:  7) Server -> Client : 12992 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:  6) Server -> Client : 1448 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:  6) Server -> Client : 7240 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:  6) Server -> Client : 4344 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:  6) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:  6) Server -> Client : 1903 bytes  (Service=HTTP)
+[Network Analyzer (18f0:19ac)]   (Sid: 10) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0:1950)]   (Sid:  5) Server -> Client : 4344 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:  5) Server -> Client : 5792 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:  5) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:  5) Server -> Client : 6642 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /favicon.ico"   
+[Network Analyzer (18f0:1950)]   (Sid:  1) Client -> Server @ : 424 bytes (Service=HTTP)
+[Network Analyzer (18f0:19ac)]   (Sid: 10) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:1980)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1950)]   (Sid:  1) Server -> Client : 1857 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1980)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid= 17)  PROXIED!
+[Network Analyzer (18f0:198c)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:198c)] Request Connection: Remote Server @ 104.18.25.243:80   (Service=)  (Sid= 18)  PROXIED!
+[Network Analyzer (18f0:19ec)]   (Sid: 17) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0:19ec)]   (Sid: 17) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:1950)]   (Sid:  8) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid:  3) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid:  2) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid:  9) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid:  4) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid: 11) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid: 13) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid: 12) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid: 16) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid: 14) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid: 15) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid:  7) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid:  6) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid:  5) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid:  1) Connection Terminated (by Server)
+[Network Analyzer (18f0:1990)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1990)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 19)  PROXIED!
+[Web Request      (18f0:1950)] "GET /login.html?source=pc"   
+[Network Analyzer (18f0:1950)]   (Sid: 19) Client -> Server @ : 602 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 19) Server -> Client : 2896 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 19) Server -> Client : 601 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /scripts/login.gzjs?_dc=8793a3eea48"   
+[Network Analyzer (18f0:1950)]   (Sid: 19) Client -> Server @ : 525 bytes (Service=HTTP)
+[Network Analyzer (18f0:1990)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1990)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 20)  PROXIED!
+[Network Analyzer (18f0:198c)] Address lookup for PC127 = 10.191.65.127
+[Web Request      (18f0:1950)] "GET /styles/scholat/login.gzcss?_dc=74104bcc4c0"   
+[Network Analyzer (18f0:1950)]   (Sid: 20) Client -> Server @ : 533 bytes (Service=HTTP)
+[Network Analyzer (18f0:198c)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid= 21)  PROXIED!
+[Network Analyzer (18f0:1950)]   (Sid: 19) Server -> Client : 3612 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /images/homepage/portal/logo_beta.png"   
+[Network Analyzer (18f0:1950)]   (Sid: 19) Client -> Server @ : 527 bytes (Service=HTTP)
+[Network Analyzer (18f0:1990)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1920)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1900)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1900)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 22)  PROXIED!
+[Web Request      (18f0:1950)] "GET /images/password.png"   
+[Network Analyzer (18f0:1950)]   (Sid: 22) Client -> Server @ : 510 bytes (Service=HTTP)
+[Network Analyzer (18f0:1990)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 23)  PROXIED!
+[Web Request      (18f0:1950)] "GET /images/account.png"   
+[Network Analyzer (18f0:1950)]   (Sid: 23) Client -> Server @ : 509 bytes (Service=HTTP)
+[Network Analyzer (18f0:1920)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 24)  PROXIED!
+[Network Analyzer (18f0:1950)]   (Sid: 20) Server -> Client : 1109 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /images/login_corner.png"   
+[Network Analyzer (18f0:1950)]   (Sid: 24) Client -> Server @ : 514 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 22) Server -> Client : 2896 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 23) Server -> Client : 2896 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 22) Server -> Client : 870 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 23) Server -> Client : 679 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 24) Server -> Client : 840 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 19) Server -> Client : 5792 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 19) Server -> Client : 2880 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1990)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1a30)]   (Sid: 21) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0:1a30)]   (Sid: 21) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:1990)] Request Connection: Remote Server @ 117.18.232.200:80   (Service=)  (Sid= 25)  PROXIED!
+[Network Analyzer (18f0:1990)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1950)]   (Sid: 20) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid: 22) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid: 23) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid: 24) Connection Terminated (by Server)
+[Network Analyzer (18f0:1990)] Request Connection: Remote Server @ 216.156.211.32:80   (Service=)  (Sid= 26)  PROXIED!
+[Network Analyzer (18f0:1950)]   (Sid: 19) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid: 18) Connection Terminated (by Server)
+[Network Analyzer (18f0:198c)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1980)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1980)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid= 27)  PROXIED!
+[Network Analyzer (18f0:198c)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid= 28)  PROXIED!
+[Network Analyzer (18f0:1950)]   (Sid: 10) Connection Terminated (by Client)
+[Network Analyzer (18f0:1950)]   (Sid: 21) Connection Terminated (by Client)
+[Network Analyzer (18f0:1950)]   (Sid: 17) Connection Terminated (by Client)
+[Network Analyzer (18f0:1988)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1988)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid= 29)  PROXIED!
+[Network Analyzer (18f0:1a70)]   (Sid: 27) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0:1a70)]   (Sid: 27) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:1920)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1920)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid= 30)  PROXIED!
+[Network Analyzer (18f0:1950)]   (Sid: 27) Connection Terminated (by Client)
+[Network Analyzer (18f0:1a74)]   (Sid: 28) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0:1a74)]   (Sid: 28) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:1a78)]   (Sid: 29) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0:1a78)]   (Sid: 29) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:1950)]   (Sid: 28) Connection Terminated (by Client)
+[Network Analyzer (18f0:1950)]   (Sid: 29) Connection Terminated (by Client)
+[Network Analyzer (18f0:1a7c)]   (Sid: 30) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0:1a7c)]   (Sid: 30) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:1950)]   (Sid: 30) Connection Terminated (by Client)
+[Network Analyzer (18f0:1920)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1920)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid= 31)  PROXIED!
+[Network Analyzer (18f0:1a94)]   (Sid: 31) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0:1a94)]   (Sid: 31) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:1950)]   (Sid: 31) Connection Terminated (by Client)
+[Network Analyzer (18f0:1920)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1920)] Request Connection: Remote Server @ 117.18.232.200:443   (Service=)  (Sid= 32)  PROXIED!
+[Network Analyzer (18f0:1aa4)]   (Sid: 32) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0:1aa4)]   (Sid: 32) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:1980)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1980)] Request Connection: Remote Server @ 104.18.25.243:80   (Service=)  (Sid= 33)  PROXIED!
+[User action                 ] StartTransactionEvent Login [Network Analyzer (18f0:1988)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1988)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 34)  PROXIED!
+[Web Request      (18f0:1950)] "POST /Auth.html"   
+[Network Analyzer (18f0:1950)]   (Sid: 34) Client -> Server @ : 825 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 34) Server -> Client : 355 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /j_security_check?j_username=lqlz&j_password=72308B68B8B911983C3DA559ED6A1A8BF90C59E1FF370157&j_passdec=LOG"   
+[Network Analyzer (18f0:1950)]   (Sid: 34) Client -> Server @ : 733 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 34) Server -> Client : 239 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /loginForward.jsp"   
+[Network Analyzer (18f0:1950)]   (Sid: 34) Client -> Server @ : 643 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 34) Server -> Client : 359 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /AuthCookie.html"   
+[Network Analyzer (18f0:1950)]   (Sid: 34) Client -> Server @ : 642 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 34) Server -> Client : 359 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 34) Connection Terminated (by Client)
+[Network Analyzer (18f0:1988)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1980)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1980)] Request Connection: Remote Server @ 14.215.177.221:80   (Service=)  (Sid= 35)  PROXIED!
+[Web Request      (18f0:1950)] "GET /_PXCK_2666988751061_1259677113.gif"   
+[Network Analyzer (18f0:1950)]   (Sid: 35) Client -> Server @ : 441 bytes (Service=HTTP)
+[Network Analyzer (18f0:1988)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid= 36)  PROXIED!
+[Network Analyzer (18f0:1950)]   (Sid: 35) Server -> Client : 137 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 35) Connection Terminated (by Client)
+[Network Analyzer (18f0:198c)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1980)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:198c)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 37)  PROXIED!
+[Web Request      (18f0:1950)] "GET /AuthCookie.html"   
+[Network Analyzer (18f0:1950)]   (Sid: 37) Client -> Server @ : 563 bytes (Service=HTTP)
+[Network Analyzer (18f0:1980)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid= 38)  PROXIED!
+[Network Analyzer (18f0:198c)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1af0)]   (Sid: 36) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0:1af0)]   (Sid: 36) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:198c)] Request Connection: Remote Server @ 117.18.232.200:80   (Service=)  (Sid= 39)  PROXIED!
+[Network Analyzer (18f0:1950)]   (Sid: 36) Connection Terminated (by Client)
+[Network Analyzer (18f0:1988)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1988)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid= 40)  PROXIED!
+[Network Analyzer (18f0:1b08)]   (Sid: 38) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0:1b08)]   (Sid: 38) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:1950)]   (Sid: 38) Connection Terminated (by Client)
+[Network Analyzer (18f0:1980)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1980)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid= 41)  PROXIED!
+[Network Analyzer (18f0:1b14)]   (Sid: 40) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0:1b14)]   (Sid: 40) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:1950)]   (Sid: 37) Server -> Client : 384 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /Phomepage.html"   
+[Network Analyzer (18f0:1950)]   (Sid: 37) Client -> Server @ : 652 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 40) Connection Terminated (by Client)
+[Network Analyzer (18f0:1b20)]   (Sid: 41) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0:1b20)]   (Sid: 41) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:1950)]   (Sid: 41) Connection Terminated (by Client)
+[Network Analyzer (18f0:1988)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1988)] Request Connection: Remote Server @ 216.156.211.19:80   (Service=)  (Sid= 42)  PROXIED!
+[Network Analyzer (18f0:1950)]   (Sid: 33) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid: 37) Server -> Client : 2896 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 37) Server -> Client : 1448 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 37) Server -> Client : 3441 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1980)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:198c)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1990)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:199c)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1944)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:193c)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:19a4)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1900)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:19a0)] Address lookup for PC127 = 10.191.65.127
+[Web Request      (18f0:1950)] "GET /scripts/global.gzjs?_dc=00d1a1b6db7"   
+[Network Analyzer (18f0:1950)]   (Sid: 37) Client -> Server @ : 610 bytes (Service=HTTP)
+[Network Analyzer (18f0:1b30)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1944)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 43)  PROXIED!
+[Web Request      (18f0:1950)] "GET /styles/space/reset.gzcss?_dc=0c9353328a9"   
+[Network Analyzer (18f0:1950)]   (Sid: 43) Client -> Server @ : 615 bytes (Service=HTTP)
+[Network Analyzer (18f0:19a0)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 44)  PROXIED!
+[Web Request      (18f0:1950)] "GET /styles/space/Ppagecss.gzcss?_dc=a24015325cf"   
+[Network Analyzer (18f0:1950)]   (Sid: 44) Client -> Server @ : 618 bytes (Service=HTTP)
+[Network Analyzer (18f0:1980)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 45)  PROXIED!
+[Web Request      (18f0:1950)] "GET /struts/xhtml/styles.css"   
+[Network Analyzer (18f0:1950)]   (Sid: 45) Client -> Server @ : 598 bytes (Service=HTTP)
+[Network Analyzer (18f0:198c)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 46)  PROXIED!
+[Network Analyzer (18f0:1950)]   (Sid: 37) Server -> Client : 2222 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /struts/utils.js"   
+[Network Analyzer (18f0:1950)]   (Sid: 46) Client -> Server @ : 590 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /scripts/html5shiv.min.gzjs?_dc=f999c592b85"   
+[Network Analyzer (18f0:1950)]   (Sid: 37) Client -> Server @ : 617 bytes (Service=HTTP)
+[Network Analyzer (18f0:1990)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 47)  PROXIED!
+[Web Request      (18f0:1950)] "GET /styles/scholat/leftmenu.gzcss?_dc=ab618ee2e24"   
+[Network Analyzer (18f0:1950)]   (Sid: 47) Client -> Server @ : 620 bytes (Service=HTTP)
+[Network Analyzer (18f0:19a4)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 48)  PROXIED!
+[Web Request      (18f0:1950)] "GET /styles/homepage/portalliststyle.gzcss?_dc=0b14c83135c"   
+[Network Analyzer (18f0:1950)]   (Sid: 48) Client -> Server @ : 628 bytes (Service=HTTP)
+[Network Analyzer (18f0:199c)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 49)  PROXIED!
+[Network Analyzer (18f0:1950)]   (Sid: 43) Server -> Client : 1057 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 44) Server -> Client : 2764 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 37) Server -> Client : 1609 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 45) Server -> Client : 1072 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /styles/friends/myfriends.gzcss?_dc=6e2bc265b79"   
+[Network Analyzer (18f0:1950)]   (Sid: 49) Client -> Server @ : 621 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /scripts/respond.min.gzjs?_dc=0cf22de0c27"   
+[Network Analyzer (18f0:1950)]   (Sid: 43) Client -> Server @ : 615 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 46) Server -> Client : 2057 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1b30)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid= 50)  PROXIED!
+[Web Request      (18f0:1950)] "GET /styles/homepage/barSearch.gzcss?_dc=a01d9082ffb"   
+[Network Analyzer (18f0:1950)]   (Sid: 37) Client -> Server @ : 622 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /styles/calendar.gzcss?_dc=7693e3b476e"   
+[Network Analyzer (18f0:1950)]   (Sid: 44) Client -> Server @ : 612 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /homepage/styles/calendarZone.gzcss?_dc=1db70494990"   
+[Network Analyzer (18f0:1950)]   (Sid: 45) Client -> Server @ : 625 bytes (Service=HTTP)
+[Network Analyzer (18f0:193c)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 51)  PROXIED!
+[Web Request      (18f0:1950)] "GET /homepage/styles/Ppage.gzcss?_dc=d1f81da214e"   
+[Network Analyzer (18f0:1950)]   (Sid: 46) Client -> Server @ : 618 bytes (Service=HTTP)
+[Network Analyzer (18f0:1900)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 52)  PROXIED!
+[Network Analyzer (18f0:1950)]   (Sid: 49) Server -> Client : 2278 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /styles/forms.gzcss?_dc=a66025a1501"   
+[Network Analyzer (18f0:1950)]   (Sid: 51) Client -> Server @ : 609 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 47) Server -> Client : 1348 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /styles/scholat/print.gzcss?_dc=25698421d93"   
+[Network Analyzer (18f0:1950)]   (Sid: 52) Client -> Server @ : 617 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 43) Server -> Client : 2519 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /scripts/homepage/Ppage.gzjs?_dc=555de156c4c"   
+[Network Analyzer (18f0:1950)]   (Sid: 47) Client -> Server @ : 618 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /scripts/calendarindex.gzjs?_dc=3e73f54fca3"   
+[Network Analyzer (18f0:1950)]   (Sid: 49) Client -> Server @ : 617 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /portal/styles/portalTop.gzcss?_dc=5a1c8ee51b2"   
+[Network Analyzer (18f0:1950)]   (Sid: 43) Client -> Server @ : 620 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 52) Server -> Client : 629 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /portal/scripts/portalTop.gzjs?_dc=ef16806c586"   
+[Network Analyzer (18f0:1950)]   (Sid: 52) Client -> Server @ : 620 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 43) Server -> Client : 2179 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 49) Server -> Client : 2300 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /scripts/cookieUtil.gzjs?_dc=4d9c355cc55"   
+[Network Analyzer (18f0:1950)]   (Sid: 49) Client -> Server @ : 614 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /ext-2.0.2/resources/css/ext-all-style.gzcss?_dc=dac3d2e21bb"   
+[Network Analyzer (18f0:1950)]   (Sid: 43) Client -> Server @ : 634 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 47) Server -> Client : 2896 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 52) Server -> Client : 1448 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 52) Server -> Client : 1448 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 49) Server -> Client : 725 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 47) Server -> Client : 2128 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /ext-2.0.2/chat-all.gzcss?_dc=fab96c80dac"   
+[Network Analyzer (18f0:1950)]   (Sid: 49) Client -> Server @ : 615 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 52) Server -> Client : 2417 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /dwr/engine.js"   
+[Network Analyzer (18f0:1950)]   (Sid: 47) Client -> Server @ : 588 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /dwr/interface/ChatMng.js"   
+[Network Analyzer (18f0:1950)]   (Sid: 52) Client -> Server @ : 599 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 43) Server -> Client : 8556 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 43) Server -> Client : 5792 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 44) Server -> Client : 1371 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 37) Server -> Client : 877 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 45) Server -> Client : 1153 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 52) Server -> Client : 857 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /scripts/jquery-ui-1.10.4.min.gzjs?_dc=b7c2ad35745"   
+[Network Analyzer (18f0:1950)]   (Sid: 37) Client -> Server @ : 624 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 46) Server -> Client : 2593 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 47) Server -> Client : 7302 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 49) Server -> Client : 1340 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /ext-2.0.2/adapter/jquery/ext-jquery-adapter.gzjs?_dc=2e881e9bc76"   
+[Network Analyzer (18f0:1950)]   (Sid: 52) Client -> Server @ : 639 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /ext-2.0.2/adapter/ext/ext-base.gzjs?_dc=a2f5bf50671"   
+[Network Analyzer (18f0:1950)]   (Sid: 44) Client -> Server @ : 626 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /ext-2.0.2/ext-all.gzjs?_dc=b3021a6934f"   
+[Network Analyzer (18f0:1950)]   (Sid: 45) Client -> Server @ : 613 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /ext-2.0.2/build/locale/ext-CN.gzjs?_dc=2658d3b3224"   
+[Network Analyzer (18f0:1950)]   (Sid: 49) Client -> Server @ : 625 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 37) Server -> Client : 15758 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /chatjs/swfupload.gzjs?_dc=ec02675407e"   
+[Network Analyzer (18f0:1950)]   (Sid: 46) Client -> Server @ : 612 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /chatjs/UploadDialog.gzjs?_dc=cc347cd1309"   
+[Network Analyzer (18f0:1950)]   (Sid: 47) Client -> Server @ : 615 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 37) Server -> Client : 944 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 37) Server -> Client : 2896 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 37) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 44) Server -> Client : 1448 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 44) Server -> Client : 4344 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 37) Server -> Client : 2440 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 37) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 37) Server -> Client : 7077 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /chatjs/sound.gzjs?_dc=a3983d96d36"   
+[Network Analyzer (18f0:1950)]   (Sid: 37) Client -> Server @ : 608 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 44) Server -> Client : 4996 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 52) Server -> Client : 6226 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /chatjs/chat.gzjs?_dc=c355816c251"   
+[Network Analyzer (18f0:1950)]   (Sid: 44) Client -> Server @ : 607 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /chatjs/mainwin.gzjs?_dc=9cca6a7ad5e"   
+[Network Analyzer (18f0:1950)]   (Sid: 52) Client -> Server @ : 610 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 46) Server -> Client : 4916 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 47) Server -> Client : 2686 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 49) Server -> Client : 2391 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /chatjs/send.gzjs?_dc=2efe1602e5e"   
+[Network Analyzer (18f0:1950)]   (Sid: 47) Client -> Server @ : 607 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /chatjs/teamsend.gzjs?_dc=6994ea87aa0"   
+[Network Analyzer (18f0:1950)]   (Sid: 46) Client -> Server @ : 611 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /course/layer/layer.gzjs?_dc=822459d74c8"   
+[Network Analyzer (18f0:1950)]   (Sid: 49) Client -> Server @ : 614 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 45) Server -> Client : 4344 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 45) Server -> Client : 7240 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 45) Server -> Client : 1448 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 45) Server -> Client : 3672 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 37) Server -> Client : 7597 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 44) Server -> Client : 8516 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /course/layer/extend/layer.ext.gzjs?_dc=4c1f068ce21"   
+[Network Analyzer (18f0:1950)]   (Sid: 37) Client -> Server @ : 625 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 45) Server -> Client : 8688 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 45) Server -> Client : 8688 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 44) Server -> Client : 1196 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /course/styles/pekeUpload.gzcss?_dc=752e1006f46"   
+[Network Analyzer (18f0:1950)]   (Sid: 44) Client -> Server @ : 621 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 45) Server -> Client : 5792 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 45) Server -> Client : 9568 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 45) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 45) Server -> Client : 16352 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 52) Server -> Client : 4532 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /chatjs/pekeUpload.gzjs?_dc=22ab70f6847"   
+[Network Analyzer (18f0:1950)]   (Sid: 52) Client -> Server @ : 613 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 47) Server -> Client : 1448 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 45) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 47) Server -> Client : 1448 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 49) Server -> Client : 5683 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 46) Server -> Client : 4002 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 45) Server -> Client : 16384 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /common/layer/layer.min.gzjs?_dc=03c00df5428"   
+[Network Analyzer (18f0:1950)]   (Sid: 49) Client -> Server @ : 618 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 45) Server -> Client : 16336 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 37) Server -> Client : 2282 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 45) Server -> Client : 5792 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 45) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 45) Server -> Client : 10560 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 44) Server -> Client : 1266 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 45) Server -> Client : 7240 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 45) Server -> Client : 9128 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 48) Server -> Client : 1520 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 52) Server -> Client : 3445 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 45) Server -> Client : 16368 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 43) Server -> Client : 2416 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 51) Server -> Client : 2071 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 45) Server -> Client : 2083 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 49) Server -> Client : 6728 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /common/layer/skin/layer.css"   
+[Network Analyzer (18f0:1950)]   (Sid: 46) Client -> Server @ : 602 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /common/layer/skin/default/xubox_ico0.png"   
+[Network Analyzer (18f0:1950)]   (Sid: 37) Client -> Server @ : 615 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 46) Server -> Client : 2189 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 37) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1b38)]   (Sid: 50) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0:1950)]   (Sid: 37) Server -> Client : 7890 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /images/triangle.png"   
+[Network Analyzer (18f0:1950)]   (Sid: 44) Client -> Server @ : 594 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /template/homepage/bgimages/29.jpg"   
+[Network Analyzer (18f0:1950)]   (Sid: 43) Client -> Server @ : 608 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /images/searchbutton.png"   
+[Network Analyzer (18f0:1950)]   (Sid: 48) Client -> Server @ : 598 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /images/Exit.png"   
+[Network Analyzer (18f0:1950)]   (Sid: 51) Client -> Server @ : 590 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /images/arrow_white.png"   
+[Network Analyzer (18f0:1950)]   (Sid: 52) Client -> Server @ : 597 bytes (Service=HTTP)
+[Network Analyzer (18f0:1b38)]   (Sid: 50) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:1b30)] Address lookup for PC127 = 10.191.65.127
+[Web Request      (18f0:1950)] "GET /images/space/headbg.jpg"   
+[Network Analyzer (18f0:1950)]   (Sid: 45) Client -> Server @ : 598 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 47) Server -> Client : 1448 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 51) Server -> Client : 865 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 52) Server -> Client : 586 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 45) Server -> Client : 3145 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 44) Server -> Client : 548 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 48) Server -> Client : 867 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 43) Server -> Client : 2896 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 43) Server -> Client : 2896 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 43) Server -> Client : 2896 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 47) Server -> Client : 1410 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 43) Server -> Client : 1448 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 43) Server -> Client : 9385 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 43) Server -> Client : 14480 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 43) Server -> Client : 1448 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 43) Server -> Client : 8688 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 43) Server -> Client : 4344 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 43) Server -> Client : 10030 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /course/layer/skin/layer.css"   
+[Network Analyzer (18f0:1950)]   (Sid: 49) Client -> Server @ : 602 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 49) Server -> Client : 2768 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /course/layer/skin/layer.ext.css"   
+[Network Analyzer (18f0:1950)]   (Sid: 46) Client -> Server @ : 606 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 46) Server -> Client : 1403 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /scripts/calendarZone.gzjs?_dc=cf5d9e3f058"   
+[Network Analyzer (18f0:1950)]   (Sid: 51) Client -> Server @ : 616 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /dwr/interface/CalendarAjaxService.js"   
+[Network Analyzer (18f0:1950)]   (Sid: 37) Client -> Server @ : 611 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /images/more_Fr.png"   
+[Network Analyzer (18f0:1950)]   (Sid: 43) Client -> Server @ : 593 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /images/release.png"   
+[Network Analyzer (18f0:1950)]   (Sid: 44) Client -> Server @ : 593 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /images/archives.png"   
+[Network Analyzer (18f0:1950)]   (Sid: 45) Client -> Server @ : 594 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /images/academic.png"   
+[Network Analyzer (18f0:1950)]   (Sid: 47) Client -> Server @ : 594 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /images/invite.png"   
+[Network Analyzer (18f0:1950)]   (Sid: 48) Client -> Server @ : 592 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /images/space/loading.gif"   
+[Network Analyzer (18f0:1950)]   (Sid: 49) Client -> Server @ : 599 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /images/user1.png"   
+[Network Analyzer (18f0:1950)]   (Sid: 52) Client -> Server @ : 591 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /images/bullet_delete.gif"   
+[Network Analyzer (18f0:1950)]   (Sid: 46) Client -> Server @ : 599 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 43) Server -> Client : 962 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 44) Server -> Client : 1943 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 51) Server -> Client : 3182 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 37) Server -> Client : 1034 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /calendar/imgs/calendar-icon.png"   
+[Network Analyzer (18f0:1950)]   (Sid: 43) Client -> Server @ : 606 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 45) Server -> Client : 1638 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 46) Server -> Client : 538 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 47) Server -> Client : 3459 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 48) Server -> Client : 2278 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 49) Server -> Client : 1467 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 52) Server -> Client : 2346 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 43) Server -> Client : 1027 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /images/backTopBottom.png"   
+[Network Analyzer (18f0:1950)]   (Sid: 44) Client -> Server @ : 599 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "POST /calendarCourse-getTodayCourse_ajax.html"   
+[Network Analyzer (18f0:1950)]   (Sid: 46) Client -> Server @ : 736 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 51) Client -> Server @ : 774 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "POST //getDynamicMessagesMobile_ajax.html"   
+[Network Analyzer (18f0:1950)]   (Sid: 37) Client -> Server @ : 732 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "POST //getAllAddFriendsMsg_ajax.html"   
+[Network Analyzer (18f0:1950)]   (Sid: 45) Client -> Server @ : 727 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "POST //checkMobileApplyInfo_ajax.html"   
+[Network Analyzer (18f0:1950)]   (Sid: 48) Client -> Server @ : 728 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "POST //AllScholarShare_ajax.html"   
+[Network Analyzer (18f0:1950)]   (Sid: 49) Client -> Server @ : 723 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "POST //SharePatent_ajax.html"   
+[Network Analyzer (18f0:1950)]   (Sid: 47) Client -> Server @ : 719 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "POST //getAllCourseInvitationsAndApplications_ajax.html"   
+[Network Analyzer (18f0:1950)]   (Sid: 43) Client -> Server @ : 746 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "POST //mobileCalendarShare_ajax.html"   
+[Network Analyzer (18f0:1950)]   (Sid: 52) Client -> Server @ : 727 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 44) Server -> Client : 1782 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "POST /getFreshEventByJs_Page.html"   
+[Network Analyzer (18f0:1950)]   (Sid: 51) Client -> Server @ : 70 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "POST //emailM-getUnreadCount_ajax.html"   
+[Network Analyzer (18f0:1950)]   (Sid: 44) Client -> Server @ : 729 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 47) Server -> Client : 234 bytes  (Service=HTTP)
+[Network Analyzer (18f0:198c)] Address lookup for PC127 = 10.191.65.127
+[Web Request      (18f0:1950)] "POST //ScholarUserType_ajax.html"   
+[Network Analyzer (18f0:1950)]   (Sid: 47) Client -> Server @ : 723 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 50) Connection Terminated (by Client)
+[Network Analyzer (18f0:1950)]   (Sid: 44) Server -> Client : 235 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /calendar/images/noMsg.png"   
+[Network Analyzer (18f0:1950)]   (Sid: 44) Client -> Server @ : 600 bytes (Service=HTTP)
+[Network Analyzer (18f0:198c)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid= 53)  PROXIED!
+[Network Analyzer (18f0:1b30)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid= 54)  PROXIED!
+[Network Analyzer (18f0:1950)]   (Sid: 44) Server -> Client : 5203 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /ext-2.0.2/resources/images/default/qtip/tip-sprite.gif"   
+[Network Analyzer (18f0:1950)]   (Sid: 44) Client -> Server @ : 629 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 44) Server -> Client : 3663 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /ext-2.0.2/resources/images/default/qtip/tip-anchor-sprite.gif"   
+[Network Analyzer (18f0:1950)]   (Sid: 44) Client -> Server @ : 636 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 44) Server -> Client : 575 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /chatjs/swf/soundmanager2.swf"   
+[Network Analyzer (18f0:1950)]   (Sid: 44) Client -> Server @ : 603 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 44) Server -> Client : 2878 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "POST /getLatestVisitors.html"   
+[Network Analyzer (18f0:1950)]   (Sid: 44) Client -> Server @ : 719 bytes (Service=HTTP)
+[Network Analyzer (18f0:1b4c)]   (Sid: 53) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0:1b4c)]   (Sid: 53) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:1950)]   (Sid: 32) Connection Terminated (by Client)
+[Network Analyzer (18f0:1950)]   (Sid: 53) Connection Terminated (by Client)
+[Network Analyzer (18f0:198c)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:198c)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid= 55)  PROXIED!
+[Network Analyzer (18f0:1b50)]   (Sid: 54) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0:1b50)]   (Sid: 54) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:1950)]   (Sid: 46) Server -> Client : 235 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 37) Server -> Client : 234 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 46) Client -> Server @ : 709 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 45) Server -> Client : 234 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "POST /dwr/call/plaincall/CalendarAjaxService.getRemindCalendars.dwr"   
+[Network Analyzer (18f0:1950)]   (Sid: 46) Client -> Server @ : 184 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "POST /recommendFriendsByJs_ajax.html"   
+[Network Analyzer (18f0:1950)]   (Sid: 37) Client -> Server @ : 727 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 45) Client -> Server @ : 685 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "POST /dwr/call/plaincall/ChatMng.update.dwr"   
+[Network Analyzer (18f0:1950)]   (Sid: 45) Client -> Server @ : 249 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 52) Server -> Client : 234 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 49) Server -> Client : 234 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /chatjs/icons/tonline.png"   
+[Network Analyzer (18f0:1950)]   (Sid: 49) Client -> Server @ : 599 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /ext-2.0.2/resources/images/default/panel/tool-sprites.gif"   
+[Network Analyzer (18f0:1950)]   (Sid: 52) Client -> Server @ : 632 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 54) Connection Terminated (by Client)
+[Network Analyzer (18f0:1b94)]   (Sid: 55) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0:1b94)]   (Sid: 55) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:1950)]   (Sid: 55) Connection Terminated (by Client)
+[Network Analyzer (18f0:1950)]   (Sid: 26) Server -> Client : 414 bytes 
+[Network Analyzer (18f0:1950)]   (Sid: 26) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid: 49) Server -> Client : 614 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 49) Client -> Server @ : 760 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "POST /FriendTreeActionForChat.html?acc_id=17449"   
+[Network Analyzer (18f0:1950)]   (Sid: 49) Client -> Server @ : 13 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 52) Server -> Client : 2117 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 52) Client -> Server @ : 760 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "POST /RecentTreeActionForChat.html?acc_id=17449"   
+[Network Analyzer (18f0:1950)]   (Sid: 52) Client -> Server @ : 13 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 47) Server -> Client : 233 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 47) Client -> Server @ : 758 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "POST /TeamTreeActionForChat.html?acc_id=17449"   
+[Network Analyzer (18f0:1950)]   (Sid: 47) Client -> Server @ : 13 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 45) Server -> Client : 431 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 49) Server -> Client : 590 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 47) Server -> Client : 385 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET //chatjs/icons/online-avatar.jpg"   
+[Network Analyzer (18f0:1950)]   (Sid: 45) Client -> Server @ : 606 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /resources/s_icon/huangzhihao_1444124176867.jpg"   
+[Network Analyzer (18f0:1950)]   (Sid: 49) Client -> Server @ : 621 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 52) Server -> Client : 416 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /chatjs/icons/team.png"   
+[Network Analyzer (18f0:1950)]   (Sid: 47) Client -> Server @ : 596 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 45) Server -> Client : 5288 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 49) Server -> Client : 5569 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /ext-2.0.2/resources/images/default/tree/leaf.gif"   
+[Network Analyzer (18f0:1950)]   (Sid: 52) Client -> Server @ : 623 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 52) Server -> Client : 995 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 47) Server -> Client : 4884 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 43) Server -> Client : 275 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 48) Connection Terminated (by Client)
+[Network Analyzer (18f0:1950)]   (Sid: 49) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid: 45) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid: 52) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid: 47) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid: 43) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid: 46) Server -> Client : 426 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /calendar/images/remind.png"   
+[Network Analyzer (18f0:1950)]   (Sid: 46) Client -> Server @ : 601 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 46) Server -> Client : 1575 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 37) Server -> Client : 754 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /resources/s_icon/chenjingfen_1434872125499.jpg"   
+[Network Analyzer (18f0:1950)]   (Sid: 46) Client -> Server @ : 621 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /images/homepage/addfriend.jpg"   
+[Network Analyzer (18f0:1950)]   (Sid: 37) Client -> Server @ : 604 bytes (Service=HTTP)
+[Network Analyzer (18f0:1920)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1920)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 56)  PROXIED!
+[Network Analyzer (18f0:1950)]   (Sid: 37) Server -> Client : 2579 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /resources/s_icon/guobanghong_1527731669788.jpg"   
+[Network Analyzer (18f0:1950)]   (Sid: 56) Client -> Server @ : 621 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 46) Server -> Client : 4090 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 56) Server -> Client : 2896 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 56) Server -> Client : 2352 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 44) Server -> Client : 617 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /images/default.png"   
+[Network Analyzer (18f0:1950)]   (Sid: 37) Client -> Server @ : 593 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /resources/s_icon/mozhaoxian_1444843385058.jpg"   
+[Network Analyzer (18f0:1950)]   (Sid: 46) Client -> Server @ : 620 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 46) Server -> Client : 7156 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 37) Server -> Client : 15044 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 56) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid: 44) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid: 37) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid: 46) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid: 25) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid: 42) Server -> Client : 413 bytes 
+[Network Analyzer (18f0:1950)]   (Sid: 42) Connection Terminated (by Server)
+[User action                 ] EndTransactionEvent Login [Network Analyzer (18f0:1950)]   (Sid: 39) Connection Terminated (by Client)
+[Network Analyzer (18f0:1944)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1920)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1944)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 57)  PROXIED!
+[Network Analyzer (18f0:1950)]   (Sid: 57) Client -> Server @ : 685 bytes (Service=HTTP)
+[Network Analyzer (18f0:1920)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 58)  PROXIED!
+[Web Request      (18f0:1950)] "POST /dwr/call/plaincall/ChatMng.logout.dwr"   
+[Network Analyzer (18f0:1950)]   (Sid: 57) Client -> Server @ : 227 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /addPostMessage.html"   
+[Network Analyzer (18f0:1950)]   (Sid: 58) Client -> Server @ : 705 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 58) Server -> Client : 363 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 58) Connection Terminated (by Client)
+[Network Analyzer (18f0:1950)]   (Sid: 57) Connection Terminated (by Client)
+[Network Analyzer (18f0:1950)]   (Sid: 51) Connection Terminated (by Client)
+[Network Analyzer (18f0:1944)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1920)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1944)] Request Connection: Remote Server @ 14.215.177.221:80   (Service=)  (Sid= 59)  PROXIED!
+[Web Request      (18f0:1950)] "GET /_PXCK_2666988751061_3579560837.gif"   
+[Network Analyzer (18f0:1950)]   (Sid: 59) Client -> Server @ : 445 bytes (Service=HTTP)
+[Network Analyzer (18f0:1920)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid= 60)  PROXIED!
+[Network Analyzer (18f0:1950)]   (Sid: 59) Server -> Client : 137 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 59) Connection Terminated (by Client)
+[Network Analyzer (18f0:198c)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1944)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:198c)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 61)  PROXIED!
+[Web Request      (18f0:1950)] "GET /addPostMessage.html"   
+[Network Analyzer (18f0:1950)]   (Sid: 61) Client -> Server @ : 657 bytes (Service=HTTP)
+[Network Analyzer (18f0:1944)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid= 62)  PROXIED!
+[Network Analyzer (18f0:1508)]   (Sid: 60) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0:1508)]   (Sid: 60) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:1920)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1920)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid= 63)  PROXIED!
+[Network Analyzer (18f0:1950)]   (Sid: 60) Connection Terminated (by Client)
+[Network Analyzer (18f0:1418)]   (Sid: 62) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0:1418)]   (Sid: 62) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:14cc)]   (Sid: 63) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0:14cc)]   (Sid: 63) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:1950)]   (Sid: 61) Server -> Client : 2896 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1920)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:198c)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1980)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1900)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1b30)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1950)]   (Sid: 61) Server -> Client : 5792 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1984)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:199c)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:19a0)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1990)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:19a4)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:199c)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 64)  PROXIED!
+[Web Request      (18f0:1950)] "GET /styles/jquery-ui.gzcss?_dc=401d4ce7347"   
+[Network Analyzer (18f0:1950)]   (Sid: 64) Client -> Server @ : 618 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 61) Server -> Client : 3449 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /dwr/interface/ChatMng.js"   
+[Network Analyzer (18f0:1950)]   (Sid: 61) Client -> Server @ : 604 bytes (Service=HTTP)
+[Network Analyzer (18f0:19a0)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 65)  PROXIED!
+[Web Request      (18f0:1950)] "GET /scripts/search/searchMyPostMessage.gzjs?_dc=9a2f0fef0ed"   
+[Network Analyzer (18f0:1950)]   (Sid: 65) Client -> Server @ : 635 bytes (Service=HTTP)
+[Network Analyzer (18f0:1980)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 66)  PROXIED!
+[Web Request      (18f0:1950)] "GET /common/ueditor1_3_6/ueditor.config.gzjs?_dc=693020255af"   
+[Network Analyzer (18f0:1950)]   (Sid: 66) Client -> Server @ : 635 bytes (Service=HTTP)
+[Network Analyzer (18f0:1b30)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 67)  PROXIED!
+[Web Request      (18f0:1950)] "GET /styles/scholat/contentStyles.gzcss?_dc=652082e59b4"   
+[Network Analyzer (18f0:1950)]   (Sid: 67) Client -> Server @ : 630 bytes (Service=HTTP)
+[Network Analyzer (18f0:198c)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 68)  PROXIED!
+[Web Request      (18f0:1950)] "GET /scripts/jquery-1.9.1.min.gzjs?_dc=89a8221df3d"   
+[Network Analyzer (18f0:1950)]   (Sid: 68) Client -> Server @ : 625 bytes (Service=HTTP)
+[Network Analyzer (18f0:1920)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 69)  PROXIED!
+[Web Request      (18f0:1950)] "GET /styles/space/css.gzcss?_dc=edbf4eab51c"   
+[Network Analyzer (18f0:1950)]   (Sid: 69) Client -> Server @ : 618 bytes (Service=HTTP)
+[Network Analyzer (18f0:1900)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 70)  PROXIED!
+[Web Request      (18f0:1950)] "GET /common/ueditor1_3_6/lang/zh-cn/zh-cn.gzjs?_dc=aaa6b2b0bb6"   
+[Network Analyzer (18f0:1950)]   (Sid: 70) Client -> Server @ : 637 bytes (Service=HTTP)
+[Network Analyzer (18f0:1984)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 71)  PROXIED!
+[Web Request      (18f0:1950)] "GET /common/ueditor1_3_6/ueditor.all.min.gzjs?_dc=f20335518c0"   
+[Network Analyzer (18f0:1950)]   (Sid: 71) Client -> Server @ : 636 bytes (Service=HTTP)
+[Network Analyzer (18f0:19a4)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 72)  PROXIED!
+[Web Request      (18f0:1950)] "GET /dwr/engine.js"   
+[Network Analyzer (18f0:1950)]   (Sid: 72) Client -> Server @ : 680 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 64) Server -> Client : 2896 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 65) Server -> Client : 2022 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 66) Server -> Client : 1585 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 67) Server -> Client : 1398 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 64) Server -> Client : 2297 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 68) Server -> Client : 2896 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 61) Server -> Client : 857 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 69) Server -> Client : 2613 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1990)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid= 73)  PROXIED!
+[Network Analyzer (18f0:1950)]   (Sid: 70) Server -> Client : 2896 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 68) Server -> Client : 5792 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 71) Server -> Client : 1448 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 70) Server -> Client : 4969 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 71) Server -> Client : 1448 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 72) Server -> Client : 2896 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 68) Server -> Client : 8023 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 71) Server -> Client : 4344 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 71) Server -> Client : 1448 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 72) Server -> Client : 2896 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 72) Server -> Client : 1514 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 71) Server -> Client : 4344 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 71) Server -> Client : 3679 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 71) Server -> Client : 2896 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 68) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 71) Server -> Client : 15928 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 68) Server -> Client : 33 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 71) Server -> Client : 2896 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 71) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 71) Server -> Client : 6784 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 71) Server -> Client : 4344 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 71) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 71) Server -> Client : 8112 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 71) Server -> Client : 4972 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /struts/css_xhtml/validation.js"   
+[Network Analyzer (18f0:1950)]   (Sid: 65) Client -> Server @ : 610 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /images/searchFriend.png"   
+[Network Analyzer (18f0:1950)]   (Sid: 66) Client -> Server @ : 603 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 66) Server -> Client : 850 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 65) Server -> Client : 1169 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /images/attachment.gif"   
+[Network Analyzer (18f0:1950)]   (Sid: 67) Client -> Server @ : 601 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /common/ueditor1_3_6/themes/default/css/ueditor.css"   
+[Network Analyzer (18f0:1950)]   (Sid: 64) Client -> Server @ : 630 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 67) Server -> Client : 2323 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 62) Connection Terminated (by Client)
+[Network Analyzer (18f0:1950)]   (Sid: 63) Connection Terminated (by Client)
+[Network Analyzer (18f0:1950)]   (Sid: 64) Server -> Client : 6286 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1944)] Address lookup for PC127 = 10.191.65.127
+[Web Request      (18f0:1950)] "POST //getDynamicMessagesMobile_ajax.html"   
+[Network Analyzer (18f0:1950)]   (Sid: 61) Client -> Server @ : 737 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "POST //getAllAddFriendsMsg_ajax.html"   
+[Network Analyzer (18f0:1950)]   (Sid: 69) Client -> Server @ : 732 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "POST //checkMobileApplyInfo_ajax.html"   
+[Network Analyzer (18f0:1950)]   (Sid: 70) Client -> Server @ : 733 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "POST //AllScholarShare_ajax.html"   
+[Network Analyzer (18f0:1950)]   (Sid: 72) Client -> Server @ : 728 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "POST //SharePatent_ajax.html"   
+[Network Analyzer (18f0:1950)]   (Sid: 68) Client -> Server @ : 724 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "POST //getAllCourseInvitationsAndApplications_ajax.html"   
+[Network Analyzer (18f0:1950)]   (Sid: 71) Client -> Server @ : 751 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "POST //mobileCalendarShare_ajax.html"   
+[Network Analyzer (18f0:1950)]   (Sid: 66) Client -> Server @ : 732 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "POST //emailM-getUnreadCount_ajax.html"   
+[Network Analyzer (18f0:1950)]   (Sid: 65) Client -> Server @ : 734 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "POST //ScholarUserType_ajax.html"   
+[Network Analyzer (18f0:1950)]   (Sid: 67) Client -> Server @ : 728 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "POST /checkLimitCondition.html"   
+[Network Analyzer (18f0:1950)]   (Sid: 64) Client -> Server @ : 683 bytes (Service=HTTP)
+[Network Analyzer (18f0:1944)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid= 74)  PROXIED!
+[Network Analyzer (18f0:1048)]   (Sid: 73) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0:1048)]   (Sid: 73) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:1900)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1984)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1900)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid= 75)  PROXIED!
+[Network Analyzer (18f0:1984)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid= 76)  PROXIED!
+[Network Analyzer (18f0:1950)]   (Sid: 73) Connection Terminated (by Client)
+[Network Analyzer (18f0:1990)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1990)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid= 77)  PROXIED!
+[Network Analyzer (18f0:1594)]   (Sid: 74) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0:1594)]   (Sid: 74) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:1050)]   (Sid: 75) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0:1050)]   (Sid: 75) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:1950)]   (Sid: 72) Server -> Client : 234 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 72) Client -> Server @ : 690 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "POST /dwr/call/plaincall/ChatMng.update.dwr"   
+[Network Analyzer (18f0:1950)]   (Sid: 72) Client -> Server @ : 255 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 66) Server -> Client : 234 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 69) Server -> Client : 234 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /common/ueditor1_3_6/themes/default/images/icons.png"   
+[Network Analyzer (18f0:1950)]   (Sid: 66) Client -> Server @ : 631 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /common/ueditor1_3_6/themes/default/images/icons.gif"   
+[Network Analyzer (18f0:1950)]   (Sid: 69) Client -> Server @ : 631 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 67) Server -> Client : 233 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 68) Server -> Client : 234 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /common/ueditor1_3_6/themes/iframe.css"   
+[Network Analyzer (18f0:1950)]   (Sid: 67) Client -> Server @ : 617 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 65) Server -> Client : 235 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /common/ueditor1_3_6/themes/default/images/scale.png"   
+[Network Analyzer (18f0:1950)]   (Sid: 68) Client -> Server @ : 631 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 69) Server -> Client : 2896 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 69) Server -> Client : 1448 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 69) Server -> Client : 4344 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 66) Server -> Client : 4344 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 69) Server -> Client : 1448 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 67) Server -> Client : 370 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 68) Server -> Client : 594 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 72) Server -> Client : 428 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 66) Server -> Client : 8688 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 69) Server -> Client : 11035 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 66) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 66) Server -> Client : 992 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 66) Server -> Client : 5434 bytes  (Service=HTTP)
+[Network Analyzer (18f0: df8)]   (Sid: 76) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0: df8)]   (Sid: 76) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:1950)]   (Sid: 74) Connection Terminated (by Client)
+[Network Analyzer (18f0:1950)]   (Sid: 75) Connection Terminated (by Client)
+[Network Analyzer (18f0:1920)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1900)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1950)]   (Sid: 65) Client -> Server @ : 765 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 67) Client -> Server @ : 765 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 68) Client -> Server @ : 763 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "POST /FriendTreeActionForChat.html?acc_id=17449"   
+[Network Analyzer (18f0:1950)]   (Sid: 65) Client -> Server @ : 13 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "POST /RecentTreeActionForChat.html?acc_id=17449"   
+[Network Analyzer (18f0:1950)]   (Sid: 67) Client -> Server @ : 13 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "POST /TeamTreeActionForChat.html?acc_id=17449"   
+[Network Analyzer (18f0:1950)]   (Sid: 68) Client -> Server @ : 13 bytes (Service=HTTP)
+[Network Analyzer (18f0:1900)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid= 78)  PROXIED!
+[Network Analyzer (18f0:1920)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid= 79)  PROXIED!
+[Network Analyzer (18f0:1950)]   (Sid: 76) Connection Terminated (by Client)
+[Network Analyzer (18f0:1984)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1984)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid= 80)  PROXIED!
+[Network Analyzer (18f0:1950)]   (Sid: 68) Server -> Client : 385 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 67) Server -> Client : 416 bytes  (Service=HTTP)
+[Network Analyzer (18f0:10cc)]   (Sid: 77) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0:1950)]   (Sid: 65) Server -> Client : 590 bytes  (Service=HTTP)
+[Network Analyzer (18f0:10cc)]   (Sid: 77) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:1950)]   (Sid: 61) Server -> Client : 234 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 71) Server -> Client : 275 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 64) Server -> Client : 234 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1074)]   (Sid: 78) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0:1074)]   (Sid: 78) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:1950)]   (Sid: 77) Connection Terminated (by Client)
+[Network Analyzer (18f0:1950)]   (Sid: 78) Connection Terminated (by Client)
+[Network Analyzer (18f0: f7c)]   (Sid: 79) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0: f7c)]   (Sid: 79) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:12b0)]   (Sid: 80) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0:12b0)]   (Sid: 80) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:1950)]   (Sid: 79) Connection Terminated (by Client)
+[Network Analyzer (18f0:1950)]   (Sid: 80) Connection Terminated (by Client)
+[Network Analyzer (18f0:1920)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1920)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid= 81)  PROXIED!
+[Network Analyzer (18f0:1950)]   (Sid: 70) Server -> Client : 268 bytes  (Service=HTTP)
+[Network Analyzer (18f0:16c0)]   (Sid: 81) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0:16c0)]   (Sid: 81) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:1984)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1984)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid= 82)  PROXIED!
+[Network Analyzer (18f0:1950)]   (Sid: 81) Connection Terminated (by Client)
+[Network Analyzer (18f0: a58)]   (Sid: 82) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0: a58)]   (Sid: 82) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:1984)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1950)]   (Sid: 69) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid: 66) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid: 72) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid: 82) Connection Terminated (by Client)
+[Network Analyzer (18f0:1984)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid= 83)  PROXIED!
+[Network Analyzer (18f0:1950)]   (Sid: 67) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid: 65) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid: 68) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid: 64) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid: 61) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid: 71) Connection Terminated (by Server)
+[Network Analyzer (18f0:1684)]   (Sid: 83) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0:1684)]   (Sid: 83) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:1950)]   (Sid: 83) Connection Terminated (by Client)
+[Web Request      (18f0:1950)] "POST /showteamworkListByUsername.html"   
+[Network Analyzer (18f0:1950)]   (Sid: 70) Client -> Server @ : 788 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 70) Server -> Client : 573 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "POST /showteamworkListByUsername.html"   
+[Network Analyzer (18f0:1950)]   (Sid: 70) Client -> Server @ : 788 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 70) Server -> Client : 573 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 70) Connection Terminated (by Server)
+[User action                 ] StartTransactionEvent fabudongtai [Network Analyzer (18f0:1920)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1990)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1920)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 84)  PROXIED!
+[Network Analyzer (18f0:1950)]   (Sid: 84) Client -> Server @ : 690 bytes (Service=HTTP)
+[Network Analyzer (18f0:1990)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 85)  PROXIED!
+[Web Request      (18f0:1950)] "POST /dwr/call/plaincall/ChatMng.logout.dwr"   
+[Network Analyzer (18f0:1950)]   (Sid: 84) Client -> Server @ : 233 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "POST /savePostMessage.html"   
+[Network Analyzer (18f0:1950)]   (Sid: 85) Client -> Server @ : 2232 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 84) Server -> Client : 432 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 84) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid: 85) Server -> Client : 265 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /postMessage.html"   
+[Network Analyzer (18f0:1950)]   (Sid: 85) Client -> Server @ : 732 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 85) Server -> Client : 360 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1990)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1984)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1990)] Request Connection: Remote Server @ 14.215.177.221:80   (Service=)  (Sid= 86)  PROXIED!
+[Web Request      (18f0:1950)] "GET /_PXCK_2666988751061_3953144625.gif"   
+[Network Analyzer (18f0:1950)]   (Sid: 86) Client -> Server @ : 442 bytes (Service=HTTP)
+[Network Analyzer (18f0:1984)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid= 87)  PROXIED!
+[Network Analyzer (18f0:1950)]   (Sid: 85) Connection Terminated (by Client)
+[Network Analyzer (18f0:1950)]   (Sid: 86) Server -> Client : 137 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1920)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1990)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1920)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 88)  PROXIED!
+[Web Request      (18f0:1950)] "GET /postMessage.html"   
+[Network Analyzer (18f0:1950)]   (Sid: 88) Client -> Server @ : 654 bytes (Service=HTTP)
+[Network Analyzer (18f0:1990)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid= 89)  PROXIED!
+[Network Analyzer (18f0:1950)]   (Sid: 86) Connection Terminated (by Client)
+[Network Analyzer (18f0: bb4)]   (Sid: 87) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0: bb4)]   (Sid: 87) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:1984)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1984)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid= 90)  PROXIED!
+[Network Analyzer (18f0:1950)]   (Sid: 87) Connection Terminated (by Client)
+[Network Analyzer (18f0: c84)]   (Sid: 89) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0: c84)]   (Sid: 89) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0: b0c)]   (Sid: 90) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0: b0c)]   (Sid: 90) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:1950)]   (Sid: 89) Connection Terminated (by Client)
+[Network Analyzer (18f0:1950)]   (Sid: 90) Connection Terminated (by Client)
+[Network Analyzer (18f0:1990)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1990)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid= 91)  PROXIED!
+[Network Analyzer (18f0:1950)]   (Sid: 88) Server -> Client : 2896 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 88) Server -> Client : 4409 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /styles/postMessgaeThickbox.gzcss?_dc=917ffa76f2b"   
+[Network Analyzer (18f0:1950)]   (Sid: 88) Client -> Server @ : 625 bytes (Service=HTTP)
+[Network Analyzer (18f0:1920)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1980)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1950)]   (Sid: 88) Server -> Client : 1419 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1920)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 92)  PROXIED!
+[Web Request      (18f0:1950)] "GET /dwr/engine.js"   
+[Network Analyzer (18f0:1950)]   (Sid: 92) Client -> Server @ : 677 bytes (Service=HTTP)
+[Network Analyzer (18f0:1980)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 93)  PROXIED!
+[Web Request      (18f0:1950)] "GET /dwr/interface/ChatMng.js"   
+[Network Analyzer (18f0:1950)]   (Sid: 93) Client -> Server @ : 601 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 93) Server -> Client : 858 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 92) Server -> Client : 2896 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 92) Server -> Client : 1448 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1900)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1950)]   (Sid: 92) Server -> Client : 2961 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1900)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid= 94)  PROXIED!
+[Web Request      (18f0:1950)] "GET /scripts/postMessgaePushThickbox.gzjs?_dc=0c00cf195b3"   
+[Network Analyzer (18f0:1950)]   (Sid: 88) Client -> Server @ : 629 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /xheditor-1.1.5/xheditor-zh-cn.min.gzjs?_dc=3b49cdea5a0"   
+[Network Analyzer (18f0:1950)]   (Sid: 93) Client -> Server @ : 631 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 88) Server -> Client : 2869 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 93) Server -> Client : 2896 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 93) Server -> Client : 4344 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 93) Server -> Client : 1448 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 93) Server -> Client : 2896 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 93) Server -> Client : 5126 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 93) Server -> Client : 4344 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 93) Server -> Client : 1236 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "POST //getDynamicMessagesMobile_ajax.html"   
+[Network Analyzer (18f0:1950)]   (Sid: 92) Client -> Server @ : 734 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "POST //getAllAddFriendsMsg_ajax.html"   
+[Network Analyzer (18f0:1950)]   (Sid: 88) Client -> Server @ : 729 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "POST //checkMobileApplyInfo_ajax.html"   
+[Network Analyzer (18f0:1950)]   (Sid: 93) Client -> Server @ : 730 bytes (Service=HTTP)
+[Network Analyzer (18f0:1980)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1984)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1920)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:198c)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1944)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:19a4)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1b30)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1920)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 95)  PROXIED!
+[Web Request      (18f0:1950)] "POST //getAllCourseInvitationsAndApplications_ajax.html"   
+[Network Analyzer (18f0:1950)]   (Sid: 95) Client -> Server @ : 748 bytes (Service=HTTP)
+[Network Analyzer (18f0:1980)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 96)  PROXIED!
+[Network Analyzer (18f0:1950)]   (Sid: 92) Server -> Client : 234 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1984)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 97)  PROXIED!
+[Web Request      (18f0:1950)] "POST //AllScholarShare_ajax.html"   
+[Network Analyzer (18f0:1950)]   (Sid: 96) Client -> Server @ : 725 bytes (Service=HTTP)
+[Network Analyzer (18f0:198c)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 98)  PROXIED!
+[Web Request      (18f0:1950)] "POST //SharePatent_ajax.html"   
+[Network Analyzer (18f0:1950)]   (Sid: 97) Client -> Server @ : 721 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "POST //mobileCalendarShare_ajax.html"   
+[Network Analyzer (18f0:1950)]   (Sid: 98) Client -> Server @ : 729 bytes (Service=HTTP)
+[Network Analyzer (18f0:19a4)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid= 99)  PROXIED!
+[Web Request      (18f0:1950)] "POST //ScholarUserType_ajax.html"   
+[Network Analyzer (18f0:1950)]   (Sid: 99) Client -> Server @ : 725 bytes (Service=HTTP)
+[Network Analyzer (18f0:1944)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid=100)  PROXIED!
+[Web Request      (18f0:1950)] "POST //emailM-getUnreadCount_ajax.html"   
+[Network Analyzer (18f0:1950)]   (Sid:100) Client -> Server @ : 731 bytes (Service=HTTP)
+[Network Analyzer (18f0:1b30)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid=101)  PROXIED!
+[Web Request      (18f0:1950)] "GET /images/loadingAnimation.gif"   
+[Network Analyzer (18f0:1950)]   (Sid:101) Client -> Server @ : 604 bytes (Service=HTTP)
+[Network Analyzer (18f0:132c)]   (Sid: 91) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0:1950)]   (Sid:101) Server -> Client : 2896 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:101) Server -> Client : 3234 bytes  (Service=HTTP)
+[Network Analyzer (18f0:132c)]   (Sid: 91) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:1950)]   (Sid: 88) Server -> Client : 234 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 96) Server -> Client : 235 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 97) Server -> Client : 235 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 98) Server -> Client : 235 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:100) Server -> Client : 236 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 91) Connection Terminated (by Client)
+[Network Analyzer (18f0:19a0)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:19a0)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid=102)  PROXIED!
+[Network Analyzer (18f0: d94)]   (Sid: 94) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0:1950)]   (Sid: 93) Server -> Client : 268 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 95) Server -> Client : 276 bytes  (Service=HTTP)
+[Network Analyzer (18f0: d94)]   (Sid: 94) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:1950)]   (Sid: 99) Server -> Client : 234 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 92) Client -> Server @ : 687 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "POST /dwr/call/plaincall/ChatMng.update.dwr"   
+[Network Analyzer (18f0:1950)]   (Sid: 92) Client -> Server @ : 252 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 94) Connection Terminated (by Client)
+[Network Analyzer (18f0:1900)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1900)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid=103)  PROXIED!
+[Network Analyzer (18f0: c80)]   (Sid:102) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0: c80)]   (Sid:102) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:1950)]   (Sid: 92) Server -> Client : 428 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:102) Connection Terminated (by Client)
+[Network Analyzer (18f0:19a0)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:19a0)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid=104)  PROXIED!
+[Network Analyzer (18f0:16b4)]   (Sid:103) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0:16b4)]   (Sid:103) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:1950)]   (Sid:101) Client -> Server @ : 762 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 88) Client -> Server @ : 762 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 96) Client -> Server @ : 760 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "POST /FriendTreeActionForChat.html?acc_id=17449"   
+[Network Analyzer (18f0:1950)]   (Sid:101) Client -> Server @ : 13 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "POST /RecentTreeActionForChat.html?acc_id=17449"   
+[Network Analyzer (18f0:1950)]   (Sid: 88) Client -> Server @ : 13 bytes (Service=HTTP)
+[Web Request      (18f0:1950)] "POST /TeamTreeActionForChat.html?acc_id=17449"   
+[Network Analyzer (18f0:1950)]   (Sid: 96) Client -> Server @ : 13 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 96) Server -> Client : 385 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid: 88) Server -> Client : 416 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:101) Server -> Client : 590 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:103) Connection Terminated (by Client)
+[Network Analyzer (18f0:11ac)]   (Sid:104) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0:11ac)]   (Sid:104) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:1950)]   (Sid:104) Connection Terminated (by Client)
+[Network Analyzer (18f0:1950)]   (Sid: 97) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid: 98) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid:100) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid: 93) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid: 95) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid: 99) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid: 92) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid:101) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid: 88) Connection Terminated (by Server)
+[Network Analyzer (18f0:1950)]   (Sid: 96) Connection Terminated (by Server)
+[WebMultiInProcNotify_x64:  (18f0:18fc)] Insert Text Check: "SCHOLAT Ñ§ÕßÍø"
+[User action                 ] EndTransactionEvent fabudongtai [Network Analyzer (18f0:19a0)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1944)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1944)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid=105)  PROXIED!
+[Web Request      (18f0:1950)] "GET /logout.html"   
+[Network Analyzer (18f0:1950)]   (Sid:105) Client -> Server @ : 699 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:105) Server -> Client : 355 bytes  (Service=HTTP)
+[Network Analyzer (18f0:19a0)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid=106)  PROXIED!
+[Network Analyzer (18f0:1950)]   (Sid:105) Connection Terminated (by Client)
+[Network Analyzer (18f0:1950)]   (Sid:106) Client -> Server @ : 687 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:106) Connection Terminated (by Client)
+[Network Analyzer (18f0:1900)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:19a0)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1900)] Request Connection: Remote Server @ 14.215.177.221:80   (Service=)  (Sid=107)  PROXIED!
+[Web Request      (18f0:1950)] "GET /_PXCK_2666988751061_4000464493.gif"   
+[Network Analyzer (18f0:1950)]   (Sid:107) Client -> Server @ : 437 bytes (Service=HTTP)
+[Network Analyzer (18f0:19a0)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid=108)  PROXIED!
+[Network Analyzer (18f0:1950)]   (Sid:107) Server -> Client : 137 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1944)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1900)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1944)] Request Connection: Remote Server @ 120.76.26.130:80   (Service=)  (Sid=109)  PROXIED!
+[Web Request      (18f0:1950)] "GET /logout.html"   
+[Network Analyzer (18f0:1950)]   (Sid:109) Client -> Server @ : 649 bytes (Service=HTTP)
+[Network Analyzer (18f0:1900)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid=110)  PROXIED!
+[Network Analyzer (18f0:1950)]   (Sid:107) Connection Terminated (by Client)
+[Network Analyzer (18f0:1310)]   (Sid:108) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0:1310)]   (Sid:108) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:19a0)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:19a0)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid=111)  PROXIED!
+[Network Analyzer (18f0:1950)]   (Sid:108) Connection Terminated (by Client)
+[Network Analyzer (18f0: 930)]   (Sid:110) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0: 930)]   (Sid:110) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0: c98)]   (Sid:111) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0: c98)]   (Sid:111) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:1950)]   (Sid:110) Connection Terminated (by Client)
+[Network Analyzer (18f0:1950)]   (Sid:111) Connection Terminated (by Client)
+[Network Analyzer (18f0:1900)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1900)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid=112)  PROXIED!
+[Network Analyzer (18f0:1950)]   (Sid:109) Server -> Client : 516 bytes  (Service=HTTP)
+[Web Request      (18f0:1950)] "GET /login.html"   
+[Network Analyzer (18f0:1950)]   (Sid:109) Client -> Server @ : 558 bytes (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:109) Server -> Client : 2896 bytes  (Service=HTTP)
+[Network Analyzer (18f0:1950)]   (Sid:109) Server -> Client : 601 bytes  (Service=HTTP)
+[Network Analyzer (18f0:19a0)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:19a0)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid=113)  PROXIED!
+[Network Analyzer (18f0: d58)]   (Sid:112) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0: d58)]   (Sid:112) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:1944)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1950)]   (Sid:112) Connection Terminated (by Client)
+[Network Analyzer (18f0:1944)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid=114)  PROXIED!
+[Network Analyzer (18f0: f70)]   (Sid:113) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0: f70)]   (Sid:113) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:1950)]   (Sid:113) Connection Terminated (by Client)
+[Network Analyzer (18f0:19a0)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:19a0)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid=115)  PROXIED!
+[Network Analyzer (18f0: ae4)]   (Sid:114) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0: ae4)]   (Sid:114) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:1950)]   (Sid:114) Connection Terminated (by Client)
+[Network Analyzer (18f0:1944)] Address lookup for PC127 = 10.191.65.127
+[Network Analyzer (18f0:1944)] Request Connection: Remote Server @ 40.65.178.165:443   (Service=)  (Sid=116)  PROXIED!
+[Network Analyzer (18f0:13c4)]   (Sid:115) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0:13c4)]   (Sid:115) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:1950)]   (Sid:115) Connection Terminated (by Client)
+[Network Analyzer (18f0:1950)]   (Sid:109) Connection Terminated (by Server)
+[Network Analyzer (18f0:1828)]   (Sid:116) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES256-SHA)
+[Network Analyzer (18f0:1828)]   (Sid:116) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1, ciphers:AES256-SHA)
+[Network Analyzer (18f0:1950)]   (Sid:116) Connection Terminated (by Client)

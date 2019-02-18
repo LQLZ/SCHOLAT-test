@@ -1,0 +1,90 @@
+Start auto log messages stack - Iteration 1.	[MsgId: MMSG-10545]
+Action.c(23): Found resource "http://www.scholat.com/images/homepage/note.jpg" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(23): Found resource "http://www.scholat.com/images/homepage/makefriend.jpg" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(23): Found resource "http://www.scholat.com/resources/s_icon/adamwt_1495636807713.jpg" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(23): Found resource "http://www.scholat.com/images/backTopBottom.png" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(23): Continuing after Error -26366: "Text=SCHOLAT 学者网" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack - Iteration 1.	[MsgId: MMSG-10545]
+Action.c(23): Found resource "http://www.scholat.com/images/homepage/note.jpg" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(23): Found resource "http://www.scholat.com/images/homepage/makefriend.jpg" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(23): Found resource "http://www.scholat.com/resources/s_icon/adamwt_1495636807713.jpg" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(23): Found resource "http://www.scholat.com/images/backTopBottom.png" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(23): Continuing after Error -26366: "Text=SCHOLAT 学者网" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack - Iteration 1.	[MsgId: MMSG-10545]
+Action.c(23): Found resource "http://www.scholat.com/images/homepage/note.jpg" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(23): Found resource "http://www.scholat.com/images/homepage/makefriend.jpg" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(23): Found resource "http://www.scholat.com/resources/s_icon/adamwt_1495636807713.jpg" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(23): Found resource "http://www.scholat.com/images/backTopBottom.png" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(23): Continuing after Error -26366: "Text=SCHOLAT 学者网" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack - Iteration 2.	[MsgId: MMSG-10545]
+Action.c(23): Found resource "http://www.scholat.com/images/homepage/note.jpg" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(23): Found resource "http://www.scholat.com/images/homepage/makefriend.jpg" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(23): Found resource "http://www.scholat.com/resources/s_icon/adamwt_1495636807713.jpg" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(23): Found resource "http://www.scholat.com/images/backTopBottom.png" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(23): Continuing after Error -26366: "Text=SCHOLAT 学者网" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack - Iteration 2.	[MsgId: MMSG-10545]
+Action.c(23): Found resource "http://www.scholat.com/images/homepage/note.jpg" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(23): Found resource "http://www.scholat.com/images/homepage/makefriend.jpg" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(23): Found resource "http://www.scholat.com/resources/s_icon/adamwt_1495636807713.jpg" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(23): Found resource "http://www.scholat.com/images/backTopBottom.png" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(23): Continuing after Error -26366: "Text=SCHOLAT 学者网" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack - Iteration 2.	[MsgId: MMSG-10545]
+Action.c(23): Found resource "http://www.scholat.com/images/homepage/note.jpg" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(23): Found resource "http://www.scholat.com/images/homepage/makefriend.jpg" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(23): Found resource "http://www.scholat.com/resources/s_icon/adamwt_1495636807713.jpg" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(23): Found resource "http://www.scholat.com/images/backTopBottom.png" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(23): Continuing after Error -26366: "Text=SCHOLAT 学者网" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack - Iteration 3.	[MsgId: MMSG-10545]
+Action.c(23): Found resource "http://www.scholat.com/images/homepage/note.jpg" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(23): Found resource "http://www.scholat.com/images/homepage/makefriend.jpg" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(23): Found resource "http://www.scholat.com/resources/s_icon/adamwt_1495636807713.jpg" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(23): Found resource "http://www.scholat.com/images/backTopBottom.png" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(23): Continuing after Error -26366: "Text=SCHOLAT 学者网" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack - Iteration 3.	[MsgId: MMSG-10545]
+Action.c(23): Found resource "http://www.scholat.com/images/homepage/note.jpg" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(23): Found resource "http://www.scholat.com/images/homepage/makefriend.jpg" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(23): Found resource "http://www.scholat.com/resources/s_icon/adamwt_1495636807713.jpg" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(23): Found resource "http://www.scholat.com/images/backTopBottom.png" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(23): Continuing after Error -26366: "Text=SCHOLAT 学者网" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack - Iteration 4.	[MsgId: MMSG-10545]
+Action.c(23): Found resource "http://www.scholat.com/images/homepage/note.jpg" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(23): Found resource "http://www.scholat.com/images/homepage/makefriend.jpg" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(23): Found resource "http://www.scholat.com/resources/s_icon/adamwt_1495636807713.jpg" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(23): Found resource "http://www.scholat.com/images/backTopBottom.png" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(23): Continuing after Error -26366: "Text=SCHOLAT 学者网" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack - Iteration 3.	[MsgId: MMSG-10545]
+Action.c(23): Found resource "http://www.scholat.com/images/homepage/note.jpg" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(23): Found resource "http://www.scholat.com/images/homepage/makefriend.jpg" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(23): Found resource "http://www.scholat.com/resources/s_icon/adamwt_1495636807713.jpg" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(23): Found resource "http://www.scholat.com/images/backTopBottom.png" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(23): Continuing after Error -26366: "Text=SCHOLAT 学者网" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+

@@ -1,0 +1,14 @@
+POST /getLatestVisitors.html HTTP/1.1
+x-requested-with: XMLHttpRequest
+Accept-Language: zh-CN
+Referer: http://www.scholat.com/Phomepage.html
+Accept: application/json, text/javascript, */*; q=0.01
+UA-CPU: AMD64
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Win64; x64; Trident/4.0; .NET CLR 2.0.50727; SLCC2; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3)
+Host: www.scholat.com
+Content-Length: 0
+Connection: Keep-Alive
+Cache-Control: no-cache
+Cookie: JSESSIONID=9BEFD7F04BA19D22D2736DD434BDD25F.tomcat2; STOKEN="E64478C5D0095A74/2018-06-04 09:44:04/7a573102ccfe134a461bc6e11f81dcb2&desc=1217"
+

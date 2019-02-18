@@ -1,0 +1,86 @@
+[
+    {
+        "stepId": "STEP36",
+        "stepName": "Submit Data: savePostMessage.html",
+        "infFile": "t40.inf",
+        "time": 1528702544724
+    },
+    {
+        "stepId": "STEP37",
+        "stepName": "Url: postMessage.html",
+        "infFile": "t41.inf",
+        "time": 1528702545141
+    },
+    {
+        "stepId": "STEP38",
+        "stepName": "Custom Request: getDynamicMessagesMobile_ajax.html_3",
+        "infFile": "t42.inf",
+        "time": 1528702545345
+    },
+    {
+        "stepId": "STEP39",
+        "stepName": "Custom Request: getAllAddFriendsMsg_ajax.html_3",
+        "infFile": "t43.inf",
+        "time": 1528702545662
+    },
+    {
+        "stepId": "STEP40",
+        "stepName": "Custom Request: AllScholarShare_ajax.html_3",
+        "infFile": "t44.inf",
+        "time": 1528702546132
+    },
+    {
+        "stepId": "STEP41",
+        "stepName": "Custom Request: SharePatent_ajax.html_3",
+        "infFile": "t45.inf",
+        "time": 1528702547399
+    },
+    {
+        "stepId": "STEP42",
+        "stepName": "Custom Request: mobileCalendarShare_ajax.html_3",
+        "infFile": "t46.inf",
+        "time": 1528702547623
+    },
+    {
+        "stepId": "STEP43",
+        "stepName": "Custom Request: emailM-getUnreadCount_ajax.html_3",
+        "infFile": "t47.inf",
+        "time": 1528702548166
+    },
+    {
+        "stepId": "STEP44",
+        "stepName": "Custom Request: checkMobileApplyInfo_ajax.html_2",
+        "infFile": "t48.inf",
+        "time": 1528702548470
+    },
+    {
+        "stepId": "STEP45",
+        "stepName": "Custom Request: getAllCourseInvitationsAndApplications_ajax.html_3",
+        "infFile": "t49.inf",
+        "time": 1528702548700
+    },
+    {
+        "stepId": "STEP46",
+        "stepName": "Custom Request: ScholarUserType_ajax.html_3",
+        "infFile": "t50.inf",
+        "time": 1528702549028
+    },
+    {
+        "stepId": "STEP47",
+        "stepName": "Submit Data: TeamTreeActionForChat.html_3",
+        "infFile": "t52.inf",
+        "time": 1528702549355
+    },
+    {
+        "stepId": "STEP48",
+        "stepName": "Submit Data: RecentTreeActionForChat.html_3",
+        "infFile": "t53.inf",
+        "time": 1528702549634
+    },
+    {
+        "stepId": "STEP49",
+        "stepName": "Submit Data: FriendTreeActionForChat.html_3",
+        "infFile": "t54.inf",
+        "time": 1528702549799
+    }
+]

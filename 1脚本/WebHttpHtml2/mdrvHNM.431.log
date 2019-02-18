@@ -1,0 +1,33 @@
+Start auto log messages stack.	[MsgId: MMSG-10546]
+Virtual User Script started at : 	[MsgId: MMSG-15967]
+Starting action vu.	[MsgId: MMSG-15919]
+Web Turbo Replay of LoadRunner 12.0.0 for Windows 7; build 2079 (Jun 17 2014 10:56:12)  	[MsgId: MMSG-27143]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Run-Time Settings file: "C:\Users\user\AppData\Local\Temp\lr5tmpdirn6S.950\lrcfg28u.957\cfg5zo.962"  	[MsgId: MMSG-27141]
+vuser_init.c(12): web_url("www.scholat.com") started  	[MsgId: MMSG-26355]
+vuser_init.c(12): Continuing after Error -27794: Failed to connect to server "www.scholat.com:80": [10060] Connection timed out  	[MsgId: MERR-27794]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack.	[MsgId: MMSG-10546]
+Virtual User Script started at : 	[MsgId: MMSG-15967]
+Starting action vu.	[MsgId: MMSG-15919]
+Web Turbo Replay of LoadRunner 12.0.0 for Windows 7; build 2079 (Jun 17 2014 10:56:12)  	[MsgId: MMSG-27143]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Run-Time Settings file: "C:\Users\user\AppData\Local\Temp\lr5tmpdirn6S.950\lrcfg28u.957\cfg5zo.962"  	[MsgId: MMSG-27141]
+vuser_init.c(12): web_url("www.scholat.com") started  	[MsgId: MMSG-26355]
+vuser_init.c(12): Continuing after Error -27794: Failed to connect to server "www.scholat.com:80": [10060] Connection timed out  	[MsgId: MERR-27794]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack.	[MsgId: MMSG-10546]
+Virtual User Script started at : 	[MsgId: MMSG-15967]
+Starting action vu.	[MsgId: MMSG-15919]
+Web Turbo Replay of LoadRunner 12.0.0 for Windows 7; build 2079 (Jun 17 2014 10:56:12)  	[MsgId: MMSG-27143]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Run-Time Settings file: "C:\Users\user\AppData\Local\Temp\lr5tmpdirn6S.950\lrcfg28u.957\cfg5zo.962"  	[MsgId: MMSG-27141]
+vuser_init.c(12): web_url("www.scholat.com") started  	[MsgId: MMSG-26355]
+vuser_init.c(12): Continuing after Error -27794: Failed to connect to server "www.scholat.com:80": [10060] Connection timed out  	[MsgId: MERR-27794]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+

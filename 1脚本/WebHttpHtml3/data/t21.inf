@@ -1,0 +1,17 @@
+[t21]
+FileName1=t21.html
+URL1=http://www.scholat.com/TeamTreeActionForChat.html?acc_id=17449
+Total=4
+RequestHeaderFile=t21_RequestHeader.txt
+RequestBodyFile=t21_RequestBody.txt
+ResponseHeaderFile=t21_ResponseHeader.txt
+ContentType=application/json
+SnapshotXmlFile=snapshot_21.xml
+FileName2=t21_team.png
+URL2=http://www.scholat.com/chatjs/icons/team.png
+FileName3=t21_leaf.gif
+URL3=http://202.116.32.240/scholat/ext-2.0.2/resources/images/default/tree/leaf.gif
+FileName4=t21_xubox_ico0.png
+URL4=http://www.scholat.com/common/layer/skin/default/xubox_ico0.png
+[ProtocolInfo]
+ProtocolId=QTWeb

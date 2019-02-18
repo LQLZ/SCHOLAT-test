@@ -1,0 +1,87 @@
+Start auto log messages stack.	[MsgId: MMSG-10546]
+Run-Time Settings file: "C:\Users\Administrator\AppData\Local\Temp\lr5tmpdirhMl.944\lrcfg28d.945\cfgLda.966"  	[MsgId: MMSG-27141]
+vuser_init.c(12): web_url("www.scholat.com") started  	[MsgId: MMSG-26355]
+vuser_init.c(12): Downloading resource "http://www.scholat.com/portal_new/images/Invite.png" (specified by argument number 9)  	[MsgId: MMSG-26577]
+vuser_init.c(12): Downloading resource "http://www.scholat.com/portal_new/images/team.png" (specified by argument number 11)  	[MsgId: MMSG-26577]
+vuser_init.c(12): Downloading resource "http://www.scholat.com/portal_new/images/course.png" (specified by argument number 13)  	[MsgId: MMSG-26577]
+vuser_init.c(12): Downloading resource "http://www.scholat.com/favicon.ico" (specified by argument number 15)  	[MsgId: MMSG-26577]
+vuser_init.c(12): Continuing after Error -26609: HTTP Status-Code=503 (Service Unavailable) for "http://www.scholat.com/"  	[MsgId: MERR-26609]
+Start auto log messages stack.	[MsgId: MMSG-10546]
+Run-Time Settings file: "C:\Users\Administrator\AppData\Local\Temp\lr5tmpdirhMl.944\lrcfg28d.945\cfgLda.966"  	[MsgId: MMSG-27141]
+vuser_init.c(12): web_url("www.scholat.com") started  	[MsgId: MMSG-26355]
+vuser_init.c(12): Downloading resource "http://www.scholat.com/portal_new/images/Invite.png" (specified by argument number 9)  	[MsgId: MMSG-26577]
+vuser_init.c(12): Downloading resource "http://www.scholat.com/portal_new/images/team.png" (specified by argument number 11)  	[MsgId: MMSG-26577]
+vuser_init.c(12): Downloading resource "http://www.scholat.com/portal_new/images/course.png" (specified by argument number 13)  	[MsgId: MMSG-26577]
+vuser_init.c(12): Downloading resource "http://www.scholat.com/favicon.ico" (specified by argument number 15)  	[MsgId: MMSG-26577]
+vuser_init.c(12): Continuing after Error -26609: HTTP Status-Code=503 (Service Unavailable) for "http://www.scholat.com/"  	[MsgId: MERR-26609]
+Start auto log messages stack.	[MsgId: MMSG-10546]
+Run-Time Settings file: "C:\Users\Administrator\AppData\Local\Temp\lr5tmpdirhMl.944\lrcfg28d.945\cfgLda.966"  	[MsgId: MMSG-27141]
+vuser_init.c(12): web_url("www.scholat.com") started  	[MsgId: MMSG-26355]
+vuser_init.c(12): Downloading resource "http://www.scholat.com/portal_new/images/Invite.png" (specified by argument number 9)  	[MsgId: MMSG-26577]
+vuser_init.c(12): Downloading resource "http://www.scholat.com/portal_new/images/team.png" (specified by argument number 11)  	[MsgId: MMSG-26577]
+vuser_init.c(12): Downloading resource "http://www.scholat.com/portal_new/images/course.png" (specified by argument number 13)  	[MsgId: MMSG-26577]
+vuser_init.c(12): Downloading resource "http://www.scholat.com/favicon.ico" (specified by argument number 15)  	[MsgId: MMSG-26577]
+vuser_init.c(12): Continuing after Error -26609: HTTP Status-Code=503 (Service Unavailable) for "http://www.scholat.com/"  	[MsgId: MERR-26609]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack.	[MsgId: MMSG-10546]
+Start auto log messages stack.	[MsgId: MMSG-10546]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Virtual User Script started at: 2018/6/11 15:46:55	[MsgId: MMSG-15967]
+Starting action vuser_init.	[MsgId: MMSG-15919]
+Web Turbo Replay of LoadRunner 12.55.0 for Windows 8.1; build 911 (7ÔÂ 24 2017 19:46:00)  	[MsgId: MMSG-26983]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Replay user agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows; Trident/4.0)  	[MsgId: MMSG-26988]
+vuser_init.c(12): Found resource "http://www.scholat.com/portal_new/js/slider.gzjs?_dc=17c4636ea96" in HTML "http://www.scholat.com/"  	[MsgId: MMSG-26659]
+vuser_init.c(12): web_url("www.scholat.com") was successful, 257396 body bytes, 12186 header bytes, 77 chunking overhead bytes  	[MsgId: MMSG-26385]
+vuser_init.c(26): web_set_sockets_option started  	[MsgId: MMSG-26355]
+Run-Time Settings file: "C:\Users\Administrator\AppData\Local\Temp\lr5tmpdirhMl.944\lrcfg28d.945\cfgLda.966"  	[MsgId: MMSG-27141]
+vuser_init.c(26): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+vuser_init.c(12): web_url("www.scholat.com") started  	[MsgId: MMSG-26355]
+vuser_init.c(12): Continuing after Error -27787: Server "www.scholat.com" has shut down the connection prematurely  	[MsgId: MERR-27787]
+vuser_init.c(28): lr_think_time: 23.78 seconds (recorded think time was 25.00 seconds).	[MsgId: MMSG-15947]
+End auto log messages stack.	[MsgId: MMSG-10544]
+vuser_init.c(30): web_link("Login") started  	[MsgId: MMSG-26355]
+
+
+vuser_init.c(30): Linking to "http://www.scholat.com/login.html?source=pc", Target Frame="_self"  	[MsgId: MMSG-27994]
+vuser_init.c(30): Continuing after Error -27787: Server "www.scholat.com" has shut down the connection prematurely  	[MsgId: MERR-27787]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack.	[MsgId: MMSG-10546]
+vuser_init.c(30): web_link("Login") highest severity level was "continue on error", 0 body bytes, 0 header bytes  	[MsgId: MMSG-26388]
+vuser_init.c(30): Continuing after error in Vuser script.	[MsgId: MMSG-10678]
+vuser_init.c(35): Notify: Transaction "Login" started.	[MsgId: MMSG-16999]
+vuser_init.c(37): web_submit_form("Auth.html") started  	[MsgId: MMSG-26355]
+vuser_init.c(37): Continuing after Error -27979: Requested form not found  	[MsgId: MERR-27979]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack.	[MsgId: MMSG-10546]
+vuser_init.c(12): Found resource "http://www.scholat.com/portal_new/js/slider.gzjs?_dc=17c4636ea96" in HTML "http://www.scholat.com/"  	[MsgId: MMSG-26659]
+vuser_init.c(12): web_url("www.scholat.com") was successful, 257396 body bytes, 12186 header bytes, 77 chunking overhead bytes  	[MsgId: MMSG-26385]
+vuser_init.c(26): web_set_sockets_option started  	[MsgId: MMSG-26355]
+vuser_init.c(26): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+vuser_init.c(28): lr_think_time: 23.88 seconds (recorded think time was 25.00 seconds).	[MsgId: MMSG-15947]
+vuser_init.c(30): web_link("Login") started  	[MsgId: MMSG-26355]
+vuser_init.c(30): Linking to "http://www.scholat.com/login.html?source=pc", Target Frame="_self"  	[MsgId: MMSG-27994]
+vuser_init.c(30): Continuing after Error -27787: Server "www.scholat.com" has shut down the connection prematurely  	[MsgId: MERR-27787]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack.	[MsgId: MMSG-10546]
+vuser_init.c(30): web_link("Login") highest severity level was "continue on error", 0 body bytes, 0 header bytes  	[MsgId: MMSG-26388]
+vuser_init.c(30): Continuing after error in Vuser script.	[MsgId: MMSG-10678]
+vuser_init.c(35): Notify: Transaction "Login" started.	[MsgId: MMSG-16999]
+vuser_init.c(37): web_submit_form("Auth.html") started  	[MsgId: MMSG-26355]
+vuser_init.c(37): Continuing after Error -27979: Requested form not found  	[MsgId: MERR-27979]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+

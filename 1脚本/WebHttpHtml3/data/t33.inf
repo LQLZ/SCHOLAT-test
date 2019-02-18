@@ -1,0 +1,17 @@
+[t33]
+FileName1=t33.htm
+URL1=http://www.scholat.com/getLatestVisitors.html
+Total=4
+RequestHeaderFile=t33_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t33_ResponseHeader.txt
+ContentType=text/html
+SnapshotXmlFile=snapshot_33.xml
+FileName2=t33_default.png
+URL2=http://www.scholat.com/images/default.png
+FileName3=t33_mozhaoxian_1444843385058.jpg
+URL3=http://www.scholat.com/resources/s_icon/mozhaoxian_1444843385058.jpg
+FileName4=t33_huangzhihao_1444124176867.jpg
+URL4=http://www.scholat.com/resources/s_icon/huangzhihao_1444124176867.jpg
+[ProtocolInfo]
+ProtocolId=QTWeb

@@ -1,0 +1,1 @@
+"freshEventDynamicBegin=0&freshEventTeamBegin=0&freshEventCourseBegin=0"

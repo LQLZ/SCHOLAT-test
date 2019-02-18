@@ -1,0 +1,17 @@
+[t42]
+FileName1=t42.htm
+URL1=http://www.scholat.com//getDynamicMessagesMobile.html
+Total=4
+RequestHeaderFile=t42_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t42_ResponseHeader.txt
+ContentType=text/html
+SnapshotXmlFile=snapshot_42.xml
+FileName2=t42_tip-anchor-sprite.gif
+URL2=http://202.116.32.240/scholat/ext-2.0.2/resources/images/default/qtip/tip-anchor-sprite.gif
+FileName3=t42_tip-sprite.gif
+URL3=http://202.116.32.240/scholat/ext-2.0.2/resources/images/default/qtip/tip-sprite.gif
+FileName4=t42_soundmanager2.swf
+URL4=http://www.scholat.com/chatjs/swf/soundmanager2.swf
+[ProtocolInfo]
+ProtocolId=QTWeb

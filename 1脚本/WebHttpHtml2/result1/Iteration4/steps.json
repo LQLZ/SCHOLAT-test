@@ -1,0 +1,38 @@
+[
+    {
+        "stepId": "STEP38",
+        "stepName": "Url: editUserProfile.html",
+        "infFile": "t22.inf",
+        "time": 1528702638774
+    },
+    {
+        "stepId": "STEP39",
+        "stepName": "Custom Request: getDynamicMessagesMobile.html_2",
+        "infFile": "t23.inf",
+        "time": 1528702639348
+    },
+    {
+        "stepId": "STEP40",
+        "stepName": "Custom Request: getAllAddFriendsMsg.html_2",
+        "infFile": "t24.inf",
+        "time": 1528702639555
+    },
+    {
+        "stepId": "STEP41",
+        "stepName": "Submit Data: FriendTreeActionForChat.html_2",
+        "infFile": "t26.inf",
+        "time": 1528702640164
+    },
+    {
+        "stepId": "STEP42",
+        "stepName": "Submit Data: RecentTreeActionForChat.html_2",
+        "infFile": "t27.inf",
+        "time": 1528702640341
+    },
+    {
+        "stepId": "STEP43",
+        "stepName": "Submit Data: TeamTreeActionForChat.html_2",
+        "infFile": "t28.inf",
+        "time": 1528702640531
+    }
+]

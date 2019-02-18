@@ -1,0 +1,13 @@
+[t7]
+FileName1=t7.htm
+URL1=http://www.scholat.com//ScholarUserType.html
+Total=2
+RequestHeaderFile=t7_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t7_ResponseHeader.txt
+ContentType=text/html
+SnapshotXmlFile=snapshot_7.xml
+FileName2=t7_tip-anchor-sprite.gif
+URL2=http://202.116.32.240/scholat/ext-2.0.2/resources/images/default/qtip/tip-anchor-sprite.gif
+[ProtocolInfo]
+ProtocolId=QTWeb

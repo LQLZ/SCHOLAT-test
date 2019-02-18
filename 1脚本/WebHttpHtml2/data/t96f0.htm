@@ -1,0 +1,145 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<title>上传头像</title>
+	<link href="http://202.116.32.240/scholat/styles/avatar/avatar.gzcss?_dc=9393258f9d9" rel="stylesheet" type="text/css" />
+	<script type="text/javascript">
+	initData = { width: 160, height: 160 };
+	</script>
+	<script src="http://202.116.32.240/scholat/scripts/jquery-1.9.1.min.gzjs?_dc=89a8221df3d" type="text/javascript"></script>
+	<script src="http://202.116.32.240/scholat/scripts/jquery-ui-1.10.4.min.gzjs?_dc=b7c2ad35745" type="text/javascript"></script>
+	<script src="http://202.116.32.240/scholat/scripts/avatar/cutpic.gzjs?_dc=b9a5c90895f" type="text/javascript"></script>
+	<script type="text/javascript">
+ function checkPicType(fileName){
+	$(".detailsContainer ul").css("top","0");
+	var arr = new Array();
+	var picTypeArr = new Array("JPG","BMP","GIF","PNG","JPEG");
+	var arr = fileName.split(".");
+	var type = arr[arr.length-1].toUpperCase();
+	for(var i =0; i < picTypeArr.length; i++){
+ if(type == picTypeArr[i]){
+ 	$("#upavatarForm").submit();
+ 	return true;
+ }
+	}
+	return false;
+ }
+ function Step0() {
+	document.getElementById("tips").style.color="red";
+	document.getElementById("tips").innerHTML="请选择头像图片文件";
+	$(".Step2Container").hide(); 
+ }
+ function Step1() {
+	$(".Step2Container").hide();
+ }
+ function Step2() {
+	$("#CurruntPicContainer").hide();
+	$(".Step2Container").show();
+	$("#step2").hide();
+	
+	$("#tips2").show();
+	window.parent.$("#result").height("297px");
+	window.parent.$("#picture").height("313px");
+ }
+ function Step3() {
+	$(".Step2Container").hide();
+	var usrName = document.getElementById("usrName").value;
+	document.getElementById("tips").innerHTML="头像修改成功，您可以&nbsp;<a href=./" + usrName + " target=_blank>访问学者主页</a>&nbsp;查看效果。";
+	window.parent.$("#picture").height("189px");
+ }
+	</script>
+	<style type="text/css">
+ body{
+	margin:0;
+ }
+ .BtnFile {
+	background: url(./teamwork/img/FileBtn.jpg) no-repeat;
+	z-index: 99;
+	height: 30px;
+	margin-left: 3px;
+ }
+ .BtnFile input {
+	opacity: 0;
+	filter: alpha(opacity:0);
+ }
+	</style>
+	</head>
+	<body>
+ <div style="float: left;">
+	
+	<div id="CurruntPicContainer">
+ <div class="photocontainer">
+ 	<img id="imgphoto" src=".//images/default.png"
+  onerror="javascript:this.src='images/avatar/default.png';"
+  style="border-width: 0px; width: 160px; height: 160px;" />
+ </div>
+	</div>
+	
+	<div class="Step2Container" style="display: none;">
+ <div id="Canvas" class="uploaddiv">
+ 	<div id="ImageDragContainer">
+  <img id="ImageDrag" class="imagePhoto"
+ 	src="avatartmp/null" style="border-width: 0px;" />
+ 	</div>
+ 	<div id="IconContainer">
+  <img id="ImageIcon" class="imagePhoto"
+ 	src="avatartmp/null" style="border-width: 0px;" />
+ 	</div>
+ </div>
+	</div>
+ </div>
+ <div id="step2" style="float: left; margin: 18px; margin-top: 50px;">
+	<form action="upavatar.html" enctype="multipart/form-data"
+ method="post" id="upavatarForm">
+ <input type="hidden" id="usrName" value="null" />
+ <div class="BtnFile">
+ 	<input type="file" name="image" onchange="checkPicType(this.value);"
+  style="cursor: pointer; margin-left: -155px;" />
+ </div>
+ <div id="tips" style="margin:15px 0 0 5px;font-family:'Georgia', Georgia, 'Times New Roman', Times, 'Microsoft YaHei', SimSun, SimHei, serif; 'Georgia', Georgia, 'Times New Roman', Times, 'Microsoft YaHei', SimSun, SimHei, serif;">
+ 	<div style="color: #399;">Please upload your avatar file.</div>
+ 	<div style="color: #399;margin:10px 0;">格式：jpg/jpeg/bmp/gif/png，建议小于1MB。</div>
+ 	<div style='color:red;'>请上传本人近期真实照片，系统将定期审核清除不符合规范的头像，严重违规的将注销帐号。</div>
+ </div>
+	</form>
+ </div>
+ <div class="Step2Container" style="float: left;margin-left:20px; margin-top: 50px; display: none;">
+	<div id="tips2" style="margin:15px 0 0 5px;font-family:'Georgia', Georgia, 'Times New Roman', Times, 'Microsoft YaHei', SimSun, SimHei, serif; 'Georgia', Georgia, 'Times New Roman', Times, 'Microsoft YaHei', SimSun, SimHei, serif;">
+ <div style='color:#399;'>请进行拖拽\缩放至满意规格，也可以拖动头像至合适位置。</div>
+ <div style='color:red;margin:10px 0;'>请上传本人近期真实照片，系统将定期审核清除不符合规范的头像，严重违规的将注销帐号。</div>
+	</div>
+	<div class="uploaddiv">
+ <table>
+ 	<tr>
+  <td>
+ 	<div id="bar">
+  <div class="child">
+  </div>
+ 	</div>
+  </td>
+ 	</tr>
+ </table>
+	</div>
+	<div class="uploaddiv" style="margin-left: 6px;margin-top:10px;">
+ <form action="zoomavatar.html" method="post" style="float:left;">
+ 	<input type="hidden" name="picture" value="null" />
+ 	<input type="submit" name="btn_Image" value="保存头像" id="btn_Image" style="margin-right:20px;" />
+ 	<input type="button" id="cancle_Image" onclick="javascript:parent.location.reload();" value="取消保存"/>
+ 	<div style="display: none;">
+  txt_width<input name="txt_width" type="text" value="1" id="txt_width" />
+  txt_height<input name="txt_height" type="text" value="1" id="txt_height" />
+  txt_top<input name="txt_top" type="text" value="82" id="txt_top" />
+  txt_left<input name="txt_left" type="text" value="73" id="txt_left" />
+  txt_zoom<input name="txt_zoom" type="text" id="txt_zoom" />
+ 	</div>
+ </form>
+	</div>
+ </div>
+ 
+ <script type='text/javascript'>Step1();</script>
+ 
+ <div style="clear:both;"></div>
+	</body>
+</html>

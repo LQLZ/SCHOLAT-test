@@ -1,0 +1,898 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+ <title>用户设置 | 学者网</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+ <link rel="stylesheet" href="/struts/xhtml/styles.css" type="text/css"/>
+<script src="/struts/utils.js" type="text/javascript"></script>
+ 
+ <link href="http://202.116.32.240/scholat/styles/forms.gzcss?_dc=a66025a1501" rel="stylesheet" type="text/css" />
+ <link href="http://202.116.32.240/scholat/styles/scholat/leftmenu.gzcss?_dc=ab618ee2e24" rel="stylesheet" type="text/css" />
+ <link href="http://202.116.32.240/scholat/styles/scholat/print.gzcss?_dc=25698421d93" rel="stylesheet" type="text/css" />
+ <link href="http://202.116.32.240/scholat/styles/homepage/portalliststyle.gzcss?_dc=0b14c83135c" rel="stylesheet" type="text/css" />
+ <link href="http://202.116.32.240/scholat/styles/friends/myfriends.gzcss?_dc=6e2bc265b79" rel="stylesheet" type="text/css" />
+ <link href="http://202.116.32.240/scholat/styles/space/reset.gzcss?_dc=0c9353328a9" rel="stylesheet" type="text/css" />
+ <link href="http://202.116.32.240/scholat/styles/space/ProfileCss.gzcss?_dc=9e230f87183" rel="stylesheet" type="text/css" />
+ <script src="http://202.116.32.240/scholat/scripts/global.gzjs?_dc=00d1a1b6db7" type="text/javascript"></script>
+ <script src="http://202.116.32.240/scholat/scripts/jquery-1.9.1.min.gzjs?_dc=89a8221df3d" type="text/javascript"></script>
+ <script type="text/javascript">
+     $(document).ready(function(){
+    $(".tc li").mouseover(function(){
+    $(this).css("background-image","url(images/space/tto.gif)");
+    });
+    $(".tc li").mouseout(function(){
+  $(this).css("background-image","");
+    });
+    $("#t4").click(function(){
+    $(".sm").slideToggle("slow");
+    });
+     });
+
+     function changeTab(current,n,classname,tabname){
+    for(var i=1; i<=n;i++){
+   $("#"+tabname+i).attr("class","");
+    } 
+    $("#"+tabname+current).attr("class",classname); 
+     }
+  function slidelist(){
+  if($("#lhl").css("display")=="none"){
+ $(".lhide").html("收起<img src='images/space/up.gif' />"); 
+  }else{
+ $(".lhide").html("更多<img src='images/space/down.gif' />"); 
+  }
+  $("#lhl").slideToggle("slow");
+  }
+  function changebgc(c){
+  $(".lhide").css("background-color",c);
+  }
+  function sTab(c,n){
+   for(var i=1;i<=n;i++){
+   $("#ptab"+i).css("display","none");
+   }
+   $("#ptab"+c).css("display","block");  
+  }
+  if($("#backgroudImg").val() == ''){
+  document.getElementsByTagName("body")[0].style.backgroundImage="url(http://202.116.32.240/scholat/template/homepage/bgimages/22.jpg)";
+	 }
+ </script>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+ 
+ <link href="http://202.116.32.240/scholat/styles/scholat/contentStyles.gzcss?_dc=652082e59b4" rel="stylesheet" type="text/css" />
+ <link href="http://202.116.32.240/scholat/styles/space/editProfile.gzcss?_dc=cf12b4fc5db" rel="stylesheet" type="text/css" />
+ <link href="http://202.116.32.240/scholat/styles/homepage/jquery-ui-1.10.4.gzcss?_dc=4a288b29c1b" rel="stylesheet" type="text/css" />
+ <link href="http://202.116.32.240/scholat/styles/autocomplete.gzcss?_dc=7168f0d17bc" rel="stylesheet" type="text/css" />
+ <script src="http://202.116.32.240/scholat/scripts/jquery-ui-1.7.1.custom.min.gzjs?_dc=6658f8686b4" type="text/javascript"></script>
+ <script src="http://202.116.32.240/scholat/scripts/MajorList.gzjs?_dc=c41ebc4e285" type="text/javascript"></script>
+ <script src="http://202.116.32.240/scholat/scripts/UniLabList.gzjs?_dc=8d25909db0d" type="text/javascript"></script>
+ <script src="http://202.116.32.240/scholat/scripts/autocomplete.min.gzjs?_dc=d85452a7cd5" type="text/javascript"></script>
+ <script type="text/javascript">
+	function selectToInput(id, value) {
+ document.getElementById(id).value = value;
+	}
+	$(document).ready( function() {
+ $("#workUnit").autocomplete({
+ 	source: getUniLabList()
+ });
+	
+	});
+	$( function() {
+ $("#UsersubmitBtn").click( function() {
+ 	$("#UserProfileForm").submit();
+ });
+ 
+ var complete = $("#UserInnerData").val();
+ if (complete == 0) {
+ 	$("#completer").css('height', '30px');
+ 	$("#completer").html("<div style='margin:10px 0px 0px 50px;color:#F15191;font-weight:bold;'>请按照提示填写您的资料</div>");
+ }
+ 
+ $("#UploadPicture").hover( function() {
+ 	$(".bg").css("opacity", "1");
+ }, function() {
+ 	$(".bg").css("opacity", "0.8");
+ });
+ var defaultVal = $("#scholarTitle").val();
+ var defaultFlag = 0;
+ $("#scholarTitleSelect").find("option").each( function() {
+ 	if ($(this).val() == defaultVal) {
+  $(this).attr("selected", "selected");
+  defaultFlag = 1;
+ 	}
+ });
+ if (defaultFlag == 0) {
+ 	$("#scholarTitleSelect").find("option").each( function() {
+  if ($(this).val() == " ") {
+ 	$(this).attr("selected", "selected");
+ 	defaultFlag = 0;
+  }
+ 	});
+ }
+ var defaultVal2 = $("#degree").val();
+ var defaultFlag2 = 0;
+ $("#degreeSelect").find("option").each( function() {
+ 	if ($(this).val() == defaultVal2) {
+  $(this).attr("selected", "selected");
+  defaultFlag2 = 1;
+ 	}
+ });
+ if(defaultFlag2 == 0){
+ 	$("#degreeSelect").find("option").each( function() {
+  if ($(this).val() == " ") {
+ 	$(this).attr("selected", "selected");
+ 	defaultFlag = 0;
+  }
+ 	});
+ }
+ 
+ var scholarTitle = ["硕士生导师/Master Supervisor","博士生导师/Ph.D. Supervisor","教授/Professor","副教授/Associate Professor","讲师/Lecturer","研究员/Research Fellow","副研究员/Associate Research Fellow",
+ "助理研究员/Assistant Research Fellow","教授级高工/Professorate Senior Engineer","高级工程师/Senior Engineer","工程师/Engineer",
+ "高级实验师/Senior Experimentalist","实验师/Experimentalist","博士后/Postdoctor","博士生/Doctoral Candidate","硕士生/Postgraduate","本科生/Undergraduate",
+ "大专生/Junior College Student "];
+ $("#scholarTitle").autocomplete({
+ 	source: scholarTitle
+ });
+ 
+   	$( "#scholarField" ).autocomplete({
+    source: getMajorList()
+  	});
+  	});
+ </script>
+ <style>
+	.detailsContainer input {
+ vertical-align: middle;
+ margin-left: 5px; *
+ margin-left: 10px;
+	}
+	#picture {
+ padding-top: 20px;
+ padding-left:70px;
+ border-bottom: solid 1px #ddd;
+ padding-bottom:10px;
+	}
+	#editPicture {
+ width: 86%;
+ height: 25px;
+ line-height: 25px;
+ position: absolute;
+ left: 0;
+ bottom: 0;
+	}
+	.bg {
+ display: block;
+ position: absolute;
+ left: 0;
+ top: 0;
+ background-color: #39f;
+ opacity: 0.9;
+ width: 100%;
+ height: 100%;
+ z-index: 5;
+ margin-left: 25px;
+	}
+	.HomePageSet {
+ float: right;
+ margin-right: 20px;
+ width: 90px;
+ height: 35px;
+ line-height: 35px;
+ text-align: center;
+ cursor: pointer;
+ background-color: #009acd;
+	}
+	.inputMsg label,.inputRadio label {
+ width: 126px;
+	}
+	.ui-autocomplete {
+ max-height: 100px;
+ overflow-y: auto;
+ overflow-x: hidden;
+	}
+	* html .ui-autocomplete {
+ height: 100px;
+	}
+	.progress {
+ width: 200px;
+ margin-left: 5px;
+ float: left;
+ background: #ebebeb;
+ border-left: 1px solid transparent;
+ border-right: 1px solid transparent;
+ border-radius: 10px;
+	}
+	.progress .blue {
+ float: left;
+ min-width: 30px;
+ height: 16px;
+ line-height: 16px;
+ border: 1px solid;
+ border-radius: 10px;
+ text-align: center;
+ border-color: #459fd6 #3094d2 #277db2;
+ background: #48d1cc;
+ color: #fff;
+ box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), 0 1px 2px
+ 	rgba(0, 0, 0, 0.2);
+	}
+	.info_remind {
+ margin-left: 77px;
+ margin-top: 20px;
+	}
+	.info_remind span {
+ display: inline-block;
+ color: red;
+ float: left;
+ line-height: 18px;
+ margin-right: 46px;
+	}
+ </style>
+	</head>
+	<body
+ style="background-color: #ccc; background-image: url('http://202.116.32.240/scholat/template/homepage/bgimages/29.jpg'); background-attachment: fixed;">
+ <input type="hidden" id="backgroudImg" value="29.jpg" />
+ 
+ >
+ 
+ 
+
+ <head>
+	<link href="http://202.116.32.240/scholat/portal/styles/portalTop.gzcss?_dc=019474ff976" rel="stylesheet" type="text/css" />
+	
+</head>
+<style>
+	@media screen and (-webkit-min-device-pixel-ratio:0) {
+ #portal_logo {
+	margin-top: 5px;
+ }
+ img{
+	    vertical-align: middle !important;
+ }
+	}
+	img{
+ vertical-align: middle !important;
+	}
+</style>
+<body style="background-image: url('http://202.116.32.240/scholat/template/homepage/bgimages/29.jpg'); background-attachment: fixed;">
+	<input type="hidden" id="backgroudImg" value="29.jpg" />
+	<input type="hidden" id="local_filepath" value="http://www.scholat.com/" />
+	<input type="hidden" id="remoteUser" value="lqlz" />
+	
+	<div id="divheader" onkeydown="BindEnter(event)">
+ <div id="divheaderinfo" style="padding: 0px 20px;">
+	<div id="divheaderinfo_left">
+ <a style="color:#fff;font-size:14px;" href="http://www.scholat.com/" target="_self">SCHOLAT 学者网</a>&emsp;
+	</div>
+	<div id="divheaderinfo_center">
+ <div class="nav">
+ 	<div class="select">
+  <span class="ui-display"> 
+ 	<span id="search_flag" onclick="SearchNav()"> 学者</span>
+ 	<img id="triangle_down" src="http://202.116.32.240/scholat/images/triangle.png" />
+  </span>
+  <div id="tool_List" style="display: hidden;" class="hidden-box">
+ 	<div id="mytest">
+  <div id="li-0" onclick="changeSearch(0)">
+  	<a>动态</a>
+  </div>
+  <div id="li-1" onclick="changeSearch(1)">
+  	<a>学术</a>
+  </div>
+  <div id="li-2" onclick="changeSearch(2)">
+  	<a>学者</a>
+  </div>
+  <div id="li-3" onclick="changeSearch(3)">
+  	<a>团队</a>
+  </div>
+  <div id="li-4" onclick="changeSearch(4)">
+  	<a>课程</a>
+  </div>
+ 	</div>
+  </div>
+ 	</div>
+ 	<div id="search_input_bg" class="ui-search_input_bg">
+  <input id="searchGroupInput" name="q" maxlength="100" type="text" />
+ 	</div>
+ 	<div onclick="SearchNav()"
+  style="background: none repeat scroll 0% 0% #fff; width: 30px; height: 25px; float: left; cursor: pointer;">
+  <a href="#no" style="margin-left: 8px;" onclick="SearchNav()">
+ 	<img id="portal_logo" src="http://202.116.32.240/scholat/images/searchbutton.png" />
+  </a>
+ 	</div>
+ 	<div style="clear: both;"></div>
+ </div>
+	</div>
+	
+	<div id="divheaderinfo_right">
+ 
+ 	
+  <div style="float:right;position:relative;">
+ 	<a href="http://www.scholat.com/Phomepage.html" style="float:left;text-align:center;width:90px;font-size:14px;color:#fff;" title="Zone">我的空间</a>
+ 	<ul id="navList">
+  <li id="t1" style="width:80px;">
+  	<p class="p1" title="My profile">
+   个人中心&nbsp;<img src="http://202.116.32.240/scholat/images/arrow_white.png"/>
+  	</p>
+  </li>
+  <li id="t2" style="width:80px;">
+  	<p class="p1" title="Academic">
+   学术圈&nbsp;<img src="http://202.116.32.240/scholat/images/arrow_white.png"/>
+  	</p>
+  </li>
+  <li id="t3" style="width:60px;">
+  	<p class="p1" title="Tools" id="newsTips" style="position:relative;">
+   消息&nbsp;<img src="http://202.116.32.240/scholat/images/arrow_white.png"/>
+   <span>●</span>
+  	</p>
+  </li>
+  <div style="clear:both;"></div>
+ 	</ul>
+ 	<a href="http://www.scholat.com/lqlz" target="_blank" title='访问我的学者主页' style="margin-right:13px; color:#fff; font-size:14px;">
+  lqlz
+ 	</a>
+ 	<a href="logout.html" title='退出登录状态'>
+  <img src="http://202.116.32.240/scholat/images/Exit.png" style="margin-top:-3px;"/>
+ 	</a>
+ 	<img src="http://www.scholat.com/images/help.png" onclick="window.open('http://www.scholat.com/helpPerson.html','_self')"
+ 	style="margin-top:-3px;cursor:pointer;margin-left: 8px; width: 21px;" title="Help"/>
+ 	<ul id="personList" style="display:none;">
+  <li>
+  	<a href="http://www.scholat.com/editUserProfile.html">个人信息</a>
+  </li>
+  <li>
+  	<a href="http://www.scholat.com/ScholarPapers.html?selectType=allPaper">学术档案</a>
+  </li>
+  <li>
+  	<a href="http://www.scholat.com/postMessage.html">动态管理</a>
+  </li>
+  <li>
+  	<a href="http://www.scholat.com/ScholarCalendar.html">日程管理</a>
+  </li>
+  <li>
+  	<a href="http://www.scholat.com/noDecComShowUnReadMessage.html">站内信息</a>
+  </li>
+ 	</ul>
+ 	<ul id="academicList" style="display:none;">
+  <li>
+  	<a href="http://www.scholat.com/friendsGroupManager.html">我的好友</a>
+  </li>
+  <li>
+  	<a href="http://www.scholat.com/teamworkShowAll.html">我的团队</a>
+  </li>
+  <li>
+  	<a href="http://www.scholat.com/myCourses.html">我的课程</a>
+  </li>
+ 	</ul>
+ 	<div id="newsList" style="display:none;">
+  <div id="header_newsbar">
+  	<ul>
+   <li>
+  	<div id="header_dynamicremind">动态<span>●</span></div>
+   </li>
+   <li>
+  	<div id="header_friendremind">好友<span>●</span></div>
+   </li>
+   <li>
+  	<div id="header_teamremind">团队<span>●</span></div>
+   </li>
+   <li>
+  	<div id="header_academicremind">学术<span>●</span></div>
+   </li>
+   <li>
+  	<div id="header_courseremind">课程<span>●</span></div>
+   </li>
+   <li>
+  	<div id="header_calendarshareremind">课表<span>●</span></div>
+   </li>
+   <li style="width:44px;">
+  	<div id="header_emailremind">站内信<span>●</span></div>
+   </li>
+   <div style="clear:both;"></div>
+  	</ul>
+  	<div class="header_newsLine"></div>
+  </div>
+  <div id="header_Message"></div>
+ 	</div>
+  </div>
+ 	
+ 	
+ 
+	</div>
+ </div>
+	</div>
+	
+	<script src="http://202.116.32.240/scholat/portal/scripts/portalTop.gzjs?_dc=5747594202a" type="text/javascript"></script>
+	<script src="http://202.116.32.240/scholat/scripts/cookieUtil.gzjs?_dc=4d9c355cc55" type="text/javascript"></script>
+	<script>
+ var account = "lqlz";
+ 
+ if (account == null || account == "") {
+
+	var logincookie = CookieUtil.get("STOKEN");
+
+	if (logincookie != null && logincookie != "") {
+
+  if (checkdate(logincookie.split("/")[1])) {
+
+	          var currentUrl = window.location.href;
+
+	          CookieUtil.set("H_U", currentUrl, "/", "/", null, true);
+
+	          window.location.href = './login.html';
+	      } else {
+
+	          CookieUtil.unset("STOKEN", "/", null);
+	      }
+	}
+	
+ }
+
+ function checkdate(cookiedate) {
+
+	    var date = new Date(),
+	      timestamp, newDate;
+
+	    timestamp = date.getTime();
+
+	    newDate = new Date(timestamp - 7 * 24 * 3600 * 1000);
+
+	    var cookie_Date = new Date(cookiedate);
+
+	    if (cookie_Date.getTime() > newDate.getTime()) {
+
+	      return true;
+	    }
+
+	    return false;
+
+	  }
+	</script>
+</body>
+
+ <div style="margin: 60px auto;">
+	<div class="t" style="height: 0px; margin-top: 32px; border: 0px;">
+ 
+
+<html>
+	<head>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+ <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+ <link href="http://202.116.32.240/scholat/ext-2.0.2/resources/css/ext-all-style.gzcss" rel="stylesheet" type="text/css" />
+ <link href="http://202.116.32.240/scholat/ext-2.0.2/chat-all.gzcss" rel="stylesheet" type="text/css" />
+ <script src="http://www.scholat.com/dwr/engine.js" type="text/javascript"></script>
+ <script src="http://www.scholat.com/dwr/interface/ChatMng.js" type="text/javascript"></script>
+ <script src="http://202.116.32.240/scholat/scripts/jquery-ui-1.10.4.min.gzjs" type="text/javascript"></script>
+ 
+ <script src="http://202.116.32.240/scholat/ext-2.0.2/adapter/jquery/ext-jquery-adapter.gzjs" type="text/javascript"></script>
+ <script src="http://202.116.32.240/scholat/ext-2.0.2/adapter/ext/ext-base.gzjs" type="text/javascript"></script>
+ <script src="http://202.116.32.240/scholat/ext-2.0.2/ext-all.gzjs" type="text/javascript"></script>
+ <script src="http://202.116.32.240/scholat/ext-2.0.2/build/locale/ext-CN.gzjs" type="text/javascript"></script>
+ <script src="http://202.116.32.240/scholat/chatjs/swfupload.gzjs" type="text/javascript"></script>
+ <script src="http://202.116.32.240/scholat/chatjs/UploadDialog.gzjs" type="text/javascript"></script>
+ <script src="http://202.116.32.240/scholat/chatjs/sound.gzjs" type="text/javascript"></script>
+ <script src="http://202.116.32.240/scholat/chatjs/chat.gzjs" type="text/javascript"></script>
+ <script src="http://202.116.32.240/scholat/chatjs/mainwin.gzjs" type="text/javascript"></script>
+ <script src="http://202.116.32.240/scholat/chatjs/send.gzjs" type="text/javascript"></script>
+ <script src="http://202.116.32.240/scholat/chatjs/teamsend.gzjs" type="text/javascript"></script>
+ <script src="http://202.116.32.240/scholat/course/layer/layer.gzjs" type="text/javascript"></script>
+ <script src="http://202.116.32.240/scholat/course/layer/extend/layer.ext.gzjs" type="text/javascript"></script>
+ 
+ <link href="http://202.116.32.240/scholat/course/styles/pekeUpload.gzcss" rel="stylesheet" type="text/css" />
+ <script src="http://202.116.32.240/scholat/chatjs/pekeUpload.gzjs" type="text/javascript"></script>
+ <style>
+	.tcl .num {
+ color: #F15191;
+	}
+	.msgA {
+ color: black;
+ padding-top: 10px;
+	}
+	.msgA:ACTIVE,.msgA:HOVER,msgA:LINK,msgA:VISITED {
+ color: black;
+	}
+ </style>
+ 
+ 
+ <script type="text/javascript">
+	Ext.onReady(function () {
+ var iE6 = !-[1, ] && !window.XMLHttpRequest;
+ if (iE6) {
+ 	setTimeout("tipsbox.msg('\u6d4f\u89c8\u5668\u7248\u672c\u8fc7\u4f4e','\u4e0d\u652f\u6301\u5728\u7ebf\u4ea4\u6d41\u529f\u80fd\uff01','3');", 8000);
+ } else {
+ 	ACCOUNT_ID = "17449";
+ 	var strurl = window.location.href;
+ 	if (ACCOUNT_ID != null && ACCOUNT_ID != "" && strurl.indexOf("/team/") < 0 && strurl.indexOf("/teamIndex.html") < 0) {
+  CHINESE_NAME = "李祺";
+  SESSION_ID = "35EAD32AD7E0A9B9578107EDF1A16F02.tomcat3";
+  ICON_URL = "/images/default.png";
+  Ext.QuickTips.init();
+  soundinit();
+  if (ICON_URL == "" || ICON_URL == null || ICON_URL == "images/default.png") {
+ 	ICON_URL = "/chatjs/icons/online-avatar.jpg";
+  }
+  ICON_URL = WEB_ROOT + ICON_URL;
+  CHAT_LOGIN = true;
+  CHAT_LOAD_TIME = randTime();
+  setTimeout("submitClient()", 1000);
+  setTimeout("loadchat()", 2000);
+  DWREngine.setTimeout(25000);
+  dwr.engine.setErrorHandler(function (message) {
+ 	logincheck();
+  });
+ 	}
+ }
+	});
+	
+	window.document.onkeydown = function doconkeydown() {
+ if ((event.keyCode == 8)) {
+ 	if (window.event.srcElement.tagName.toUpperCase() != "INPUT" && window.event.srcElement.tagName.toUpperCase() != "TEXTAREA" && window.event.srcElement.tagName.toUpperCase() != "TEXT") {
+  event.keyCode = 0;
+  event.returnValue = false;
+ 	}
+ }
+	};
+	startList = function () {
+ if (document.all && document.getElementById) {
+ 	navRoot = document.getElementById("nav");
+ 	for (i = 0; i < navRoot.childNodes.length; i++) {
+  node = navRoot.childNodes[i];
+  if (node.nodeName == "LI") {
+ 	node.onmouseover = function () {
+  this.className += "over";
+ 	};
+ 	node.onmouseout = function () {
+  this.className = this.className.replace("over", "");
+ 	};
+  }
+ 	}
+ }
+	};
+	window.onload = startList;
+	navList = function () {
+ if (document.all && document.getElementById) {
+ 	navRoot = document.getElementById("navList");
+ 	for (i = 0; i < navRoot.childNodes.length; i++) {
+  node = navRoot.childNodes[i];
+  if (node.nodeName == "LI") {
+ 	node.onmouseover = function () {
+  this.className += "over";
+ 	};
+ 	node.onmouseout = function () {
+  this.className = this.className.replace("over", "");
+ 	};
+  }
+ 	}
+ }
+	};
+	window.onload = navList;
+ </script>
+	</head>
+	<body>
+	</body>
+</html>
+<appfuse:constants scope="request" />
+
+	</div>
+	<div class="c">
+ <div id="ajaxContent">
+ 	
+ 	<style type="text/css">
+ #userProfileTag {
+	width: 960px;
+	margin-top: 60px;
+	background-color: #e4fafa;
+ }
+ #userProfileTitle{
+	margin-top: -5px;
+	margin-left: 5px;
+	width:150px;
+	text-align:center;
+	font-size:16px;
+	background-color: #399;
+	float:left;
+	padding: 10px;
+	font-weight:bold;
+	color: #fff;
+ }
+ #userProfileBar{
+	
+	margin-left:10px;
+	background-color: #e4fafa;
+	float:left;
+	padding: 10px;
+ }
+ #userProfileTag span {
+	color: #399;
+	padding: 5px;
+	cursor: pointer;
+	font-size: 16px;
+ }
+ .currentTag,.currentHoverTag {
+	border-bottom: 2px solid #399;
+ }
+ 
+ .exportResume_bar{
+	text-align: center;
+   display: inline-block;
+   cursor: pointer;
+   color: #c1854f;
+   width: 120px;
+   line-height: 36px;
+   font-size: 14px;
+ }
+ .exportResume_bar:hover{
+	color:#c1854f;
+	text-decoration: underline;
+ }
+ .exportResume_bar img{
+	margin-top:-3px;
+	margin-left:5px;
+ }
+ 
+	</style>
+	<script type="text/javascript">
+	$(function(){
+ $("#profileSetting").click(function(){
+	window.location.href = "http://www.scholat.com/editUserProfile.html";
+ });
+ $("#profileInfo").click(function(){
+	window.location.href = "http://www.scholat.com/editUserIntroduction.html";
+ });
+ $("#passwordSetting").click(function(){
+	window.location.href = "http://www.scholat.com/passwordManage.html";
+ });
+ $("#styleSetting").click(function(){
+	window.location.href = "http://www.scholat.com/styleSetting.html";
+ });
+ 
+ $("#userProfileTag > div > span").each(function(){
+	if(!$(this).hasClass("currentTag")){
+ $(this).hover(function(){
+ 	$(this).addClass("currentHoverTag");
+ }, function(){
+ 	$(this).removeClass("currentHoverTag");
+ });
+	}
+ });
+ 
+ var url = window.location.href;
+ if(url.indexOf("editUserProfile") != -1){
+	
+	$("#profileSetting").addClass("currentTag");
+ } else if(url.indexOf("editUserIntroduction") != -1){
+	
+	$("#profileInfo").addClass("currentTag");
+ } else if(url.indexOf("passwordManage") != -1){
+	
+	$("#passwordSetting").addClass("currentTag");
+ } else if(url.indexOf("savePassword") != -1){
+	
+	$("#passwordSetting").addClass("currentTag");
+ } else if(url.indexOf("styleSetting") != -1){
+	
+	$("#styleSetting").addClass("currentTag");
+ }
+	});
+	</script>
+<div id="userProfileTag">
+	<div id="userProfileTitle">个人信息&nbsp;Profile</div>
+	<div id="userProfileBar">
+ <span id="profileSetting">用户信息</span>
+ <span id="profileInfo">个人简介</span>
+ <span id="passwordSetting">账号设置</span>
+ <span id="styleSetting">主页设置</span>
+	</div>
+	<div style="float:right;">
+  <a href="./exportResume.html" class="exportResume_bar">信息导出<img src="http://202.116.32.240/scholat/images/right_arrow.png"></a>
+	</div>
+	<div style="clear:both;"></div>
+</div>
+
+ <div class="profileContent" style="width:960px;*margin-top:5px;background-color:#fff;box-shadow:3px 3px 3px grey;padding-bottom:20px;">
+	
+	<div id="picture">
+ <input id="InnerData" value="40" style="display: none;" />
+ 
+ <div id="uploadPicture"
+ 	label="%{getText('profile.uploadPicture')}" theme="ajax">
+ 	<iframe id="result" src="./setavatar.html?currentPicUrl=/images/default.png"
+  frameborder="0" border="0" runat="server" height="189px" scrolling="no" style="width: 880px;">
+ 	</iframe>
+ </div>
+	</div>
+	<div id="tabs">
+ <input id="UserInnerData" value="40" style="display: none;" />
+ 
+ <form id="UserProfileForm" name="UserProfileForm" action="/saveUserProfile.html" method="post" enctype="multipart/form-data">
+
+ 	<input type="hidden" name="profile.pictureUrl" value="/images/default.png" id="UserProfileForm_profile_pictureUrl"/>
+ 	<input type="hidden" name="from" value="" />
+ 	
+ 	<div class="detailsContainer">
+  <ul style="position:static;margin-bottom:30px;">
+ 	<li style="margin: 0px; padding: 0px; height: 40px; line-height: 40px;">
+  <div class="inputMsg">
+  	<label>姓名/Name
+   <span>*</span>
+  	</label>
+  	<input id="chineseName" name="profile.chineseName"
+   value="李祺"
+   style="width: 232px; vertical-align: middle;"
+   />
+  	
+  </div>
+ 	</li>
+ 	<li style="margin: 0px; padding: 0px; height: 40px; line-height: 40px;">
+  <div class="inputMsg">
+  	<label>English Name</label>
+  	<input name="profile.englishName"
+   value="Li Qi" style="width: 232px;"
+   />
+  	
+  </div>
+ 	</li>
+ 	<li style="margin: 0px; padding: 0px; height: 40px; line-height: 40px;">
+  <div class="inputRadio">
+  	<label>Gender</label>
+  	<span>
+   
+   
+  	
+   
+   
+  	<input type="radio" name="profile.gender"
+   
+   value="0" />
+  	
+  	女/Female
+   
+  	<input type="radio" name="profile.gender"
+   checked="checked"
+   value="1" />
+  	男/Male
+  	
+   
+  	</span>
+  </div>
+ 	</li>
+ 	<li style="margin: 0px; padding: 0px; margin-top: 20px; border-top: 2px solid #ccc; padding-top: 20px;">
+  <div class="inputMsg">
+  	<label>单位/Organization<span>*</span></label>
+  	<input id="workUnit" name="profile.workUnit"
+   value="华南师范大学软件学院" style="width: 480px;"
+   placeholder="请填写所属单位/Please input your Organization">
+  </div>
+ 	</li>
+ 	<li style="margin: 0px; padding: 0px;">
+  <div class="inputMsg">
+  	<label>部门/Department</label>
+  	<input name="profile.workDepartment"
+   value="" style="width: 480px;"
+   placeholder="请填写所属部门/Please input your Department">
+  </div>
+ 	</li>
+ 	<li style="margin: 0px; padding: 0px;">
+  <div class="inputMsg">
+  	<label>English Organization</label>
+  	<input name="profile.workUnitEn"
+   value="" style="width: 480px;"
+   placeholder="请输入工作单位英文名称/Please input your organization">
+  </div>
+ 	</li>
+ 	<li style="margin: 0px; padding: 0px; margin-top: 20px; border-top: 2px solid #ccc; padding-top: 20px;">
+  <div class="inputMsg">
+  	<label>学历/Degree</label>
+  	<span style="padding-left: 6px;">
+   <select id="degreeSelect" class="SelInput" onchange="javascript:selectToInput('degree',this.value)"
+  	style="height: 30px; border: 1px solid #399; position: static;font-size: 16px; padding-left: 5px;">
+  	<option selected="selected"></option>
+  	<option value='学士/Bachelor'>学士/Bachelor</option>
+  	<option value='硕士/Master'>硕士/Master</option>
+  	<option value='博士/Doctor'>博士/Doctor</option>
+  	<option value='其它/Other'>其它/Other</option>
+  	<option value=" "></option>
+   </select>
+   <input name="profile.degree" id="degree" value=""
+  	style="margin-left: -176px; width: 128px; display: none;">
+  	</span>
+  </div>
+ 	</li>
+ 	<li style="margin: 0px; padding: 0px;">
+  <div class="inputMsg">
+  	<label>职务/Title</label>
+  	<input type="text" id="scholarTitle"
+   name="profile.scholarTitle" value=""
+   placeholder="请输入职务/Please input your Title" />
+  </div>
+ 	</li>
+ 	<li style="margin: 0px; padding: 0px;">
+  <div class="inputMsg">
+  	<label>专业/Major</label>
+  	<input type="text" id="scholarField"
+   name="profile.scholarField" value="软件"
+   placeholder="专业/Major（如有多个请用，号隔开。）" />
+  </div>
+ 	</li>
+ 	<li style="margin: 0px; padding: 0px;">
+  <div class="inputMsg">
+  	<label>地址/Address</label>
+  	<input id="address" name="profile.address"
+   value="" style="width: 480px;"
+   placeholder="请输入地址/Please input your Address">
+  </div>
+ 	</li>
+  </ul>
+ 	</div>
+ 	<div style="background-color: #F15191; display: none;">
+  <input type="text" name="profile.workEmail" value="1249260951@qq.com" id="UserProfileForm_profile_workEmail" class="text large1"/>
+ 	</div>
+ 	<div style="float:left;color:#008000;margin-left: 80px;">
+  学者网是实名的学术社交网络平台，请填写真实资料，系统将定期清除非真实用户，以避免造成不良影响。
+ 	</div>
+ 	<div style="float:left;color:#008000; margin-top: 10px; margin-left: 80px;">
+  We are the real-name authentication academic social network
+  platform. Please fill in the real information.
+ 	</div>
+ 	<li class="buttonBar bottom" style="margin-left: 110px;">
+  <input id="UsersubmitBtn" type="button" value="保存/Submit"
+ 	style="margin-left: 110px; width: 120px; height: 35px; background-color: #009acd; color:#fff;" />
+ 	</li>
+ </form>
+
+
+ 
+	</div>
+ </div>
+ </div>
+	</div>
+ </div>
+ 
+ <div style="clear: both;"></div>
+ <div class="b"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<script>
+window.onscroll=function()
+{
+ var docEle=document.documentElement;
+ var st = docEle.scrollTop==0?document.body.scrollTop:docEle.scrollTop;
+ var toTop = $("#toTop");
+ if(st<520)
+ {
+  toTop.css("visibility", "hidden");
+ }
+ else
+ {
+  toTop.css("visibility", "visible");
+ }
+}
+	</script>
+<div
+	style="z-index: 9999; position: fixed; bottom: 48px; z-index: 0; right: 0; cursor: pointer; margin-right: 18px;"
+	onclick="location.href='#';">
+	<span id="toTop" style="visibility: hidden;"> <a
+ style="color: #FFFFFF; text-decoration: none; font-size: 12px;"><img
+ src="/images/backTopBottom.png" width="40px"
+ style="opacity: 1;"> </a> </span>
+</div>
+<div style="visible:hidden;">
+	&nbsp;.
+</div>
+<div
+	style="line-height: 25px; font-family:'Georgia', Georgia, 'Times New Roman', Times, 'Microsoft YaHei', SimSun, SimHei, serif; 'Georgia', Georgia, 'Times New Roman', Times, 'Microsoft YaHei', SimSun, SimHei, serif; text-align: center;">
+	<div style="color: #399;">
+ &copy;
+ 2018
+ SCHOLAT 学者网
+	</div>
+	<div>
+ <a style="color: #399;" href="portaldisclaim.html" target="_blank">免责声明</a>
+ |
+ <a style="color: #399;" href="portalaboutus.html" target="_blank">关于学者网</a>
+ |
+ <a style="color: #399;" href="portalcontactus.html" target="_blank">联系我们</a>
+	</div>
+</div>
+</div>
+	</body>
+</html>

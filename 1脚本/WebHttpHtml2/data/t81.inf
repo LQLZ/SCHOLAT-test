@@ -1,0 +1,15 @@
+[t81]
+FileName1=t81.htm
+URL1=http://www.scholat.com//ScholarUserType.html
+Total=3
+RequestHeaderFile=t81_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t81_ResponseHeader.txt
+ContentType=text/html
+SnapshotXmlFile=snapshot_81.xml
+FileName2=t81_noMsg.png
+URL2=http://www.scholat.com/calendar/images/noMsg.png
+FileName3=t81_tip-sprite.gif
+URL3=http://202.116.32.240/scholat/ext-2.0.2/resources/images/default/qtip/tip-sprite.gif
+[ProtocolInfo]
+ProtocolId=QTWeb

@@ -1,0 +1,15 @@
+[t20]
+FileName1=t20.htm
+URL1=http://www.scholat.com/getLatestVisitors.html
+Total=3
+RequestHeaderFile=t20_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t20_ResponseHeader.txt
+ContentType=text/html
+SnapshotXmlFile=snapshot_20.xml
+FileName2=t20_mozhaoxian_1444843385058.jpg
+URL2=http://www.scholat.com/resources/s_icon/mozhaoxian_1444843385058.jpg
+FileName3=t20_default.png
+URL3=http://www.scholat.com/images/default.png
+[ProtocolInfo]
+ProtocolId=QTWeb

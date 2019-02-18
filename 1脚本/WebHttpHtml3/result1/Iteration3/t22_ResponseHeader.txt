@@ -1,0 +1,15 @@
+HTTP/1.1 200 OK
+Date: Mon, 11 Jun 2018 07:37:41 GMT
+Server: Apache
+Access-Control-Allow-Origin: *
+Cache-Control: no-store
+Pragma: no-store
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Vary: Accept-Encoding
+Content-Encoding: gzip
+X-Frame-Options: SAMEORIGIN
+Content-Length: 8957
+Keep-Alive: timeout=5, max=99
+Connection: Keep-Alive
+Content-Type: text/html;charset=utf-8
+

@@ -1,0 +1,11 @@
+[t32]
+FileName1=t32.html
+URL1=http://www.scholat.com/FriendTreeActionForChat.html?acc_id=17449
+Total=1
+RequestHeaderFile=t32_RequestHeader.txt
+RequestBodyFile=t32_RequestBody.txt
+ResponseHeaderFile=t32_ResponseHeader.txt
+ContentType=application/json
+SnapshotXmlFile=snapshot_32.xml
+[ProtocolInfo]
+ProtocolId=QTWeb

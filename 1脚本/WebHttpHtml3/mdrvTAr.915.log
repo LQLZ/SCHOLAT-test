@@ -1,0 +1,9 @@
+Start auto log messages stack - Iteration 11.	[MsgId: MMSG-10545]
+Action.c(25): Found resource "http://res.scholat.com/scholat/images/homepage/note.jpg" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(25): Found resource "http://res.scholat.com/scholat/images/homepage/makefriend.jpg" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(25): Found resource "http://www.scholat.com/resources/s_icon/adamwt_1495636807713.jpg" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(25): Found resource "http://www.scholat.com/images/backTopBottom.png" in HTML "http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA"  	[MsgId: MMSG-26659]
+Action.c(25): Continuing after Error -27723: Step download timeout (600 seconds) has expired when downloading resource "http://www.scholat.com/images/search/search.gif". Set the "Step Timeout caused by resources is a warning" Run-Time Setting to Yes/No to have this message as a warning/error, respectively  	[MsgId: MERR-27723]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+

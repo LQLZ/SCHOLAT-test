@@ -1,0 +1,15 @@
+[t10]
+FileName1=t10.htm
+URL1=http://www.scholat.com//checkMobileApplyInfo.html
+Total=3
+RequestHeaderFile=t10_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t10_ResponseHeader.txt
+ContentType=text/html
+SnapshotXmlFile=snapshot_10.xml
+FileName2=t10_tip-sprite.gif
+URL2=http://202.116.32.240/scholat/ext-2.0.2/resources/images/default/qtip/tip-sprite.gif
+FileName3=t10_noMsg.png
+URL3=http://www.scholat.com/calendar/images/noMsg.png
+[ProtocolInfo]
+ProtocolId=QTWeb

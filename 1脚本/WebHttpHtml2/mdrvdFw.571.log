@@ -1,0 +1,104 @@
+Start auto log messages stack.	[MsgId: MMSG-10546]
+vuser_init.c(12): Found resource "http://www.scholat.com/portal_new/js/slider.gzjs?v=20170803" in HTML "http://www.scholat.com/"  	[MsgId: MMSG-26659]
+vuser_init.c(12): web_url("www.scholat.com") was successful, 410367 body bytes, 15524 header bytes, 77 chunking overhead bytes  	[MsgId: MMSG-26385]
+vuser_init.c(26): web_set_sockets_option started  	[MsgId: MMSG-26355]
+vuser_init.c(26): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+vuser_init.c(28): lr_think_time: 34.46 seconds (recorded think time was 25.00 seconds).	[MsgId: MMSG-15947]
+vuser_init.c(30): web_link("Login") started  	[MsgId: MMSG-26355]
+vuser_init.c(30): Linking to "http://www.scholat.com/login.html?source=pc", Target Frame="_self"  	[MsgId: MMSG-27994]
+vuser_init.c(30): Continuing after Error -27794: Failed to connect to server "www.scholat.com:80": [10060] Connection timed out  	[MsgId: MERR-27794]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack.	[MsgId: MMSG-10546]
+vuser_init.c(30): web_link("Login") highest severity level was "continue on error", 0 body bytes, 0 header bytes  	[MsgId: MMSG-26388]
+vuser_init.c(30): Continuing after error in Vuser script.	[MsgId: MMSG-10678]
+vuser_init.c(35): Notify: Transaction "Lo" started.	[MsgId: MMSG-16999]
+vuser_init.c(37): web_submit_form("Auth.html") started  	[MsgId: MMSG-26355]
+vuser_init.c(37): Continuing after Error -27979: Requested form not found  	[MsgId: MERR-27979]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack - Iteration 1.	[MsgId: MMSG-10545]
+Action.c(28): Downloading resource "http://202.116.32.240/scholat/images/avatar/packslider.png" (specified by argument number 20)  	[MsgId: MMSG-26577]
+Action.c(28): Downloading resource "http://202.116.32.240/scholat/images/avatar/track.png" (specified by argument number 23)  	[MsgId: MMSG-26577]
+Action.c(28): Warning -27794: Failed to connect to server "202.116.32.240:80": [10060] Connection timed out  	[MsgId: MWAR-27794]
+Action.c(28): Warning -27794: Failed to connect to server "202.116.32.240:80": [10060] Connection timed out  	[MsgId: MWAR-27794]
+Action.c(28): web_custom_request("getAllAddFriendsMsg.html_2") highest severity level was "warning", 26516 body bytes, 4910 header bytes  	[MsgId: MMSG-26388]
+Action.c(45): web_custom_request("ChatMng.update.dwr_2") started  	[MsgId: MMSG-26355]
+Action.c(45): Continuing after Error -27794: Failed to connect to server "www.scholat.com:80": [10060] Connection timed out  	[MsgId: MERR-27794]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack - Iteration 1.	[MsgId: MMSG-10545]
+Action.c(45): web_custom_request("ChatMng.update.dwr_2") highest severity level was "continue on error", 0 body bytes, 0 header bytes  	[MsgId: MMSG-26388]
+Action.c(45): Continuing after error in Vuser script.	[MsgId: MMSG-10678]
+Action.c(57): web_submit_data("FriendTreeActionForChat.html_2") started  	[MsgId: MMSG-26355]
+Action.c(57): Redirecting "http://www.scholat.com/FriendTreeActionForChat.html?acc_id=17449" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(57): To location "http://www.scholat.com/Phomepage.html"  	[MsgId: MMSG-26693]
+Action.c(57): Continuing after Error -27794: Failed to connect to server "www.scholat.com:80": [10060] Connection timed out  	[MsgId: MERR-27794]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack - Iteration 1.	[MsgId: MMSG-10545]
+Action.c(57): web_submit_data("FriendTreeActionForChat.html_2") highest severity level was "continue on error", 0 body bytes, 232 header bytes  	[MsgId: MMSG-26388]
+Action.c(57): Continuing after error in Vuser script.	[MsgId: MMSG-10678]
+Action.c(68): web_submit_data("RecentTreeActionForChat.html_2") started  	[MsgId: MMSG-26355]
+Action.c(68): Continuing after Error -27794: Failed to connect to server "www.scholat.com:80": [10060] Connection timed out  	[MsgId: MERR-27794]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack - Iteration 1.	[MsgId: MMSG-10545]
+Action.c(90): web_find started  	[MsgId: MMSG-26355]
+Action.c(90): "Text Check" successful. 1 occurrence(s) of "SCHOLAT 学者网" found (RightOf="", LeftOf="")  	[MsgId: MMSG-27196]
+Action.c(90): web_find was successful  	[MsgId: MMSG-26392]
+Action.c(92): Notify: Transaction "Se" ended with "Pa" status (Duration: 0.3479).	[MsgId: MMSG-16873]
+Ending action Ac.	[MsgId: MMSG-15918]
+Ending Vuser...	[MsgId: MMSG-15966]
+Starting action vu.	[MsgId: MMSG-15919]
+vuser_end.c(4): lr_think_time: 79.32 seconds (recorded think time was 47.00 seconds).	[MsgId: MMSG-15947]
+vuser_end.c(6): web_custom_request("ChatMng.logout.dwr") started  	[MsgId: MMSG-26355]
+vuser_end.c(6): Connection to www.scholat.com:80 closed after being inactive for 79 seconds, exceeding the "HTTP Keep-Alive timeout" Run-Time Setting (60 seconds). URL="http://www.scholat.com/dwr/call/plaincall/ChatMng.logout.dwr"  	[MsgId: MMSG-27652]
+vuser_end.c(6): Continuing after Error -27794: Failed to connect to server "www.scholat.com:80": [10060] Connection timed out  	[MsgId: MERR-27794]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack - Iteration 1.	[MsgId: MMSG-10545]
+Action.c(68): web_submit_data("RecentTreeActionForChat.html_2") highest severity level was "continue on error", 0 body bytes, 0 header bytes  	[MsgId: MMSG-26388]
+Action.c(68): Continuing after error in Vuser script.	[MsgId: MMSG-10678]
+Action.c(79): web_submit_data("TeamTreeActionForChat.html_2") started  	[MsgId: MMSG-26355]
+Action.c(79): Continuing after Error -27794: Failed to connect to server "www.scholat.com:80": [10060] Connection timed out  	[MsgId: MERR-27794]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack - Iteration 1.	[MsgId: MMSG-10545]
+vuser_end.c(6): web_custom_request("ChatMng.logout.dwr") highest severity level was "continue on error", 0 body bytes, 0 header bytes  	[MsgId: MMSG-26388]
+vuser_end.c(6): Continuing after error in Vuser script.	[MsgId: MMSG-10678]
+vuser_end.c(18): web_url("logout.html") started  	[MsgId: MMSG-26355]
+vuser_end.c(18): Continuing after Error -27794: Failed to connect to server "www.scholat.com:80": [10060] Connection timed out  	[MsgId: MERR-27794]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack - Iteration 1.	[MsgId: MMSG-10545]
+Action.c(90): web_find started  	[MsgId: MMSG-26355]
+Action.c(90): "Text Check" successful. 1 occurrence(s) of "SCHOLAT 学者网" found (RightOf="", LeftOf="")  	[MsgId: MMSG-27196]
+Action.c(90): web_find was successful  	[MsgId: MMSG-26392]
+Action.c(92): Notify: Transaction "Se" ended with "Pa" status (Duration: 0.3938).	[MsgId: MMSG-16873]
+Ending action Ac.	[MsgId: MMSG-15918]
+Ending Vuser...	[MsgId: MMSG-15966]
+Starting action vu.	[MsgId: MMSG-15919]
+vuser_end.c(4): lr_think_time: 89.94 seconds (recorded think time was 47.00 seconds).	[MsgId: MMSG-15947]
+vuser_end.c(6): web_custom_request("ChatMng.logout.dwr") started  	[MsgId: MMSG-26355]
+vuser_end.c(6): Connection to www.scholat.com:80 closed after being inactive for 89 seconds, exceeding the "HTTP Keep-Alive timeout" Run-Time Setting (60 seconds). URL="http://www.scholat.com/dwr/call/plaincall/ChatMng.logout.dwr"  	[MsgId: MMSG-27652]
+vuser_end.c(6): Continuing after Error -27794: Failed to connect to server "www.scholat.com:80": [10060] Connection timed out  	[MsgId: MERR-27794]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack - Iteration 1.	[MsgId: MMSG-10545]
+vuser_end.c(6): web_custom_request("ChatMng.logout.dwr") highest severity level was "continue on error", 0 body bytes, 0 header bytes  	[MsgId: MMSG-26388]
+vuser_end.c(6): Continuing after error in Vuser script.	[MsgId: MMSG-10678]
+vuser_end.c(18): web_url("logout.html") started  	[MsgId: MMSG-26355]
+vuser_end.c(18): Continuing after Error -27794: Failed to connect to server "www.scholat.com:80": [10060] Connection timed out  	[MsgId: MERR-27794]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+

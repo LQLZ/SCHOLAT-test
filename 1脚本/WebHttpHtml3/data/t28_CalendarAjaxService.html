@@ -1,0 +1,115 @@
+
+// Provide a default path to dwr.engine
+if (dwr == null) var dwr = {};
+if (dwr.engine == null) dwr.engine = {};
+if (DWREngine == null) var DWREngine = dwr.engine;
+if (CalendarAjaxService == null) var CalendarAjaxService = {};
+CalendarAjaxService._path = '/dwr';
+CalendarAjaxService.getNote = function(p0, p1, callback) {
+ dwr.engine._execute(CalendarAjaxService._path, 'CalendarAjaxService', 'getNote', p0, p1, callback);
+}
+CalendarAjaxService.getTerm = function(p0, callback) {
+ dwr.engine._execute(CalendarAjaxService._path, 'CalendarAjaxService', 'getTerm', p0, callback);
+}
+CalendarAjaxService.getAllCalendars = function(p0, p1, p2, callback) {
+ dwr.engine._execute(CalendarAjaxService._path, 'CalendarAjaxService', 'getAllCalendars', p0, p1, p2, callback);
+}
+CalendarAjaxService.getCalendarByEndDate = function(p0, callback) {
+ dwr.engine._execute(CalendarAjaxService._path, 'CalendarAjaxService', 'getCalendarByEndDate', p0, callback);
+}
+CalendarAjaxService.getCalendarNORemind = function(callback) {
+ dwr.engine._execute(CalendarAjaxService._path, 'CalendarAjaxService', 'getCalendarNORemind', callback);
+}
+CalendarAjaxService.getCalendarGroupByDate = function(callback) {
+ dwr.engine._execute(CalendarAjaxService._path, 'CalendarAjaxService', 'getCalendarGroupByDate', callback);
+}
+CalendarAjaxService.getOneDayCourseAndCalendar = function(p0, p1, callback) {
+ dwr.engine._execute(CalendarAjaxService._path, 'CalendarAjaxService', 'getOneDayCourseAndCalendar', p0, p1, callback);
+}
+CalendarAjaxService.getCoursesByPeriod = function(p0, p1, callback) {
+ dwr.engine._execute(CalendarAjaxService._path, 'CalendarAjaxService', 'getCoursesByPeriod', p0, p1, callback);
+}
+CalendarAjaxService.getCalendarByPeriod = function(p0, p1, callback) {
+ dwr.engine._execute(CalendarAjaxService._path, 'CalendarAjaxService', 'getCalendarByPeriod', p0, p1, callback);
+}
+CalendarAjaxService.getCalendarById = function(p0, callback) {
+ dwr.engine._execute(CalendarAjaxService._path, 'CalendarAjaxService', 'getCalendarById', p0, callback);
+}
+CalendarAjaxService.getRemindsNum = function(callback) {
+ dwr.engine._execute(CalendarAjaxService._path, 'CalendarAjaxService', 'getRemindsNum', callback);
+}
+CalendarAjaxService.getRemindCalendars = function(callback) {
+ dwr.engine._execute(CalendarAjaxService._path, 'CalendarAjaxService', 'getRemindCalendars', callback);
+}
+CalendarAjaxService.getExportContent = function(p0, p1, p2, callback) {
+ dwr.engine._execute(CalendarAjaxService._path, 'CalendarAjaxService', 'getExportContent', p0, p1, p2, callback);
+}
+CalendarAjaxService.saveTerm = function(p0, p1, p2, p3, callback) {
+ dwr.engine._execute(CalendarAjaxService._path, 'CalendarAjaxService', 'saveTerm', p0, p1, p2, p3, callback);
+}
+CalendarAjaxService.saveSettings = function(p0, p1, p2, callback) {
+ dwr.engine._execute(CalendarAjaxService._path, 'CalendarAjaxService', 'saveSettings', p0, p1, p2, callback);
+}
+CalendarAjaxService.updateTerm = function(p0, p1, p2, p3, p4, callback) {
+ dwr.engine._execute(CalendarAjaxService._path, 'CalendarAjaxService', 'updateTerm', p0, p1, p2, p3, p4, callback);
+}
+CalendarAjaxService.saveSectionTime = function(p0, p1, p2, callback) {
+ dwr.engine._execute(CalendarAjaxService._path, 'CalendarAjaxService', 'saveSectionTime', p0, p1, p2, callback);
+}
+CalendarAjaxService.removeTerm = function(p0, callback) {
+ dwr.engine._execute(CalendarAjaxService._path, 'CalendarAjaxService', 'removeTerm', p0, callback);
+}
+CalendarAjaxService.getTerms = function(callback) {
+ dwr.engine._execute(CalendarAjaxService._path, 'CalendarAjaxService', 'getTerms', callback);
+}
+CalendarAjaxService.getFullCourse = function(callback) {
+ dwr.engine._execute(CalendarAjaxService._path, 'CalendarAjaxService', 'getFullCourse', callback);
+}
+CalendarAjaxService.getWeekNumOfTerm = function(p0, callback) {
+ dwr.engine._execute(CalendarAjaxService._path, 'CalendarAjaxService', 'getWeekNumOfTerm', p0, callback);
+}
+CalendarAjaxService.getCurrentWeek = function(p0, callback) {
+ dwr.engine._execute(CalendarAjaxService._path, 'CalendarAjaxService', 'getCurrentWeek', p0, callback);
+}
+CalendarAjaxService.getPeriodByDate = function(p0, p1, callback) {
+ dwr.engine._execute(CalendarAjaxService._path, 'CalendarAjaxService', 'getPeriodByDate', p0, p1, callback);
+}
+CalendarAjaxService.getPeriodByDateStr = function(p0, p1, callback) {
+ dwr.engine._execute(CalendarAjaxService._path, 'CalendarAjaxService', 'getPeriodByDateStr', p0, p1, callback);
+}
+CalendarAjaxService.saveNote = function(p0, p1, p2, p3, callback) {
+ dwr.engine._execute(CalendarAjaxService._path, 'CalendarAjaxService', 'saveNote', p0, p1, p2, p3, callback);
+}
+CalendarAjaxService.getNoteWithDateType = function(p0, p1, callback) {
+ dwr.engine._execute(CalendarAjaxService._path, 'CalendarAjaxService', 'getNoteWithDateType', p0, p1, callback);
+}
+CalendarAjaxService.getNotesByType = function(p0, callback) {
+ dwr.engine._execute(CalendarAjaxService._path, 'CalendarAjaxService', 'getNotesByType', p0, callback);
+}
+CalendarAjaxService.getTermNoExistCourseTable = function(callback) {
+ dwr.engine._execute(CalendarAjaxService._path, 'CalendarAjaxService', 'getTermNoExistCourseTable', callback);
+}
+CalendarAjaxService.getSettings = function(p0, callback) {
+ dwr.engine._execute(CalendarAjaxService._path, 'CalendarAjaxService', 'getSettings', p0, callback);
+}
+CalendarAjaxService.saveCousreTable = function(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, callback) {
+ dwr.engine._execute(CalendarAjaxService._path, 'CalendarAjaxService', 'saveCousreTable', p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, callback);
+}
+CalendarAjaxService.getCourseTableById = function(p0, callback) {
+ dwr.engine._execute(CalendarAjaxService._path, 'CalendarAjaxService', 'getCourseTableById', p0, callback);
+}
+CalendarAjaxService.getPromotCourseName = function(p0, callback) {
+ dwr.engine._execute(CalendarAjaxService._path, 'CalendarAjaxService', 'getPromotCourseName', p0, callback);
+}
+CalendarAjaxService.getCourseTableByTermId = function(p0, callback) {
+ dwr.engine._execute(CalendarAjaxService._path, 'CalendarAjaxService', 'getCourseTableByTermId', p0, callback);
+}
+CalendarAjaxService.getCurrentCourse = function(p0, p1, p2, callback) {
+ dwr.engine._execute(CalendarAjaxService._path, 'CalendarAjaxService', 'getCurrentCourse', p0, p1, p2, callback);
+}
+CalendarAjaxService.deleteCourse = function(p0, callback) {
+ dwr.engine._execute(CalendarAjaxService._path, 'CalendarAjaxService', 'deleteCourse', p0, callback);
+}
+CalendarAjaxService.getPushCalendarNum = function(callback) {
+ dwr.engine._execute(CalendarAjaxService._path, 'CalendarAjaxService', 'getPushCalendarNum', callback);
+}

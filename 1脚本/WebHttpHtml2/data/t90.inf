@@ -1,0 +1,13 @@
+[t90]
+FileName1=t90.html
+URL1=http://www.scholat.com/dwr/call/plaincall/CalendarAjaxService.getRemindCalendars.dwr
+Total=2
+RequestHeaderFile=t90_RequestHeader.txt
+RequestBodyFile=t90_RequestBody.txt
+ResponseHeaderFile=t90_ResponseHeader.txt
+ContentType=text/javascript
+SnapshotXmlFile=snapshot_90.xml
+FileName2=t90_remind.png
+URL2=http://www.scholat.com/calendar/images/remind.png
+[ProtocolInfo]
+ProtocolId=QTWeb

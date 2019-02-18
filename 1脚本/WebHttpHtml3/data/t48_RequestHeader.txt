@@ -1,0 +1,11 @@
+GET /logout.html HTTP/1.1
+Accept: application/x-ms-application, image/jpeg, application/xaml+xml, image/gif, image/pjpeg, application/x-ms-xbap, */*
+Referer: http://www.scholat.com/portalSearchScholarS.html?q=%E6%9D%8E%E7%A5%BA
+Accept-Language: zh-CN
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Win64; x64; Trident/4.0; .NET CLR 2.0.50727; SLCC2; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3)
+UA-CPU: AMD64
+Accept-Encoding: gzip, deflate
+Host: www.scholat.com
+Connection: Keep-Alive
+Cookie: JSESSIONID=8AD8E964536956287534797961691A5E.tomcat3; STOKEN="E64478C5D0095A74/2018-06-04 10:23:31/f92b0d00020a5c26016d151113f6dfed&desc=1217"
+

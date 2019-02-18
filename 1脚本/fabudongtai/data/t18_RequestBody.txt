@@ -1,0 +1,8 @@
+"callCount=1\n"
+"page=/Phomepage.html\n"
+"httpSessionId=\n"
+"scriptSessionId=A4418185C2A1E52D2513C482A418D4F423\n"
+"c0-scriptName=CalendarAjaxService\n"
+"c0-methodName=getRemindCalendars\n"
+"c0-id=0\n"
+"batchId=0\n"

@@ -1,0 +1,15 @@
+[t95]
+FileName1=t95.html
+URL1=http://www.scholat.com/FriendTreeActionForChat.html?acc_id=17449
+Total=3
+RequestHeaderFile=t95_RequestHeader.txt
+RequestBodyFile=t95_RequestBody.txt
+ResponseHeaderFile=t95_ResponseHeader.txt
+ContentType=application/json
+SnapshotXmlFile=snapshot_95.xml
+FileName2=t95_team.png
+URL2=http://www.scholat.com/chatjs/icons/team.png
+FileName3=t95_leaf.gif
+URL3=http://202.116.32.240/scholat/ext-2.0.2/resources/images/default/tree/leaf.gif
+[ProtocolInfo]
+ProtocolId=QTWeb

@@ -1,0 +1,17 @@
+[t19]
+FileName1=t19.htm
+URL1=http://www.scholat.com/recommendFriendsByJs_ajax.html
+Total=4
+RequestHeaderFile=t19_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t19_ResponseHeader.txt
+ContentType=text/html
+SnapshotXmlFile=snapshot_19.xml
+FileName2=t19_addfriend.jpg
+URL2=http://www.scholat.com/images/homepage/addfriend.jpg
+FileName3=t19_chenjingfen_1434872125499.jpg
+URL3=http://www.scholat.com/resources/s_icon/chenjingfen_1434872125499.jpg
+FileName4=t19_guobanghong_1527731669788.jpg
+URL4=http://www.scholat.com/resources/s_icon/guobanghong_1527731669788.jpg
+[ProtocolInfo]
+ProtocolId=QTWeb
